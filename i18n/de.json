@@ -4,7 +4,6 @@
   "nav_faq": "FAQ zum Bezahlmodell",
   "lang_label": "Sprache",
   "footer": "© Adam Toms Ltd. Microsoft Teams ist eine Marke der Microsoft Corporation. Diese Erweiterung ist nicht mit Microsoft verbunden und wird nicht von Microsoft unterstützt.",
-
   "idx_title": "Teams Message Extractor — Chat Export",
   "idx_intro": "Eine Browser-Erweiterung, die Microsoft Teams-Chatnachrichten — einschließlich Dateien, Bildern und Emoji-Reaktionen — als CSV oder HTML exportiert, mit Anhängen gebündelt als einzelnes ZIP. Sie scrollt automatisch durch Ihren gesamten Gesprächsverlauf, damit nichts übersehen wird.",
   "idx_card": "<strong>Alles geschieht in Ihrem Browser.</strong> Ihre Nachrichten und Dateien werden lokal auf Ihrem Gerät verarbeitet und niemals an uns oder an Server Dritter gesendet. Details finden Sie in der <a href=\"privacy.html\">Datenschutzerklärung</a>.",
@@ -17,7 +16,6 @@
   "idx_f6": "Funktioniert auf teams.microsoft.com, teams.live.com und teams.cloud.microsoft",
   "idx_support_h": "Support",
   "idx_support": "Fragen, Fehlerberichte oder Funktionswünsche:",
-
   "pp_title": "Datenschutzerklärung",
   "pp_meta": "Gültig ab: 12. Juli 2026 · Gilt für die Browser-Erweiterung „Teams Message Extractor — Chat Export“",
   "pp_summary": "<strong>Zusammenfassung:</strong> Alles, was die Erweiterung tut, geschieht lokal in Ihrem Browser. Ihre Teams-Nachrichten, Dateien und Exporte verlassen niemals Ihr Gerät. Wir erheben keine Analysedaten, betreiben keine Server und sehen keine Ihrer Daten.",
@@ -43,7 +41,6 @@
   "pp_s6_p": "Wesentliche Änderungen werden in den Versionshinweisen der Erweiterung angekündigt und auf dieser Seite mit einem neuen Gültigkeitsdatum wiedergegeben.",
   "pp_s7_h": "Kontakt",
   "pp_s7_p": "Adam Toms Ltd — <a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-
   "fq_title": "Das kommende Bezahlmodell",
   "fq_meta": "Zuletzt aktualisiert: 12. Juli 2026 — die folgenden Details werden ergänzt, sobald sie feststehen.",
   "fq_card": "<strong>Kurz gesagt:</strong> Die Erweiterung wird in einem künftigen Update auf ein Bezahlmodell umgestellt — noch nicht jetzt und nicht ohne Vorwarnung. Sie erhalten hier und in der Erweiterung eine Vorankündigung, eine <strong>kostenlose Übergangsfrist von 1 Monat</strong>, und bestehende Nutzer erhalten einen vergünstigten <strong>Frühunterstützer-Preis</strong>.",
@@ -56,5 +53,6 @@
   "fq_q4_h": "Wie werden bestehende Nutzer erkannt?",
   "fq_q4_p": "Die Erweiterung speichert lokal, wann sie erstmals installiert wurde. Installationen, die vor der Ankündigung liegen, erhalten automatisch den vergünstigten Frühunterstützer-Preis angeboten. Nichts davon verlässt Ihr Gerät — siehe die <a href=\"privacy.html\">Datenschutzerklärung</a>.",
   "fq_q5_h": "Fragen?",
-  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>"
+  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
+  "idx_shots_h": "So sieht es aus"
 }

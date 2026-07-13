@@ -57,11 +57,13 @@ def head(t, title, code, page, css_prefix):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <link rel="stylesheet" href="{css_prefix}style.css">
+<link rel="icon" href="{css_prefix}assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="{css_prefix}assets/icon128.png" type="image/png">
 {alts}
 </head>
 <body>"""
 
-def nav(t, code, page, here_prefix):
+def nav(t, code, page, here_prefix, css_prefix):
     opts = []
     for c in sorted(LOCALES, key=lambda c: (c != "en", load_cache[c]["_lang_name"])):
         sel = " selected" if c == code else ""
@@ -70,7 +72,7 @@ def nav(t, code, page, here_prefix):
     return f"""
 <header class="site">
   <nav>
-    <a class="brand" href="{here_prefix}./">Teams Message Extractor</a>
+    <a class="brand" href="{here_prefix}./"><img class="brandicon" src="{css_prefix}assets/icon.svg" alt="" width="22" height="22">Teams Message Extractor</a>
     <a href="{here_prefix}privacy.html">{t["nav_privacy"]}</a>
     <a href="{here_prefix}paid-model.html">{t["nav_faq"]}</a>
     <select class="lang" aria-label="{t["lang_label"]}" onchange="location.href=this.value">
@@ -104,10 +106,14 @@ def render_listing(code):
     return "\n".join(out)
 
 def render_index(t, code):
+    css_prefix = "../" if LOCALES[code][0] else ""
     return f"""<main>
   <h1>{t['idx_title']}</h1>
+  <figure class="hero"><img src="{css_prefix}assets/hero.png" alt="{esc(t['idx_title'])}" width="1400" height="560"></figure>
   <div class="card">{t['idx_card']}</div>
 {render_listing(code)}
+  <h2>{t['idx_shots_h']}</h2>
+  <figure class="shot"><img src="{css_prefix}assets/popup.png" alt="{esc(t['idx_title'])}" width="640" height="400" loading="lazy"></figure>
   <h2>{t['idx_support_h']}</h2>
   <p>{t['idx_support']} <a href="mailto:adamltoms@gmail.com">adamltoms@gmail.com</a></p>
 </main>"""
@@ -189,7 +195,7 @@ for c, (d, lang, rtl, flag) in LOCALES.items():
     for page in PAGES:
         html = (
             head(t, TITLE[page](t), c, page, css_prefix)
-            + nav(t, c, page, here_prefix)
+            + nav(t, c, page, here_prefix, css_prefix)
             + RENDER[page](t, c)
             + foot(t)
         )

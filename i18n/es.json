@@ -4,7 +4,6 @@
   "nav_faq": "Preguntas frecuentes sobre el modelo de pago",
   "lang_label": "Idioma",
   "footer": "© Adam Toms Ltd. Microsoft Teams es una marca comercial de Microsoft Corporation. Esta extensión no está afiliada ni respaldada por Microsoft.",
-
   "idx_title": "Teams Message Extractor — Chat Export",
   "idx_intro": "Una extensión de navegador que exporta mensajes de chat de Microsoft Teams — incluidos archivos, imágenes y reacciones emoji — a CSV o HTML, con los adjuntos agrupados en un único ZIP. Se desplaza automáticamente por todo el historial de la conversación para que no se pierda nada.",
   "idx_card": "<strong>Todo ocurre en tu navegador.</strong> Tus mensajes y archivos se procesan localmente en tu dispositivo y nunca se envían a nosotros ni a ningún servidor de terceros. Consulta la <a href=\"privacy.html\">política de privacidad</a> para más detalles.",
@@ -17,7 +16,6 @@
   "idx_f6": "Funciona en teams.microsoft.com, teams.live.com y teams.cloud.microsoft",
   "idx_support_h": "Soporte",
   "idx_support": "Preguntas, informes de errores o solicitudes de funciones:",
-
   "pp_title": "Política de privacidad",
   "pp_meta": "Fecha de entrada en vigor: 12 de julio de 2026 · Se aplica a la extensión de navegador \"Teams Message Extractor — Chat Export\"",
   "pp_summary": "<strong>Resumen:</strong> todo lo que hace la extensión ocurre localmente en tu navegador. Tus mensajes de Teams, archivos y exportaciones nunca salen de tu dispositivo. No recopilamos analíticas, no operamos servidores y no vemos ninguno de tus datos.",
@@ -43,7 +41,6 @@
   "pp_s6_p": "Los cambios sustanciales se anunciarán en las notas de la versión de la extensión y se reflejarán en esta página con una nueva fecha de entrada en vigor.",
   "pp_s7_h": "Contacto",
   "pp_s7_p": "Adam Toms Ltd — <a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-
   "fq_title": "El próximo modelo de pago",
   "fq_meta": "Última actualización: 12 de julio de 2026 — los detalles siguientes se completarán a medida que se confirmen.",
   "fq_card": "<strong>La versión corta:</strong> la extensión pasará a un modelo de pago en una actualización futura — todavía no, y no sin previo aviso. Recibirás un aviso anticipado aquí y en la extensión, un <strong>periodo de gracia gratuito de 1 mes</strong>, y los usuarios existentes obtendrán un <strong>precio con descuento por apoyo temprano</strong>.",
@@ -56,5 +53,6 @@
   "fq_q4_h": "¿Cómo se reconocerá a los usuarios existentes?",
   "fq_q4_p": "La extensión registra localmente cuándo se instaló por primera vez. A las instalaciones anteriores al anuncio se les ofrecerá automáticamente el precio con descuento por apoyo temprano. Nada de esto sale de tu dispositivo — consulta la <a href=\"privacy.html\">política de privacidad</a>.",
   "fq_q5_h": "¿Preguntas?",
-  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>"
+  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
+  "idx_shots_h": "Véalo en acción"
 }

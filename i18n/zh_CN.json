@@ -4,7 +4,6 @@
   "nav_faq": "付费模式常见问题",
   "lang_label": "语言",
   "footer": "© Adam Toms Ltd. Microsoft Teams 是 Microsoft Corporation 的商标。本扩展程序不隶属于 Microsoft，也未获得 Microsoft 认可。",
-
   "idx_title": "Teams Message Extractor — Chat Export",
   "idx_intro": "一款浏览器扩展程序，可将 Microsoft Teams 的聊天消息（包括文件、图片和表情回应）导出为 CSV 或 HTML，附件打包为单个 ZIP。它会自动滚动您的完整对话历史，确保不遗漏任何内容。",
   "idx_card": "<strong>一切都在您的浏览器中完成。</strong>您的消息和文件均在您的设备上本地处理，绝不会发送给我们或任何第三方服务器。详情请参阅<a href=\"privacy.html\">隐私政策</a>。",
@@ -17,7 +16,6 @@
   "idx_f6": "适用于 teams.microsoft.com、teams.live.com 和 teams.cloud.microsoft",
   "idx_support_h": "支持",
   "idx_support": "问题、错误报告或功能请求：",
-
   "pp_title": "隐私政策",
   "pp_meta": "生效日期：2026年7月12日 · 适用于\"Teams Message Extractor — Chat Export\"浏览器扩展程序",
   "pp_summary": "<strong>摘要：</strong>本扩展程序的所有操作都在您的浏览器中本地完成。您的 Teams 消息、文件和导出内容绝不会离开您的设备。我们不收集任何分析数据，不运行任何服务器，也看不到您的任何数据。",
@@ -43,7 +41,6 @@
   "pp_s6_p": "重大变更将在扩展程序的版本说明中公布，并以新的生效日期反映在本页面上。",
   "pp_s7_h": "联系方式",
   "pp_s7_p": "Adam Toms Ltd — <a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-
   "fq_title": "即将推出的付费模式",
   "fq_meta": "最后更新：2026年7月12日 — 以下详情将在确认后陆续补充。",
   "fq_card": "<strong>简而言之：</strong>本扩展程序将在未来的更新中转为付费模式 — 目前尚未开始，且不会在没有预告的情况下进行。您将在本页面和扩展程序内提前收到通知，并享有 <strong>1 个月的免费宽限期</strong>，现有用户还将获得优惠的<strong>早期支持者价格</strong>。",
@@ -56,5 +53,6 @@
   "fq_q4_h": "现有用户如何被识别？",
   "fq_q4_p": "扩展程序会在本地记录首次安装的时间。在公告之前安装的用户将自动获得优惠的早期支持者价格。这一过程中没有任何信息离开您的设备 — 请参阅<a href=\"privacy.html\">隐私政策</a>。",
   "fq_q5_h": "有疑问？",
-  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>"
+  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
+  "idx_shots_h": "界面预览"
 }

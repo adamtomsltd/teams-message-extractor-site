@@ -4,7 +4,6 @@
   "nav_faq": "有料モデル FAQ",
   "lang_label": "言語",
   "footer": "© Adam Toms Ltd. Microsoft Teams は Microsoft Corporation の商標です。本拡張機能は Microsoft と提携しておらず、また Microsoft から承認もされていません。",
-
   "idx_title": "Teams Message Extractor — Chat Export",
   "idx_intro": "Microsoft Teams のチャットメッセージを、ファイル、画像、絵文字リアクションも含めて CSV または HTML にエクスポートするブラウザ拡張機能です。添付ファイルは単一の ZIP にまとめられます。会話履歴全体を自動スクロールするため、取りこぼしがありません。",
   "idx_card": "<strong>すべての処理はブラウザ内で行われます。</strong>メッセージとファイルはお使いのデバイス上でローカルに処理され、当社や第三者のサーバーに送信されることは一切ありません。詳細は<a href=\"privacy.html\">プライバシーポリシー</a>をご覧ください。",
@@ -17,7 +16,6 @@
   "idx_f6": "teams.microsoft.com、teams.live.com、teams.cloud.microsoft で動作",
   "idx_support_h": "サポート",
   "idx_support": "ご質問、バグ報告、機能のご要望はこちらまで:",
-
   "pp_title": "プライバシーポリシー",
   "pp_meta": "発効日: 2026年7月12日 · ブラウザ拡張機能「Teams Message Extractor — Chat Export」に適用されます",
   "pp_summary": "<strong>要約:</strong> 本拡張機能のすべての処理は、お使いのブラウザ内でローカルに行われます。Teams のメッセージ、ファイル、エクスポートがデバイスの外に出ることはありません。当社はアナリティクスを一切収集せず、サーバーも運用しておらず、お客様のデータを見ることはありません。",
@@ -43,7 +41,6 @@
   "pp_s6_p": "重要な変更は本拡張機能のリリースノートで告知し、新しい発効日とともに本ページに反映します。",
   "pp_s7_h": "お問い合わせ",
   "pp_s7_p": "Adam Toms Ltd — <a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-
   "fq_title": "今後の有料モデルについて",
   "fq_meta": "最終更新日: 2026年7月12日 — 以下の詳細は確定次第、順次記載します。",
   "fq_card": "<strong>要点:</strong> 本拡張機能は将来のアップデートで有料モデルに移行します — ただし今すぐではなく、予告なしに行うこともありません。本ページと拡張機能内で事前にお知らせし、<strong>1 か月間の無料猶予期間</strong>を設けるほか、既存ユーザーには割引された<strong>アーリーサポーター価格</strong>をご用意します。",
@@ -56,5 +53,6 @@
   "fq_q4_h": "既存ユーザーはどのように認識されますか？",
   "fq_q4_p": "本拡張機能は、最初にインストールされた日時をローカルに記録しています。告知より前にインストールされた場合は、割引されたアーリーサポーター価格が自動的に提供されます。この情報がデバイスの外に出ることはありません — <a href=\"privacy.html\">プライバシーポリシー</a>をご覧ください。",
   "fq_q5_h": "ご質問がありますか？",
-  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>"
+  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
+  "idx_shots_h": "実際の画面"
 }

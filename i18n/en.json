@@ -4,7 +4,6 @@
   "nav_faq": "Paid Model FAQ",
   "lang_label": "Language",
   "footer": "© Adam Toms Ltd. Microsoft Teams is a trademark of Microsoft Corporation. This extension is not affiliated with or endorsed by Microsoft.",
-
   "idx_title": "Teams Message Extractor — Chat Export",
   "idx_intro": "A browser extension that exports Microsoft Teams chat messages — including files, images, and emoji reactions — to CSV or HTML, with attachments bundled as a single ZIP. It auto-scrolls your full conversation history so nothing is missed.",
   "idx_card": "<strong>Everything happens in your browser.</strong> Your messages and files are processed locally on your device and are never sent to us or to any third-party server. See the <a href=\"privacy.html\">privacy policy</a> for details.",
@@ -17,7 +16,6 @@
   "idx_f6": "Works on teams.microsoft.com, teams.live.com, and teams.cloud.microsoft",
   "idx_support_h": "Support",
   "idx_support": "Questions, bug reports, or feature requests:",
-
   "pp_title": "Privacy Policy",
   "pp_meta": "Effective date: 12 July 2026 · Applies to the \"Teams Message Extractor — Chat Export\" browser extension",
   "pp_summary": "<strong>Summary:</strong> everything the extension does happens locally in your browser. Your Teams messages, files, and exports never leave your device. We collect no analytics, run no servers, and see none of your data.",
@@ -43,7 +41,6 @@
   "pp_s6_p": "Material changes will be announced in the extension's release notes and reflected on this page with a new effective date.",
   "pp_s7_h": "Contact",
   "pp_s7_p": "Adam Toms Ltd — <a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-
   "fq_title": "The upcoming paid model",
   "fq_meta": "Last updated: 12 July 2026 — details below will be filled in as they are confirmed.",
   "fq_card": "<strong>The short version:</strong> the extension will move to a paid model in a future update — not yet, and not without warning. You'll get advance notice here and in the extension, a <strong>1-month free grace period</strong>, and existing users will get a discounted <strong>early-supporter price</strong>.",
@@ -56,5 +53,6 @@
   "fq_q4_h": "How will existing users be recognised?",
   "fq_q4_p": "The extension locally records when it was first installed. Installs that pre-date the announcement will be offered the discounted early-supporter price automatically. Nothing about this leaves your device — see the <a href=\"privacy.html\">privacy policy</a>.",
   "fq_q5_h": "Questions?",
-  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>"
+  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
+  "idx_shots_h": "See it in action"
 }

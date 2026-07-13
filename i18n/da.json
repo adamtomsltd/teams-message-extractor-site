@@ -4,7 +4,6 @@
   "nav_faq": "FAQ om betalingsmodel",
   "lang_label": "Sprog",
   "footer": "© Adam Toms Ltd. Microsoft Teams er et varemærke tilhørende Microsoft Corporation. Denne udvidelse er ikke tilknyttet eller godkendt af Microsoft.",
-
   "idx_title": "Teams Message Extractor — Chat Export",
   "idx_intro": "En browserudvidelse, der eksporterer chatbeskeder fra Microsoft Teams — inklusive filer, billeder og emoji-reaktioner — til CSV eller HTML, med vedhæftede filer samlet i ét ZIP-arkiv. Den ruller automatisk gennem hele din samtalehistorik, så intet bliver overset.",
   "idx_card": "<strong>Alt sker i din browser.</strong> Dine beskeder og filer behandles lokalt på din enhed og sendes aldrig til os eller til nogen tredjepartsserver. Se <a href=\"privacy.html\">privatlivspolitikken</a> for detaljer.",
@@ -17,7 +16,6 @@
   "idx_f6": "Fungerer på teams.microsoft.com, teams.live.com og teams.cloud.microsoft",
   "idx_support_h": "Support",
   "idx_support": "Spørgsmål, fejlrapporter eller funktionsønsker:",
-
   "pp_title": "Privatlivspolitik",
   "pp_meta": "Ikrafttrædelsesdato: 12. juli 2026 · Gælder for browserudvidelsen \"Teams Message Extractor — Chat Export\"",
   "pp_summary": "<strong>Kort fortalt:</strong> alt, hvad udvidelsen gør, sker lokalt i din browser. Dine Teams-beskeder, filer og eksporter forlader aldrig din enhed. Vi indsamler ingen analysedata, driver ingen servere og ser ingen af dine data.",
@@ -43,7 +41,6 @@
   "pp_s6_p": "Væsentlige ændringer vil blive annonceret i udvidelsens udgivelsesnoter og afspejlet på denne side med en ny ikrafttrædelsesdato.",
   "pp_s7_h": "Kontakt",
   "pp_s7_p": "Adam Toms Ltd — <a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-
   "fq_title": "Den kommende betalingsmodel",
   "fq_meta": "Senest opdateret: 12. juli 2026 — detaljerne nedenfor udfyldes, efterhånden som de bekræftes.",
   "fq_card": "<strong>Den korte version:</strong> udvidelsen overgår til en betalingsmodel i en fremtidig opdatering — ikke endnu, og ikke uden varsel. Du får besked i god tid her og i udvidelsen, en <strong>gratis overgangsperiode på 1 måned</strong>, og eksisterende brugere får en rabatteret <strong>pris for tidlige støtter</strong>.",
@@ -56,5 +53,6 @@
   "fq_q4_h": "Hvordan genkendes eksisterende brugere?",
   "fq_q4_p": "Udvidelsen registrerer lokalt, hvornår den først blev installeret. Installationer, der ligger før annonceringen, tilbydes automatisk den rabatterede pris for tidlige støtter. Intet af dette forlader din enhed — se <a href=\"privacy.html\">privatlivspolitikken</a>.",
   "fq_q5_h": "Spørgsmål?",
-  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>"
+  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
+  "idx_shots_h": "Se det i aktion"
 }

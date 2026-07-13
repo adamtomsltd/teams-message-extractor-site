@@ -4,7 +4,6 @@
   "nav_faq": "FAQ sul modello a pagamento",
   "lang_label": "Lingua",
   "footer": "© Adam Toms Ltd. Microsoft Teams è un marchio di Microsoft Corporation. Questa estensione non è affiliata a Microsoft né approvata da Microsoft.",
-
   "idx_title": "Teams Message Extractor — Chat Export",
   "idx_intro": "Un'estensione per browser che esporta i messaggi delle chat di Microsoft Teams — inclusi file, immagini e reazioni emoji — in CSV o HTML, con gli allegati raggruppati in un unico ZIP. Scorre automaticamente l'intera cronologia della conversazione in modo che nulla vada perso.",
   "idx_card": "<strong>Tutto avviene nel tuo browser.</strong> I tuoi messaggi e file vengono elaborati localmente sul tuo dispositivo e non vengono mai inviati a noi né a server di terze parti. Consulta l'<a href=\"privacy.html\">informativa sulla privacy</a> per i dettagli.",
@@ -17,7 +16,6 @@
   "idx_f6": "Funziona su teams.microsoft.com, teams.live.com e teams.cloud.microsoft",
   "idx_support_h": "Assistenza",
   "idx_support": "Domande, segnalazioni di bug o richieste di funzionalità:",
-
   "pp_title": "Informativa sulla privacy",
   "pp_meta": "Data di entrata in vigore: 12 luglio 2026 · Si applica all'estensione per browser \"Teams Message Extractor — Chat Export\"",
   "pp_summary": "<strong>In sintesi:</strong> tutto ciò che fa l'estensione avviene localmente nel tuo browser. I tuoi messaggi Teams, i file e le esportazioni non lasciano mai il tuo dispositivo. Non raccogliamo dati analitici, non gestiamo server e non vediamo nessuno dei tuoi dati.",
@@ -43,7 +41,6 @@
   "pp_s6_p": "Le modifiche sostanziali saranno annunciate nelle note di rilascio dell'estensione e riportate in questa pagina con una nuova data di entrata in vigore.",
   "pp_s7_h": "Contatti",
   "pp_s7_p": "Adam Toms Ltd — <a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-
   "fq_title": "Il futuro modello a pagamento",
   "fq_meta": "Ultimo aggiornamento: 12 luglio 2026 — i dettagli qui sotto verranno completati man mano che saranno confermati.",
   "fq_card": "<strong>In breve:</strong> l'estensione passerà a un modello a pagamento in un futuro aggiornamento — non subito, e non senza preavviso. Riceverai un avviso anticipato qui e nell'estensione, un <strong>periodo di tolleranza gratuito di 1 mese</strong>, e gli utenti esistenti avranno diritto a un <strong>prezzo scontato riservato ai primi sostenitori</strong>.",
@@ -56,5 +53,6 @@
   "fq_q4_h": "Come verranno riconosciuti gli utenti esistenti?",
   "fq_q4_p": "L'estensione registra localmente la data della prima installazione. Alle installazioni precedenti all'annuncio verrà offerto automaticamente il prezzo scontato riservato ai primi sostenitori. Nulla di tutto ciò lascia il tuo dispositivo — consulta l'<a href=\"privacy.html\">informativa sulla privacy</a>.",
   "fq_q5_h": "Domande?",
-  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>"
+  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
+  "idx_shots_h": "Guardalo in azione"
 }

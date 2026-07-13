@@ -4,7 +4,6 @@
   "nav_faq": "付費模式常見問題",
   "lang_label": "語言",
   "footer": "© Adam Toms Ltd. Microsoft Teams 是 Microsoft Corporation 的商標。本擴充功能不隸屬於 Microsoft，亦未獲 Microsoft 認可。",
-
   "idx_title": "Teams Message Extractor — Chat Export",
   "idx_intro": "這是一款瀏覽器擴充功能，可將 Microsoft Teams 的聊天訊息（包括檔案、圖片和表情回應）匯出為 CSV 或 HTML，並將附件打包為單一 ZIP。它會自動捲動您的完整對話記錄，確保不遺漏任何內容。",
   "idx_card": "<strong>所有處理都在您的瀏覽器中完成。</strong>您的訊息和檔案均在您的裝置上本機處理，絕不會傳送給我們或任何第三方伺服器。詳情請參閱<a href=\"privacy.html\">隱私權政策</a>。",
@@ -17,7 +16,6 @@
   "idx_f6": "適用於 teams.microsoft.com、teams.live.com 和 teams.cloud.microsoft",
   "idx_support_h": "支援",
   "idx_support": "如有疑問、錯誤回報或功能建議：",
-
   "pp_title": "隱私權政策",
   "pp_meta": "生效日期：2026年7月12日 · 適用於「Teams Message Extractor — Chat Export」瀏覽器擴充功能",
   "pp_summary": "<strong>摘要：</strong>本擴充功能的所有處理都在您的瀏覽器本機完成。您的 Teams 訊息、檔案和匯出內容絕不會離開您的裝置。我們不收集任何分析資料、不運行任何伺服器，也看不到您的任何資料。",
@@ -43,7 +41,6 @@
   "pp_s6_p": "重大變更將在擴充功能的版本說明中公告，並於本頁面更新新的生效日期。",
   "pp_s7_h": "聯絡方式",
   "pp_s7_p": "Adam Toms Ltd — <a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-
   "fq_title": "即將推出的付費模式",
   "fq_meta": "最後更新：2026年7月12日 — 以下細節將在確認後陸續補充。",
   "fq_card": "<strong>簡而言之：</strong>本擴充功能將在未來的更新中轉為付費模式 — 不會立即實施，也不會毫無預警。您將在本頁面和擴充功能中提前收到通知，並享有 <strong>1 個月的免費寬限期</strong>，現有使用者還將獲得優惠的<strong>早期支持者價格</strong>。",
@@ -56,5 +53,6 @@
   "fq_q4_h": "如何識別現有使用者？",
   "fq_q4_p": "擴充功能會在本機記錄首次安裝的時間。在公告日期之前安裝的使用者將自動獲得優惠的早期支持者價格。這些資料絕不會離開您的裝置 — 請參閱<a href=\"privacy.html\">隱私權政策</a>。",
   "fq_q5_h": "有其他問題嗎？",
-  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>"
+  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
+  "idx_shots_h": "介面預覽"
 }

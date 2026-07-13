@@ -4,7 +4,6 @@
   "nav_faq": "FAQ modelu płatnego",
   "lang_label": "Język",
   "footer": "© Adam Toms Ltd. Microsoft Teams jest znakiem towarowym Microsoft Corporation. To rozszerzenie nie jest powiązane z firmą Microsoft ani przez nią autoryzowane.",
-
   "idx_title": "Teams Message Extractor — Chat Export",
   "idx_intro": "Rozszerzenie przeglądarki, które eksportuje wiadomości z czatów Microsoft Teams — w tym pliki, obrazy i reakcje emoji — do formatu CSV lub HTML, z załącznikami spakowanymi w jedno archiwum ZIP. Automatycznie przewija całą historię rozmowy, aby nic nie zostało pominięte.",
   "idx_card": "<strong>Wszystko dzieje się w Twojej przeglądarce.</strong> Twoje wiadomości i pliki są przetwarzane lokalnie na Twoim urządzeniu i nigdy nie są wysyłane do nas ani na żaden serwer zewnętrzny. Szczegóły znajdziesz w <a href=\"privacy.html\">polityce prywatności</a>.",
@@ -17,7 +16,6 @@
   "idx_f6": "Działa na teams.microsoft.com, teams.live.com i teams.cloud.microsoft",
   "idx_support_h": "Pomoc",
   "idx_support": "Pytania, zgłoszenia błędów lub propozycje funkcji:",
-
   "pp_title": "Polityka prywatności",
   "pp_meta": "Data wejścia w życie: 12 lipca 2026 · Dotyczy rozszerzenia przeglądarki „Teams Message Extractor — Chat Export”",
   "pp_summary": "<strong>W skrócie:</strong> wszystko, co robi rozszerzenie, odbywa się lokalnie w Twojej przeglądarce. Twoje wiadomości Teams, pliki i eksporty nigdy nie opuszczają Twojego urządzenia. Nie zbieramy żadnych danych analitycznych, nie prowadzimy żadnych serwerów i nie widzimy żadnych Twoich danych.",
@@ -43,7 +41,6 @@
   "pp_s6_p": "Istotne zmiany zostaną ogłoszone w informacjach o wydaniu rozszerzenia i odzwierciedlone na tej stronie z nową datą wejścia w życie.",
   "pp_s7_h": "Kontakt",
   "pp_s7_p": "Adam Toms Ltd — <a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-
   "fq_title": "Nadchodzący model płatny",
   "fq_meta": "Ostatnia aktualizacja: 12 lipca 2026 — poniższe szczegóły będą uzupełniane w miarę ich potwierdzania.",
   "fq_card": "<strong>W skrócie:</strong> rozszerzenie przejdzie na model płatny w przyszłej aktualizacji — jeszcze nie teraz i nie bez uprzedzenia. Otrzymasz wcześniejsze powiadomienie tutaj i w rozszerzeniu, <strong>1-miesięczny bezpłatny okres przejściowy</strong>, a dotychczasowi użytkownicy otrzymają zniżkową <strong>cenę dla wczesnych użytkowników</strong>.",
@@ -56,5 +53,6 @@
   "fq_q4_h": "Jak zostaną rozpoznani dotychczasowi użytkownicy?",
   "fq_q4_p": "Rozszerzenie lokalnie zapisuje datę pierwszej instalacji. Instalacjom sprzed ogłoszenia automatycznie zostanie zaoferowana zniżkowa cena dla wczesnych użytkowników. Żadne z tych danych nie opuszczają Twojego urządzenia — zobacz <a href=\"privacy.html\">politykę prywatności</a>.",
   "fq_q5_h": "Pytania?",
-  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>"
+  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
+  "idx_shots_h": "Zobacz, jak działa"
 }
