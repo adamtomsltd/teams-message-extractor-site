@@ -9,28 +9,30 @@ import io, json, os, sys
 BASE = "/teams-message-extractor-site"  # project-pages path prefix
 SITE = os.path.dirname(os.path.abspath(__file__))
 
-# locale file code -> (url dir ('' = root), html lang tag, rtl?)
+# locale file code -> (url dir ('' = root), html lang tag, rtl?, flag emoji)
+# Flags are a pragmatic UI hint, not a statement that language == country;
+# the most-associated flag is used for each locale.
 LOCALES = {
-    "en":    ("",      "en",    False),
-    "ar":    ("ar",    "ar",    True),
-    "bn":    ("bn",    "bn",    False),
-    "cs":    ("cs",    "cs",    False),
-    "da":    ("da",    "da",    False),
-    "de":    ("de",    "de",    False),
-    "es":    ("es",    "es",    False),
-    "fr":    ("fr",    "fr",    False),
-    "hi":    ("hi",    "hi",    False),
-    "it":    ("it",    "it",    False),
-    "ja":    ("ja",    "ja",    False),
-    "ko":    ("ko",    "ko",    False),
-    "nl":    ("nl",    "nl",    False),
-    "pl":    ("pl",    "pl",    False),
-    "pt_BR": ("pt-br", "pt-BR", False),
-    "ru":    ("ru",    "ru",    False),
-    "uk":    ("uk",    "uk",    False),
-    "ur":    ("ur",    "ur",    True),
-    "zh_CN": ("zh-cn", "zh-CN", False),
-    "zh_TW": ("zh-tw", "zh-TW", False),
+    "en":    ("",      "en",    False, "\U0001F1EC\U0001F1E7"),  # 🇬🇧
+    "ar":    ("ar",    "ar",    True,  "\U0001F1F8\U0001F1E6"),  # 🇸🇦
+    "bn":    ("bn",    "bn",    False, "\U0001F1E7\U0001F1E9"),  # 🇧🇩
+    "cs":    ("cs",    "cs",    False, "\U0001F1E8\U0001F1FF"),  # 🇨🇿
+    "da":    ("da",    "da",    False, "\U0001F1E9\U0001F1F0"),  # 🇩🇰
+    "de":    ("de",    "de",    False, "\U0001F1E9\U0001F1EA"),  # 🇩🇪
+    "es":    ("es",    "es",    False, "\U0001F1EA\U0001F1F8"),  # 🇪🇸
+    "fr":    ("fr",    "fr",    False, "\U0001F1EB\U0001F1F7"),  # 🇫🇷
+    "hi":    ("hi",    "hi",    False, "\U0001F1EE\U0001F1F3"),  # 🇮🇳
+    "it":    ("it",    "it",    False, "\U0001F1EE\U0001F1F9"),  # 🇮🇹
+    "ja":    ("ja",    "ja",    False, "\U0001F1EF\U0001F1F5"),  # 🇯🇵
+    "ko":    ("ko",    "ko",    False, "\U0001F1F0\U0001F1F7"),  # 🇰🇷
+    "nl":    ("nl",    "nl",    False, "\U0001F1F3\U0001F1F1"),  # 🇳🇱
+    "pl":    ("pl",    "pl",    False, "\U0001F1F5\U0001F1F1"),  # 🇵🇱
+    "pt_BR": ("pt-br", "pt-BR", False, "\U0001F1E7\U0001F1F7"),  # 🇧🇷
+    "ru":    ("ru",    "ru",    False, "\U0001F1F7\U0001F1FA"),  # 🇷🇺
+    "uk":    ("uk",    "uk",    False, "\U0001F1FA\U0001F1E6"),  # 🇺🇦
+    "ur":    ("ur",    "ur",    True,  "\U0001F1F5\U0001F1F0"),  # 🇵🇰
+    "zh_CN": ("zh-cn", "zh-CN", False, "\U0001F1E8\U0001F1F3"),  # 🇨🇳
+    "zh_TW": ("zh-tw", "zh-TW", False, "\U0001F1F9\U0001F1FC"),  # 🇹🇼
 }
 PAGES = ["index.html", "privacy.html", "paid-model.html"]
 
@@ -63,7 +65,8 @@ def nav(t, code, page, here_prefix):
     opts = []
     for c in sorted(LOCALES, key=lambda c: (c != "en", load_cache[c]["_lang_name"])):
         sel = " selected" if c == code else ""
-        opts.append(f'<option value="{page_url(c, page)}"{sel}>{load_cache[c]["_lang_name"]}</option>')
+        flag = LOCALES[c][3]
+        opts.append(f'<option value="{page_url(c, page)}"{sel}>{flag} {load_cache[c]["_lang_name"]}</option>')
     return f"""
 <header class="site">
   <nav>
@@ -177,7 +180,7 @@ for c in LOCALES:
         assert not missing, f"{c} missing keys: {missing}"
 
 count = 0
-for c, (d, lang, rtl) in LOCALES.items():
+for c, (d, lang, rtl, flag) in LOCALES.items():
     t = load_cache[c]
     outdir = os.path.join(SITE, d) if d else SITE
     os.makedirs(outdir, exist_ok=True)
