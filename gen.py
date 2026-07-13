@@ -173,8 +173,8 @@ def render_faq(t, code):
 RENDER = {"index.html": render_index, "privacy.html": render_privacy, "paid-model.html": render_faq}
 TITLE = {
     "index.html": lambda t: t["idx_title"],
-    "privacy.html": lambda t: f'{t["pp_title"]} — Teams Message Extractor',
-    "paid-model.html": lambda t: f'{t["fq_title"]} — Teams Message Extractor',
+    "privacy.html": lambda t: f'{t["pp_title"]} - Teams Message Extractor',
+    "paid-model.html": lambda t: f'{t["fq_title"]} - Teams Message Extractor',
 }
 
 load_cache = {}

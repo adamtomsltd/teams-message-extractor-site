@@ -2,11 +2,11 @@
  "sections": [
   {
    "type": "p",
-   "text": "Exportieren Sie Microsoft Teams-Chatnachrichten, Dateien, Bilder und Emoji-Reaktionen als CSV oder HTML. Automatisches Scrollen durch den gesamten Chatverlauf für vollständige Sicherung & Archivierung — Anhänge gebündelt als einzelnes ZIP."
+   "text": "Exportieren Sie Microsoft Teams-Chatnachrichten, Dateien, Bilder und Emoji-Reaktionen als CSV oder HTML. Scrollt für vollständige Sicherung und Archivierung automatisch durch den gesamten Chatverlauf, mit Anhängen gebündelt als einzelnes ZIP."
   },
   {
    "type": "p",
-   "text": "Teams Message Extractor scrollt automatisch durch Ihren gesamten Gesprächsverlauf, von der allerersten bis zur neuesten Nachricht, und exportiert alles in eine saubere, strukturierte CSV-Datei oder ein eigenständiges HTML-Transkript. Dateianhänge werden als ein einziges ZIP-Archiv heruntergeladen, anstatt dutzender einzelner Speicherdialoge. Funktioniert mit Direktnachrichten, Gruppenchats und Kanälen auf allen drei Teams-Domains (teams.microsoft.com, teams.live.com, teams.cloud.microsoft)."
+   "text": "Teams Message Extractor scrollt automatisch durch Ihren gesamten Gesprächsverlauf, von der allerersten bis zur neuesten Nachricht, und exportiert alles in eine saubere, strukturierte CSV-Datei oder ein eigenständiges HTML-Transkript. Dateianhänge werden als ein einziges ZIP-Archiv heruntergeladen statt über Dutzende einzelne Speicherdialoge. Funktioniert mit Direktnachrichten, Gruppenchats und Kanälen auf allen drei Teams-Domains (teams.microsoft.com, teams.live.com, teams.cloud.microsoft)."
   },
   {
    "type": "h2",
@@ -15,10 +15,10 @@
   {
    "type": "ul",
    "items": [
-    "CSV-Export öffnet sich jetzt korrekt in Excel — Umlaute und Sonderzeichen (ä, ö, ü, ß) werden nicht mehr verstümmelt.",
-    "Eingefügte Bilder & Screenshots werden jetzt zuverlässig erfasst — auch im neuen Layout teams.cloud.microsoft, wo zuvor viele fehlten.",
-    "Screenshots direkt im HTML-Transkript eingebettet — Bilder erscheinen inline im Export, nicht nur als Links.",
-    "Originale Bildqualität — Anhänge werden als exakte Originaldatei gespeichert, ohne erneute Komprimierung."
+    "CSV-Export öffnet sich jetzt korrekt in Excel: Umlaute und Sonderzeichen (ä, ö, ü, ß) werden nicht mehr verstümmelt.",
+    "Eingefügte Bilder und Screenshots werden jetzt zuverlässig erfasst, auch im neuen Layout von teams.cloud.microsoft, wo zuvor viele fehlten.",
+    "Screenshots werden direkt ins HTML-Transkript eingebettet: Bilder erscheinen inline im Export, nicht nur als Links.",
+    "Anhänge werden als exakte Originaldatei in Originalqualität gespeichert, ohne erneute Komprimierung."
    ]
   },
   {
@@ -28,7 +28,7 @@
   {
    "type": "ul",
    "items": [
-    "Absendernamen & Zeitstempel",
+    "Absendernamen und Zeitstempel",
     "Vollständiger Nachrichteninhalt",
     "Emoji-Reaktionen (pro Nachricht, mit Anzahl)",
     "Dateianhänge, Bilder und deren URLs",
@@ -60,7 +60,7 @@
     "Offline-Suche in älteren Chatverläufen",
     "Sicherung von Projektdiskussionen und Entscheidungen",
     "Datenmigration oder Dokumentation",
-    "HR- und juristische Dokumentationsbedürfnisse"
+    "Dokumentationszwecke für HR und Rechtsabteilung"
    ]
   },
   {
@@ -70,14 +70,14 @@
   {
    "type": "ul",
    "items": [
-    "Vollständiges Auto-Scroll — erfasst Ihren gesamten Chatverlauf automatisch, kein manuelles Scrollen nötig",
-    "Funktioniert überall in Teams — Direktnachrichten, Gruppenchats, Kanäle und alle drei Teams-Domains",
-    "Mehrere Exportformate — CSV für Tabellenkalkulationen, HTML für ein formatiertes Transkript mit Reaktionen und anklickbaren Anhangslinks",
-    "Streaming-ZIP-Downloads — alle Anhänge in einem Archiv, mit ZIP64-Unterstützung für Archive über 4 GB und DEFLATE-Komprimierung für Textdateien",
-    "Emoji-Reaktionen — pro Nachricht erfasst und in CSV sowie HTML angezeigt",
-    "Popup-unabhängige Downloads — schließen Sie das Popup, das ZIP wird im Hintergrund weiter auf die Festplatte gestreamt",
-    "Datenschutz an erster Stelle — alle Verarbeitung erfolgt lokal in Ihrem Browser, keine Daten werden an externe Server gesendet",
-    "In 20 Sprachen verfügbar mit Rechts-nach-Links-Unterstützung für Arabisch und Urdu",
+    "Automatisches Scrollen erfasst Ihren gesamten Chatverlauf, ohne dass Sie selbst scrollen müssen",
+    "Funktioniert überall in Teams: in Direktnachrichten, Gruppenchats und Kanälen, auf allen drei Teams-Domains",
+    "Mehrere Exportformate: CSV für Tabellenkalkulationen, HTML für ein formatiertes Transkript mit Reaktionen und anklickbaren Anhangslinks",
+    "Streaming-ZIP-Downloads: alle Anhänge in einem Archiv, mit ZIP64-Unterstützung für Archive über 4 GB und DEFLATE-Komprimierung für Textdateien",
+    "Emoji-Reaktionen werden pro Nachricht erfasst und in CSV sowie HTML angezeigt",
+    "Downloads laufen unabhängig vom Popup: Sie können es schließen, das ZIP wird im Hintergrund weiter auf die Festplatte gestreamt",
+    "Datenschutz an erster Stelle: Die gesamte Verarbeitung erfolgt lokal in Ihrem Browser, es werden keine Daten an externe Server gesendet",
+    "In 20 Sprachen verfügbar, mit Rechts-nach-links-Unterstützung für Arabisch und Urdu",
     "Schlank und schnell"
    ]
   },
@@ -87,7 +87,7 @@
   },
   {
    "type": "p",
-   "text": "Dieses Tool wird „wie besehen\" ohne ausdrückliche oder stillschweigende Gewährleistung jeglicher Art bereitgestellt. Ich mache keine Zusicherungen über Genauigkeit, Zuverlässigkeit, Vollständigkeit oder Eignung dieser Software für einen bestimmten Zweck. Durch die Nutzung dieses Tools erkennen Sie an, dass Sie allein für die Einhaltung der IT-Richtlinien Ihrer Organisation und aller geltenden Datenschutzbestimmungen (DSGVO etc.) verantwortlich sind. Sie sollten die erforderlichen Genehmigungen einholen, bevor Sie Arbeitsplatzkommunikation extrahieren. Die extrahierten Daten können sensible oder vertrauliche Informationen enthalten, die angemessen gehandhabt werden müssen. Ich übernehme keine Haftung für Schäden, Datenverluste, Datenschutzverletzungen oder andere Folgen, die sich aus der Nutzung dieses Tools ergeben. Dies ist ein inoffizielles Dienstprogramm, das nicht mit Microsoft verbunden oder von Microsoft genehmigt ist."
+   "text": "Dieses Tool wird „wie besehen“ ohne ausdrückliche oder stillschweigende Gewährleistung jeglicher Art bereitgestellt. Ich mache keine Zusicherungen über Genauigkeit, Zuverlässigkeit, Vollständigkeit oder Eignung dieser Software für einen bestimmten Zweck. Durch die Nutzung dieses Tools erkennen Sie an, dass Sie allein für die Einhaltung der IT-Richtlinien Ihrer Organisation und aller geltenden Datenschutzbestimmungen (z. B. DSGVO) verantwortlich sind. Sie sollten die erforderlichen Genehmigungen einholen, bevor Sie Arbeitsplatzkommunikation extrahieren. Die extrahierten Daten können sensible oder vertrauliche Informationen enthalten, die angemessen gehandhabt werden müssen. Ich übernehme keine Haftung für Schäden, Datenverluste, Datenschutzverletzungen oder andere Folgen, die sich aus der Nutzung dieses Tools ergeben. Dies ist ein inoffizielles Dienstprogramm, das nicht mit Microsoft verbunden oder von Microsoft genehmigt ist."
   }
  ]
 }

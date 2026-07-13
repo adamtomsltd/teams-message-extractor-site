@@ -2,7 +2,7 @@
  "sections": [
   {
    "type": "p",
-   "text": "Export Microsoft Teams chat messages, files, images, and emoji reactions to CSV or HTML. Auto-scrolls the full chat history for complete backup & archive — attachments bundled as a single ZIP."
+   "text": "Export Microsoft Teams chat messages, files, images and emoji reactions to CSV or HTML. Scrolls the full chat history automatically for a complete backup and archive, with attachments bundled as a single ZIP."
   },
   {
    "type": "p",
@@ -15,10 +15,10 @@
   {
    "type": "ul",
    "items": [
-    "CSV export now opens correctly in Excel — accented and international characters (é, ã, ü, ç) are no longer garbled.",
-    "Pasted images & screenshots now captured reliably — including on the new teams.cloud.microsoft layout, where many were previously missed.",
-    "Screenshots embedded directly in the HTML transcript — images appear inline in the export, not just as links.",
-    "Original image quality — attachments save as the exact original file, with no re-compression."
+    "CSV export now opens correctly in Excel. Accented and international characters (é, ã, ü, ç) are no longer garbled.",
+    "Pasted images and screenshots are now captured reliably, including on the new teams.cloud.microsoft layout where many were previously missed.",
+    "Screenshots are embedded directly in the HTML transcript, so images appear in the export itself rather than as links.",
+    "Attachments save as the exact original file at original quality, with no recompression."
    ]
   },
   {
@@ -70,13 +70,13 @@
   {
    "type": "ul",
    "items": [
-    "Full auto-scroll — captures your entire chat history automatically, no manual scrolling needed",
-    "Works everywhere in Teams — direct messages, group chats, channels, and all three Teams domains",
-    "Multiple export formats — CSV for spreadsheets, HTML for a formatted transcript with reactions and clickable attachment links",
-    "Streaming ZIP downloads — bundle every attachment into one archive with ZIP64 support for archives larger than 4 GB and DEFLATE compression for text files",
-    "Emoji reactions — captured per message and shown in both CSV and HTML",
-    "Popup-independent downloads — close the popup and the ZIP keeps streaming to disk in the background",
-    "Privacy-first — all processing happens locally in your browser, no data is sent to external servers",
+    "Automatic scrolling captures your entire chat history, no manual scrolling needed",
+    "Works everywhere in Teams: direct messages, group chats, channels, and all three Teams domains",
+    "Multiple export formats: CSV for spreadsheets, HTML for a formatted transcript with reactions and clickable attachment links",
+    "Streaming ZIP downloads bundle every attachment into one archive, with ZIP64 support for archives larger than 4 GB and DEFLATE compression for text files",
+    "Emoji reactions are captured per message and shown in both CSV and HTML",
+    "Downloads carry on by themselves: close the popup and the ZIP keeps streaming to disk in the background",
+    "Private by design: all processing happens locally in your browser and no data is sent to external servers",
     "Available in 20 languages with right-to-left support for Arabic and Urdu",
     "Lightweight and fast"
    ]

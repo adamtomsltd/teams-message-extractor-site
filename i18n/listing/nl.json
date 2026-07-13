@@ -2,11 +2,11 @@
  "sections": [
   {
    "type": "p",
-   "text": "Exporteer Microsoft Teams chatberichten, bestanden, afbeeldingen en emoji-reacties naar CSV of HTML. Auto-scrollt door de volledige chatgeschiedenis voor complete back-up & archief — bijlagen gebundeld als één ZIP."
+   "text": "Exporteer Microsoft Teams-chatberichten, bestanden, afbeeldingen en emoji-reacties naar CSV of HTML. Scrollt automatisch door de volledige chatgeschiedenis voor een complete back-up en archivering, met bijlagen gebundeld als één ZIP."
   },
   {
    "type": "p",
-   "text": "Teams Message Extractor scrollt automatisch door je volledige gespreksgeschiedenis, van het allereerste bericht tot het laatste, en exporteert alles naar een schoon, gestructureerd CSV-bestand of een op zichzelf staand HTML-transcript. Bijlagen worden gedownload als één ZIP-archief in plaats van tientallen opslagvensters. Werkt met directe berichten, groepschats en kanalen op alle drie de Teams-domeinen (teams.microsoft.com, teams.live.com, teams.cloud.microsoft)."
+   "text": "Teams Message Extractor scrollt automatisch door je volledige gespreksgeschiedenis, van het allereerste bericht tot het laatste, en exporteert alles naar een overzichtelijk, gestructureerd CSV-bestand of een op zichzelf staand HTML-transcript. Bijlagen worden gedownload als één ZIP-archief in plaats van tientallen losse opslagvensters. Werkt met directe berichten, groepschats en kanalen op alle drie de Teams-domeinen (teams.microsoft.com, teams.live.com, teams.cloud.microsoft)."
   },
   {
    "type": "h2",
@@ -15,10 +15,10 @@
   {
    "type": "ul",
    "items": [
-    "CSV-export opent nu correct in Excel — letters met accenten (é, ë, ü, ç) worden niet meer verhaspeld.",
-    "Geplakte afbeeldingen & schermafbeeldingen worden nu betrouwbaar vastgelegd — ook in de nieuwe teams.cloud.microsoft-layout, waar er voorheen veel werden gemist.",
-    "Schermafbeeldingen rechtstreeks ingesloten in het HTML-transcript — afbeeldingen verschijnen inline in de export, niet alleen als links.",
-    "Originele beeldkwaliteit — bijlagen worden opgeslagen als het exacte originele bestand, zonder hercompressie."
+    "CSV-export opent nu correct in Excel: letters met accenten (é, ë, ü, ç) worden niet meer verhaspeld.",
+    "Geplakte afbeeldingen en schermafbeeldingen worden nu betrouwbaar vastgelegd, ook in de nieuwe lay-out van teams.cloud.microsoft, waar er voorheen veel werden gemist.",
+    "Schermafbeeldingen worden rechtstreeks in het HTML-transcript ingesloten: afbeeldingen verschijnen inline in de export, niet alleen als link.",
+    "Bijlagen worden opgeslagen als het exacte originele bestand, in originele beeldkwaliteit en zonder hercompressie."
    ]
   },
   {
@@ -59,8 +59,8 @@
     "Compliance- en auditvereisten",
     "Oudere chatgeschiedenis offline doorzoeken",
     "Back-up maken van projectdiscussies en beslissingen",
-    "Gegevensmigratie of het aanmaken van records",
-    "HR- en juridische documentatiebehoeften"
+    "Gegevensmigratie of dossiervorming",
+    "Documentatie voor HR en juridische doeleinden"
    ]
   },
   {
@@ -70,14 +70,14 @@
   {
    "type": "ul",
    "items": [
-    "Volledig auto-scrollen — legt je volledige chatgeschiedenis automatisch vast, geen handmatig scrollen nodig",
-    "Werkt overal in Teams — directe berichten, groepschats, kanalen en alle drie de Teams-domeinen",
-    "Meerdere exportformaten — CSV voor spreadsheets, HTML voor een opgemaakt transcript met reacties en aanklikbare bijlagelinks",
-    "Streaming ZIP-downloads — alle bijlagen in één archief, met ZIP64-ondersteuning voor archieven groter dan 4 GB en DEFLATE-compressie voor tekstbestanden",
-    "Emoji-reacties — per bericht vastgelegd en weergegeven in zowel CSV als HTML",
-    "Popup-onafhankelijke downloads — sluit de popup en de ZIP blijft op de achtergrond naar de schijf streamen",
-    "Privacy voorop — alle verwerking gebeurt lokaal in je browser, er worden geen gegevens naar externe servers verzonden",
-    "Beschikbaar in 20 talen met rechts-naar-links-ondersteuning voor Arabisch en Urdu",
+    "Automatisch scrollen legt je volledige chatgeschiedenis vast, zonder dat je zelf hoeft te scrollen",
+    "Werkt overal in Teams: directe berichten, groepschats en kanalen, op alle drie de Teams-domeinen",
+    "Meerdere exportformaten: CSV voor spreadsheets, HTML voor een opgemaakt transcript met reacties en aanklikbare bijlagelinks",
+    "Streaming ZIP-downloads: alle bijlagen in één archief, met ZIP64-ondersteuning voor archieven groter dan 4 GB en DEFLATE-compressie voor tekstbestanden",
+    "Emoji-reacties worden per bericht vastgelegd en weergegeven in zowel CSV als HTML",
+    "Downloads lopen los van de popup: sluit de popup en de ZIP blijft op de achtergrond naar de schijf streamen",
+    "Privacy voorop: alle verwerking gebeurt lokaal in je browser en er worden geen gegevens naar externe servers verzonden",
+    "Beschikbaar in 20 talen, met ondersteuning voor rechts-naar-links voor Arabisch en Urdu",
     "Lichtgewicht en snel"
    ]
   },
@@ -87,7 +87,7 @@
   },
   {
    "type": "p",
-   "text": "Deze tool wordt geleverd \"zoals hij is\", zonder enige garantie, uitdrukkelijk of impliciet. Ik doe geen uitspraken over de nauwkeurigheid, betrouwbaarheid, volledigheid of geschiktheid van deze software voor een bepaald doel. Door deze tool te gebruiken erken je dat je als enige verantwoordelijk bent voor naleving van het IT-beleid van je organisatie en alle toepasselijke regelgeving voor gegevensbescherming (AVG/GDPR, etc.). Je dient de noodzakelijke toestemmingen te verkrijgen voordat je werkcommunicatie extraheert. De geëxtraheerde gegevens kunnen gevoelige of vertrouwelijke informatie bevatten die op de juiste manier moet worden behandeld. Ik aanvaard geen aansprakelijkheid voor schade, gegevensverlies, privacyschendingen of andere gevolgen die voortvloeien uit het gebruik van deze tool. Dit is een officieuze utility die niet is aangesloten bij of goedgekeurd door Microsoft."
+   "text": "Deze tool wordt geleverd \"zoals hij is\", zonder enige garantie, uitdrukkelijk of impliciet. Ik doe geen uitspraken over de nauwkeurigheid, betrouwbaarheid, volledigheid of geschiktheid van deze software voor een bepaald doel. Door deze tool te gebruiken erken je dat je als enige verantwoordelijk bent voor naleving van het IT-beleid van je organisatie en alle toepasselijke regelgeving voor gegevensbescherming (AVG/GDPR, etc.). Je dient de noodzakelijke toestemmingen te verkrijgen voordat je werkcommunicatie extraheert. De geëxtraheerde gegevens kunnen gevoelige of vertrouwelijke informatie bevatten die op de juiste manier moet worden behandeld. Ik aanvaard geen aansprakelijkheid voor schade, gegevensverlies, privacyschendingen of andere gevolgen die voortvloeien uit het gebruik van deze tool. Dit is een onofficieel hulpprogramma dat niet is aangesloten bij of goedgekeurd door Microsoft."
   }
  ]
 }

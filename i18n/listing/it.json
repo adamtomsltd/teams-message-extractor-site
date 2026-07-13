@@ -2,7 +2,7 @@
  "sections": [
   {
    "type": "p",
-   "text": "Esporta messaggi, file, immagini e reazioni emoji delle chat di Microsoft Teams in CSV o HTML. Scorrimento automatico dell'intera cronologia per backup e archivio completi — allegati raggruppati in un unico ZIP."
+   "text": "Esporta messaggi, file, immagini e reazioni emoji delle chat di Microsoft Teams in CSV o HTML. Scorrimento automatico dell'intera cronologia per un backup e un archivio completi, con gli allegati raggruppati in un unico ZIP."
   },
   {
    "type": "p",
@@ -15,10 +15,10 @@
   {
    "type": "ul",
    "items": [
-    "L'esportazione CSV ora si apre correttamente in Excel — i caratteri accentati (à, è, ì, ò, ù) non risultano più corrotti.",
-    "Immagini e screenshot incollati ora acquisiti in modo affidabile — anche nel nuovo layout teams.cloud.microsoft, dove molti venivano persi.",
-    "Screenshot incorporati direttamente nella trascrizione HTML — le immagini appaiono inline nell'esportazione, non solo come link.",
-    "Qualità originale delle immagini — gli allegati vengono salvati come file originale esatto, senza ricompressione."
+    "L'esportazione CSV ora si apre correttamente in Excel: i caratteri accentati (à, è, ì, ò, ù) non risultano più corrotti.",
+    "Le immagini e gli screenshot incollati ora vengono acquisiti in modo affidabile, anche nel nuovo layout teams.cloud.microsoft, dove prima molti andavano persi.",
+    "Gli screenshot sono incorporati direttamente nella trascrizione HTML: le immagini compaiono nel corpo dell'esportazione, non solo come link.",
+    "Qualità originale delle immagini: gli allegati vengono salvati come copia esatta del file originale, senza ricompressione."
    ]
   },
   {
@@ -44,7 +44,7 @@
    "items": [
     "Apri una conversazione Teams nel browser",
     "Fai clic sull'icona dell'estensione",
-    "L'estensione scorre automaticamente fino all'inizio della chat, catturando ogni messaggio",
+    "L'estensione scorre automaticamente fino all'inizio della chat e cattura ogni messaggio",
     "Scarica come CSV, HTML o un unico archivio ZIP"
    ]
   },
@@ -59,7 +59,7 @@
     "Requisiti di conformità e audit",
     "Cercare nella cronologia delle chat offline",
     "Backup di discussioni di progetto e decisioni",
-    "Migrazione dati o creazione di record",
+    "Migrazione dati o creazione di documentazione",
     "Documentazione HR e legale"
    ]
   },
@@ -70,14 +70,14 @@
   {
    "type": "ul",
    "items": [
-    "Auto-scroll completo — cattura l'intera cronologia della chat automaticamente, senza scorrimento manuale",
-    "Funziona ovunque in Teams — messaggi diretti, chat di gruppo, canali e tutti e tre i domini Teams",
-    "Più formati di esportazione — CSV per fogli di calcolo, HTML per una trascrizione formattata con reazioni e link cliccabili agli allegati",
-    "Download ZIP in streaming — tutti gli allegati in un unico archivio, con supporto ZIP64 per archivi oltre 4 GB e compressione DEFLATE per file di testo",
-    "Reazioni emoji — catturate per messaggio e mostrate in CSV e HTML",
-    "Download indipendenti dal popup — chiudi il popup e lo ZIP continua a trasferirsi sul disco in background",
-    "Privacy prima di tutto — tutte le elaborazioni avvengono localmente nel browser, nessun dato viene inviato a server esterni",
-    "Disponibile in 20 lingue con supporto da destra a sinistra per arabo e urdu",
+    "Scorrimento automatico completo: acquisisce l'intera cronologia della chat senza bisogno di scorrere a mano",
+    "Funziona ovunque in Teams: messaggi diretti, chat di gruppo, canali e tutti e tre i domini Teams",
+    "Più formati di esportazione: CSV per i fogli di calcolo, HTML per una trascrizione formattata con reazioni e link cliccabili agli allegati",
+    "Download ZIP in streaming: tutti gli allegati in un unico archivio, con supporto ZIP64 per archivi oltre i 4 GB e compressione DEFLATE per i file di testo",
+    "Reazioni emoji: catturate per ogni messaggio e mostrate sia nel CSV sia nell'HTML",
+    "Download indipendenti dal popup: chiudi il popup e lo ZIP continua a salvarsi sul disco in background",
+    "Privacy prima di tutto: tutta l'elaborazione avviene localmente nel browser e nessun dato viene inviato a server esterni",
+    "Disponibile in 20 lingue, con supporto per la scrittura da destra a sinistra in arabo e urdu",
     "Leggero e veloce"
    ]
   },
@@ -87,7 +87,7 @@
   },
   {
    "type": "p",
-   "text": "Questo strumento viene fornito \"così com'è\" senza garanzie di alcun tipo, espresse o implicite. Non rilascio dichiarazioni sull'accuratezza, affidabilità, completezza o idoneità di questo software per qualsiasi scopo. Utilizzando questo strumento, riconosci di essere l'unico responsabile della conformità con le politiche IT della tua organizzazione e con qualsiasi normativa applicabile in materia di protezione dei dati (GDPR, ecc.). È necessario ottenere le autorizzazioni necessarie prima di estrarre comunicazioni sul luogo di lavoro. I dati estratti possono contenere informazioni sensibili o riservate che devono essere gestite in modo appropriato. Non accetto alcuna responsabilità per danni, perdita di dati, violazioni della privacy o altre conseguenze derivanti dall'uso di questo strumento. Si tratta di un'utility non ufficiale, non affiliata né sostenuta da Microsoft."
+   "text": "Questo strumento viene fornito \"così com'è\" senza garanzie di alcun tipo, espresse o implicite. Non rilascio dichiarazioni sull'accuratezza, affidabilità, completezza o idoneità di questo software per qualsiasi scopo. Utilizzando questo strumento, riconosci di essere l'unico responsabile della conformità con le politiche IT della tua organizzazione e con qualsiasi normativa applicabile in materia di protezione dei dati (GDPR, ecc.). Devi ottenere le autorizzazioni necessarie prima di estrarre comunicazioni di lavoro. I dati estratti possono contenere informazioni sensibili o riservate, da gestire in modo appropriato. Non accetto alcuna responsabilità per danni, perdita di dati, violazioni della privacy o altre conseguenze derivanti dall'uso di questo strumento. Si tratta di un'utility non ufficiale, non affiliata a Microsoft né approvata da Microsoft."
   }
  ]
 }

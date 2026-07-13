@@ -2,7 +2,7 @@
  "sections": [
   {
    "type": "p",
-   "text": "Exporta mensajes, archivos, imágenes y reacciones emoji de chats de Microsoft Teams a CSV o HTML. Desplazamiento automático del historial completo para copia de seguridad y archivo — adjuntos agrupados en un único ZIP."
+   "text": "Exporta mensajes, archivos, imágenes y reacciones emoji de chats de Microsoft Teams a CSV o HTML. Se desplaza automáticamente por todo el historial para copias de seguridad y archivado, con los adjuntos agrupados en un único ZIP."
   },
   {
    "type": "p",
@@ -16,9 +16,9 @@
    "type": "ul",
    "items": [
     "La exportación CSV ahora se abre correctamente en Excel: los caracteres acentuados (á, é, í, ñ) ya no aparecen dañados.",
-    "Imágenes y capturas de pantalla pegadas ahora se capturan de forma fiable — incluso en la nueva interfaz teams.cloud.microsoft, donde antes se perdían muchas.",
-    "Capturas de pantalla incrustadas directamente en la transcripción HTML — las imágenes aparecen en línea en la exportación, no solo como enlaces.",
-    "Calidad de imagen original — los adjuntos se guardan como el archivo original exacto, sin recompresión."
+    "Las imágenes y capturas de pantalla pegadas ahora se capturan de forma fiable, incluso en la nueva interfaz de teams.cloud.microsoft, donde antes se perdían muchas.",
+    "Las capturas de pantalla se incrustan directamente en la transcripción HTML: las imágenes aparecen dentro de la exportación, no solo como enlaces.",
+    "Calidad de imagen original: los adjuntos se guardan como el archivo original exacto, sin recompresión."
    ]
   },
   {
@@ -70,14 +70,14 @@
   {
    "type": "ul",
    "items": [
-    "Desplazamiento automático completo — captura todo el historial del chat automáticamente, sin desplazamiento manual",
-    "Funciona en todas partes en Teams — mensajes directos, chats de grupo, canales y los tres dominios de Teams",
-    "Múltiples formatos de exportación — CSV para hojas de cálculo, HTML para una transcripción formateada con reacciones y enlaces a adjuntos clicables",
-    "Descargas ZIP en streaming — todos los adjuntos en un archivo, con soporte ZIP64 para archivos mayores de 4 GB y compresión DEFLATE para archivos de texto",
-    "Reacciones emoji — capturadas por mensaje y mostradas en CSV y HTML",
-    "Descargas independientes del popup — cierra el popup y el ZIP continúa transfiriéndose al disco en segundo plano",
-    "Privacidad ante todo — todo el procesamiento ocurre localmente en tu navegador, no se envían datos a servidores externos",
-    "Disponible en 20 idiomas con soporte de derecha a izquierda para árabe y urdu",
+    "Desplazamiento automático completo: captura todo el historial del chat sin que tengas que desplazarte manualmente",
+    "Funciona en todo Teams: mensajes directos, chats de grupo, canales y los tres dominios de Teams",
+    "Varios formatos de exportación: CSV para hojas de cálculo y HTML para una transcripción con formato, reacciones y enlaces a los adjuntos",
+    "Descargas ZIP en streaming: todos los adjuntos en un solo archivo, con soporte ZIP64 para archivos de más de 4 GB y compresión DEFLATE para archivos de texto",
+    "Reacciones emoji: capturadas por mensaje y mostradas en el CSV y el HTML",
+    "Descargas independientes del popup: cierra el popup y el ZIP se sigue guardando en el disco en segundo plano",
+    "Privacidad ante todo: todo el procesamiento se realiza localmente en tu navegador y no se envía ningún dato a servidores externos",
+    "Disponible en 20 idiomas, con soporte de escritura de derecha a izquierda para árabe y urdu",
     "Ligero y rápido"
    ]
   },
@@ -87,7 +87,7 @@
   },
   {
    "type": "p",
-   "text": "Esta herramienta se proporciona \"tal cual\" sin garantía de ningún tipo, expresa o implícita. No hago declaraciones sobre la precisión, fiabilidad, integridad o idoneidad de este software para ningún propósito. Al usar esta herramienta, reconoces que eres el único responsable del cumplimiento de las políticas de TI de tu organización y de cualquier normativa aplicable de protección de datos (RGPD, etc.). Debes obtener los permisos necesarios antes de extraer comunicaciones del lugar de trabajo. Los datos extraídos pueden contener información sensible o confidencial que debe manejarse adecuadamente. No acepto responsabilidad por daños, pérdida de datos, violaciones de privacidad u otras consecuencias derivadas del uso de esta herramienta. Esta es una utilidad no oficial no afiliada ni respaldada por Microsoft."
+   "text": "Esta herramienta se proporciona \"tal cual\", sin garantía de ningún tipo, expresa o implícita. No garantizo la exactitud, fiabilidad, integridad ni idoneidad de este software para ningún propósito. Al usar esta herramienta, reconoces que eres el único responsable de cumplir las políticas de TI de tu organización y cualquier normativa aplicable de protección de datos (RGPD, etc.). Debes obtener los permisos necesarios antes de extraer comunicaciones del lugar de trabajo. Los datos extraídos pueden contener información sensible o confidencial que debe manejarse adecuadamente. No asumo ninguna responsabilidad por daños, pérdida de datos, violaciones de privacidad u otras consecuencias derivadas del uso de esta herramienta. Esta es una utilidad no oficial, sin afiliación con Microsoft ni respaldo por su parte."
   }
  ]
 }

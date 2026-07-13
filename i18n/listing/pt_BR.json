@@ -2,11 +2,11 @@
  "sections": [
   {
    "type": "p",
-   "text": "Exporte mensagens, arquivos, imagens e reações emoji de conversas do Microsoft Teams em CSV ou HTML. Rolagem automática do histórico completo para backup e arquivamento — anexos agrupados em um único ZIP."
+   "text": "Exporte mensagens, arquivos, imagens e reações emoji de conversas do Microsoft Teams em CSV ou HTML. Rolagem automática do histórico completo para backup e arquivamento, com os anexos agrupados em um único ZIP."
   },
   {
    "type": "p",
-   "text": "Teams Message Extractor rola automaticamente por todo o histórico da conversa, desde a primeira mensagem até a mais recente, e exporta tudo para um arquivo CSV limpo e estruturado ou para uma transcrição HTML autônoma. Os anexos são baixados como um único arquivo ZIP, em vez de dezenas de caixas de diálogo de salvamento. Funciona com mensagens diretas, conversas em grupo e canais em todos os três domínios do Teams (teams.microsoft.com, teams.live.com, teams.cloud.microsoft)."
+   "text": "Teams Message Extractor rola automaticamente por todo o histórico da conversa, desde a primeira mensagem até a mais recente, e exporta tudo para um arquivo CSV limpo e estruturado ou para uma transcrição HTML autônoma. Os anexos são baixados como um único arquivo ZIP, em vez de dezenas de caixas de diálogo de salvamento. Funciona com mensagens diretas, conversas em grupo e canais nos três domínios do Teams (teams.microsoft.com, teams.live.com, teams.cloud.microsoft)."
   },
   {
    "type": "h2",
@@ -15,10 +15,10 @@
   {
    "type": "ul",
    "items": [
-    "A exportação CSV agora abre corretamente no Excel — caracteres acentuados (á, ã, ç, é) não ficam mais corrompidos.",
-    "Imagens e capturas de tela coladas agora capturadas de forma confiável — inclusive no novo layout teams.cloud.microsoft, onde muitas eram perdidas.",
-    "Capturas de tela incorporadas diretamente na transcrição HTML — as imagens aparecem embutidas na exportação, não apenas como links.",
-    "Qualidade de imagem original — os anexos são salvos como o arquivo original exato, sem recompressão."
+    "A exportação CSV agora abre corretamente no Excel: caracteres acentuados (á, ã, ç, é) não ficam mais corrompidos.",
+    "Imagens e capturas de tela coladas agora são capturadas de forma confiável, inclusive no novo layout do teams.cloud.microsoft, onde muitas se perdiam.",
+    "As capturas de tela ficam incorporadas diretamente na transcrição HTML: as imagens aparecem embutidas na exportação, não apenas como links.",
+    "Qualidade de imagem original: os anexos são salvos como o arquivo original exato, sem recompressão."
    ]
   },
   {
@@ -31,7 +31,7 @@
     "Nomes dos remetentes e carimbos de data/hora",
     "Conteúdo completo da mensagem",
     "Reações emoji (por mensagem, com contagens)",
-    "Anexos, imagens e seus URLs",
+    "Anexos, imagens e suas URLs",
     "Threads de conversa completos"
    ]
   },
@@ -70,14 +70,14 @@
   {
    "type": "ul",
    "items": [
-    "Rolagem automática completa — captura todo o histórico da conversa automaticamente, sem rolagem manual",
-    "Funciona em qualquer lugar no Teams — mensagens diretas, conversas em grupo, canais e todos os três domínios do Teams",
-    "Vários formatos de exportação — CSV para planilhas, HTML para uma transcrição formatada com reações e links clicáveis para anexos",
-    "Downloads ZIP em streaming — todos os anexos em um arquivo, com suporte a ZIP64 para arquivos maiores que 4 GB e compactação DEFLATE para arquivos de texto",
-    "Reações emoji — capturadas por mensagem e mostradas em CSV e HTML",
-    "Downloads independentes do popup — feche o popup e o ZIP continua sendo transferido para o disco em segundo plano",
-    "Privacidade em primeiro lugar — todo o processamento acontece localmente no seu navegador, nenhum dado é enviado para servidores externos",
-    "Disponível em 20 idiomas com suporte da direita para a esquerda para árabe e urdu",
+    "Rolagem automática completa: captura todo o histórico da conversa sem que você precise rolar manualmente",
+    "Funciona em todo o Teams: mensagens diretas, conversas em grupo, canais e os três domínios do Teams",
+    "Vários formatos de exportação: CSV para planilhas e HTML para uma transcrição formatada, com reações e links clicáveis para os anexos",
+    "Downloads ZIP em streaming: todos os anexos em um único arquivo, com suporte a ZIP64 para arquivos maiores que 4 GB e compactação DEFLATE para arquivos de texto",
+    "Reações emoji: capturadas por mensagem e exibidas no CSV e no HTML",
+    "Downloads independentes do popup: feche o popup e o ZIP continua sendo gravado no disco em segundo plano",
+    "Privacidade em primeiro lugar: todo o processamento acontece localmente no seu navegador e nenhum dado é enviado para servidores externos",
+    "Disponível em 20 idiomas, com suporte à escrita da direita para a esquerda para árabe e urdu",
     "Leve e rápido"
    ]
   },
@@ -87,7 +87,7 @@
   },
   {
    "type": "p",
-   "text": "Esta ferramenta é fornecida \"como está\", sem garantias de qualquer tipo, expressas ou implícitas. Não faço declarações sobre a precisão, confiabilidade, integridade ou adequação deste software para qualquer finalidade. Ao usar esta ferramenta, você reconhece que é o único responsável pelo cumprimento das políticas de TI da sua organização e de quaisquer regulamentos aplicáveis de proteção de dados (GDPR, LGPD, etc.). Você deve obter as permissões necessárias antes de extrair comunicações do local de trabalho. Os dados extraídos podem conter informações sensíveis ou confidenciais que devem ser tratadas adequadamente. Não aceito nenhuma responsabilidade por danos, perda de dados, violações de privacidade ou outras consequências decorrentes do uso desta ferramenta. Este é um utilitário não oficial não afiliado à Microsoft nem endossado por ela."
+   "text": "Esta ferramenta é fornecida \"como está\", sem garantias de qualquer tipo, expressas ou implícitas. Não garanto a precisão, a confiabilidade, a integridade nem a adequação deste software a qualquer finalidade. Ao usar esta ferramenta, você reconhece que é o único responsável pelo cumprimento das políticas de TI da sua organização e de quaisquer regulamentos aplicáveis de proteção de dados (GDPR, LGPD, etc.). Você deve obter as permissões necessárias antes de extrair comunicações do local de trabalho. Os dados extraídos podem conter informações sensíveis ou confidenciais que devem ser tratadas adequadamente. Não assumo nenhuma responsabilidade por danos, perda de dados, violações de privacidade ou outras consequências decorrentes do uso desta ferramenta. Este é um utilitário não oficial, não afiliado à Microsoft nem endossado por ela."
   }
  ]
 }

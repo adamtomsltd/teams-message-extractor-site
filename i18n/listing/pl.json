@@ -2,7 +2,7 @@
  "sections": [
   {
    "type": "p",
-   "text": "Eksportuj wiadomości, pliki, obrazy i reakcje emoji z czatów Microsoft Teams do CSV lub HTML. Automatyczne przewijanie pełnej historii czatu w celu pełnej kopii zapasowej i archiwizacji — załączniki spakowane w jedno archiwum ZIP."
+   "text": "Eksportuj wiadomości, pliki, obrazy i reakcje emoji z czatów Microsoft Teams do CSV lub HTML. Automatyczne przewijanie pełnej historii czatu zapewnia kompletną kopię zapasową i archiwum, a załączniki trafiają do jednego archiwum ZIP."
   },
   {
    "type": "p",
@@ -15,10 +15,10 @@
   {
    "type": "ul",
    "items": [
-    "Eksport CSV otwiera się teraz poprawnie w Excelu — polskie znaki (ą, ę, ł, ż) nie są już zniekształcane.",
-    "Wklejone obrazy i zrzuty ekranu są teraz niezawodnie przechwytywane — także w nowym układzie teams.cloud.microsoft, gdzie wcześniej wiele było pomijanych.",
-    "Zrzuty ekranu osadzone bezpośrednio w transkrypcji HTML — obrazy pojawiają się w eksporcie inline, a nie tylko jako linki.",
-    "Oryginalna jakość obrazu — załączniki są zapisywane jako dokładny oryginalny plik, bez ponownej kompresji."
+    "Eksport CSV otwiera się teraz poprawnie w Excelu, a polskie znaki (ą, ę, ł, ż) nie są już zniekształcane.",
+    "Wklejone obrazy i zrzuty ekranu są teraz niezawodnie przechwytywane, także w nowym układzie teams.cloud.microsoft, gdzie wcześniej wiele z nich było pomijanych.",
+    "Zrzuty ekranu są osadzane bezpośrednio w transkrypcie HTML: obrazy widać w samym eksporcie, a nie tylko jako linki.",
+    "Obrazy zachowują oryginalną jakość: załączniki są zapisywane jako dokładnie ten sam oryginalny plik, bez ponownej kompresji."
    ]
   },
   {
@@ -70,15 +70,15 @@
   {
    "type": "ul",
    "items": [
-    "Pełne automatyczne przewijanie — przechwytuje całą historię czatu automatycznie, bez ręcznego przewijania",
-    "Działa wszędzie w Teams — wiadomości bezpośrednie, czaty grupowe, kanały i wszystkie trzy domeny Teams",
-    "Wiele formatów eksportu — CSV do arkuszy kalkulacyjnych, HTML do sformatowanego transkryptu z reakcjami i klikalnymi linkami do załączników",
-    "Strumieniowe pobieranie ZIP — wszystkie załączniki w jednym archiwum, z obsługą ZIP64 dla archiwów większych niż 4 GB i kompresją DEFLATE dla plików tekstowych",
-    "Reakcje emoji — przechwytywane na wiadomość i wyświetlane w CSV i HTML",
-    "Pobieranie niezależne od popupa — zamknij popup, a ZIP kontynuuje strumieniowanie na dysk w tle",
-    "Prywatność przede wszystkim — całe przetwarzanie odbywa się lokalnie w przeglądarce, żadne dane nie są wysyłane na zewnętrzne serwery",
+    "Pełne automatyczne przewijanie: rozszerzenie samo przechwytuje całą historię czatu, bez ręcznego przewijania",
+    "Działa wszędzie w Teams: wiadomości bezpośrednie, czaty grupowe, kanały i wszystkie trzy domeny Teams",
+    "Wiele formatów eksportu: CSV do arkuszy kalkulacyjnych, HTML jako sformatowany transkrypt z reakcjami i klikalnymi linkami do załączników",
+    "Strumieniowe pobieranie ZIP: wszystkie załączniki w jednym archiwum, z obsługą ZIP64 dla archiwów większych niż 4 GB i kompresją DEFLATE dla plików tekstowych",
+    "Reakcje emoji: przechwytywane dla każdej wiadomości i widoczne w CSV oraz HTML",
+    "Pobieranie niezależne od popupa: możesz zamknąć popup, a ZIP dalej zapisuje się na dysk w tle",
+    "Prywatność przede wszystkim: całe przetwarzanie odbywa się lokalnie w przeglądarce, żadne dane nie są wysyłane na zewnętrzne serwery",
     "Dostępne w 20 językach z obsługą pisania od prawej do lewej dla arabskiego i urdu",
-    "Lekki i szybki"
+    "Lekkie i szybkie"
    ]
   },
   {
@@ -87,7 +87,7 @@
   },
   {
    "type": "p",
-   "text": "To narzędzie jest dostarczane „tak jak jest\" bez jakiejkolwiek gwarancji, wyraźnej lub dorozumianej. Nie składam żadnych oświadczeń co do dokładności, niezawodności, kompletności ani przydatności tego oprogramowania do jakiegokolwiek celu. Korzystając z tego narzędzia, przyjmujesz do wiadomości, że ponosisz wyłączną odpowiedzialność za przestrzeganie zasad IT swojej organizacji oraz wszelkich obowiązujących przepisów o ochronie danych (RODO itp.). Przed wyodrębnieniem komunikacji w miejscu pracy należy uzyskać niezbędne zezwolenia. Wyodrębnione dane mogą zawierać wrażliwe lub poufne informacje, z którymi należy odpowiednio postępować. Nie ponoszę żadnej odpowiedzialności za jakiekolwiek szkody, utratę danych, naruszenia prywatności ani inne konsekwencje wynikające z użycia tego narzędzia. Jest to nieoficjalne narzędzie, niezwiązane z firmą Microsoft ani przez nią nieautoryzowane."
+   "text": "To narzędzie jest dostarczane „tak jak jest” bez jakiejkolwiek gwarancji, wyraźnej lub dorozumianej. Nie składam żadnych oświadczeń co do dokładności, niezawodności, kompletności ani przydatności tego oprogramowania do jakiegokolwiek celu. Korzystając z tego narzędzia, przyjmujesz do wiadomości, że ponosisz wyłączną odpowiedzialność za przestrzeganie zasad IT swojej organizacji oraz wszelkich obowiązujących przepisów o ochronie danych (RODO itp.). Przed wyodrębnieniem komunikacji w miejscu pracy należy uzyskać niezbędne zezwolenia. Wyodrębnione dane mogą zawierać wrażliwe lub poufne informacje, z którymi należy odpowiednio postępować. Nie ponoszę żadnej odpowiedzialności za jakiekolwiek szkody, utratę danych, naruszenia prywatności ani inne konsekwencje wynikające z użycia tego narzędzia. Jest to nieoficjalne narzędzie, niezwiązane z firmą Microsoft ani przez nią nieautoryzowane."
   }
  ]
 }
