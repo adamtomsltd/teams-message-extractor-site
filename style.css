@@ -30,7 +30,7 @@ header.site nav {
   display: flex; gap: 1rem; row-gap: 0.5rem; align-items: center; flex-wrap: wrap;
 }
 header.site a { color: var(--fg); text-decoration: none; font-weight: 600; font-size: 0.95rem; }
-header.site a.brand { color: var(--accent); display: inline-flex; align-items: center; gap: 0.45rem; }
+header.site a.brand { color: var(--accent); display: inline-flex; align-items: center; gap: 0.45rem; font-size: 1.1rem; }
 .brandicon { width: 22px; height: 22px; }
 figure.hero, figure.shot { margin: 1.25rem 0; }
 figure.hero img, figure.shot img {
