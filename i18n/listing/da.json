@@ -1,0 +1,93 @@
+{
+ "sections": [
+  {
+   "type": "p",
+   "text": "Eksportér chatbeskeder, filer, billeder og emoji-reaktioner fra Microsoft Teams til CSV eller HTML. Automatisk rulning gennem hele chathistorikken for komplet backup og arkivering — vedhæftede filer samlet i ét ZIP-arkiv."
+  },
+  {
+   "type": "p",
+   "text": "Teams Message Extractor ruller automatisk gennem hele din samtalehistorik, fra den allerførste besked til den nyeste, og eksporterer alt til en ren og struktureret CSV-fil eller en selvstændig HTML-udskrift. Vedhæftede filer downloades som ét ZIP-arkiv i stedet for snesevis af gemmedialoger. Fungerer med direkte beskeder, gruppechats og kanaler på alle tre Teams-domæner (teams.microsoft.com, teams.live.com, teams.cloud.microsoft)."
+  },
+  {
+   "type": "h2",
+   "text": "Nyt i 2.8.1"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "CSV-eksport åbner nu korrekt i Excel — danske tegn (æ, ø, å) bliver ikke længere ødelagt.",
+    "Indsatte billeder og skærmbilleder fanges nu pålideligt — også i det nye teams.cloud.microsoft-layout, hvor mange tidligere blev overset.",
+    "Skærmbilleder indlejret direkte i HTML-transskriptionen — billeder vises inline i eksporten, ikke kun som links.",
+    "Oprindelig billedkvalitet — vedhæftede filer gemmes som den nøjagtige originalfil, uden genkomprimering."
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Hvad bliver fanget"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "Afsendernavne og tidsstempler",
+    "Fuldt beskedindhold",
+    "Emoji-reaktioner (pr. besked, med antal)",
+    "Vedhæftede filer, billeder og deres URL-adresser",
+    "Komplette samtaletråde"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Sådan fungerer det"
+  },
+  {
+   "type": "ol",
+   "items": [
+    "Åbn en hvilken som helst Teams-samtale i din browser",
+    "Klik på udvidelsens ikon",
+    "Udvidelsen ruller automatisk til allerførste besked og fanger hver eneste besked",
+    "Download som CSV, HTML eller ét samlet ZIP-arkiv"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Perfekt til"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "Arkivering af vigtige samtaler, før de går tabt",
+    "Compliance- og revisionskrav",
+    "Offline-søgning i gammel chathistorik",
+    "Backup af projektdiskussioner og beslutninger",
+    "Datamigrering eller oprettelse af optegnelser",
+    "HR- og juridiske dokumentationsbehov"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Nøglefunktioner"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "Fuld automatisk rulning — fanger hele din chathistorik automatisk, ingen manuel rulning nødvendig",
+    "Fungerer overalt i Teams — direkte beskeder, gruppechats, kanaler og alle tre Teams-domæner",
+    "Flere eksportformater — CSV til regneark, HTML til en formateret udskrift med reaktioner og klikbare vedhæftningslinks",
+    "Streamende ZIP-downloads — saml alle vedhæftede filer i ét arkiv med ZIP64-understøttelse for arkiver over 4 GB og DEFLATE-komprimering til tekstfiler",
+    "Emoji-reaktioner — fanget pr. besked og vist i både CSV og HTML",
+    "Downloads uafhængige af pop op — luk pop op-vinduet, og ZIP-filen fortsætter med at streame til disken i baggrunden",
+    "Privatliv først — al behandling sker lokalt i din browser, ingen data sendes til eksterne servere",
+    "Tilgængelig på 20 sprog med understøttelse af højre-til-venstre-skrift for arabisk og urdu",
+    "Letvægt og hurtig"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Ansvarsfraskrivelse"
+  },
+  {
+   "type": "p",
+   "text": "Dette værktøj leveres \"som det er\", uden nogen form for garanti, hverken udtrykkelig eller underforstået. Jeg fremsætter ingen påstande om nøjagtigheden, pålideligheden, fuldstændigheden eller egnetheden af denne software til noget formål. Ved at bruge dette værktøj anerkender du, at du alene er ansvarlig for overholdelse af din organisations IT-politikker og enhver gældende databeskyttelseslovgivning (GDPR mv.). Du bør indhente de nødvendige tilladelser, før du udtrækker arbejdsrelateret kommunikation. De udtrukne data kan indeholde følsomme eller fortrolige oplysninger, som skal håndteres på passende vis. Jeg påtager mig intet ansvar for skader, datatab, brud på privatlivets fred eller andre konsekvenser, der opstår som følge af brugen af dette værktøj. Dette er et uofficielt værktøj, som ikke er tilknyttet eller godkendt af Microsoft."
+  }
+ ]
+}

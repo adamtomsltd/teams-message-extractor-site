@@ -1,0 +1,93 @@
+{
+ "sections": [
+  {
+   "type": "p",
+   "text": "Esporta messaggi, file, immagini e reazioni emoji delle chat di Microsoft Teams in CSV o HTML. Scorrimento automatico dell'intera cronologia per backup e archivio completi — allegati raggruppati in un unico ZIP."
+  },
+  {
+   "type": "p",
+   "text": "Teams Message Extractor scorre automaticamente l'intera cronologia delle conversazioni, dal primo messaggio all'ultimo, ed esporta tutto in un file CSV pulito e strutturato o in una trascrizione HTML autonoma. Gli allegati vengono scaricati in un unico archivio ZIP, invece di decine di finestre di salvataggio. Funziona con messaggi diretti, chat di gruppo e canali su tutti e tre i domini Teams (teams.microsoft.com, teams.live.com, teams.cloud.microsoft)."
+  },
+  {
+   "type": "h2",
+   "text": "Novità nella versione 2.8.1"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "L'esportazione CSV ora si apre correttamente in Excel — i caratteri accentati (à, è, ì, ò, ù) non risultano più corrotti.",
+    "Immagini e screenshot incollati ora acquisiti in modo affidabile — anche nel nuovo layout teams.cloud.microsoft, dove molti venivano persi.",
+    "Screenshot incorporati direttamente nella trascrizione HTML — le immagini appaiono inline nell'esportazione, non solo come link.",
+    "Qualità originale delle immagini — gli allegati vengono salvati come file originale esatto, senza ricompressione."
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Cosa viene catturato"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "Nomi dei mittenti e timestamp",
+    "Contenuto completo dei messaggi",
+    "Reazioni emoji (per messaggio, con conteggio)",
+    "Allegati, immagini e relativi URL",
+    "Thread completi delle conversazioni"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Come funziona"
+  },
+  {
+   "type": "ol",
+   "items": [
+    "Apri una conversazione Teams nel browser",
+    "Fai clic sull'icona dell'estensione",
+    "L'estensione scorre automaticamente fino all'inizio della chat, catturando ogni messaggio",
+    "Scarica come CSV, HTML o un unico archivio ZIP"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Ideale per"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "Archiviare conversazioni importanti prima che vadano perse",
+    "Requisiti di conformità e audit",
+    "Cercare nella cronologia delle chat offline",
+    "Backup di discussioni di progetto e decisioni",
+    "Migrazione dati o creazione di record",
+    "Documentazione HR e legale"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Funzionalità principali"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "Auto-scroll completo — cattura l'intera cronologia della chat automaticamente, senza scorrimento manuale",
+    "Funziona ovunque in Teams — messaggi diretti, chat di gruppo, canali e tutti e tre i domini Teams",
+    "Più formati di esportazione — CSV per fogli di calcolo, HTML per una trascrizione formattata con reazioni e link cliccabili agli allegati",
+    "Download ZIP in streaming — tutti gli allegati in un unico archivio, con supporto ZIP64 per archivi oltre 4 GB e compressione DEFLATE per file di testo",
+    "Reazioni emoji — catturate per messaggio e mostrate in CSV e HTML",
+    "Download indipendenti dal popup — chiudi il popup e lo ZIP continua a trasferirsi sul disco in background",
+    "Privacy prima di tutto — tutte le elaborazioni avvengono localmente nel browser, nessun dato viene inviato a server esterni",
+    "Disponibile in 20 lingue con supporto da destra a sinistra per arabo e urdu",
+    "Leggero e veloce"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Disclaimer"
+  },
+  {
+   "type": "p",
+   "text": "Questo strumento viene fornito \"così com'è\" senza garanzie di alcun tipo, espresse o implicite. Non rilascio dichiarazioni sull'accuratezza, affidabilità, completezza o idoneità di questo software per qualsiasi scopo. Utilizzando questo strumento, riconosci di essere l'unico responsabile della conformità con le politiche IT della tua organizzazione e con qualsiasi normativa applicabile in materia di protezione dei dati (GDPR, ecc.). È necessario ottenere le autorizzazioni necessarie prima di estrarre comunicazioni sul luogo di lavoro. I dati estratti possono contenere informazioni sensibili o riservate che devono essere gestite in modo appropriato. Non accetto alcuna responsabilità per danni, perdita di dati, violazioni della privacy o altre conseguenze derivanti dall'uso di questo strumento. Si tratta di un'utility non ufficiale, non affiliata né sostenuta da Microsoft."
+  }
+ ]
+}

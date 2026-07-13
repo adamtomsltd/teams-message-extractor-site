@@ -1,0 +1,93 @@
+{
+ "sections": [
+  {
+   "type": "p",
+   "text": "Export Microsoft Teams chat messages, files, images, and emoji reactions to CSV or HTML. Auto-scrolls the full chat history for complete backup & archive — attachments bundled as a single ZIP."
+  },
+  {
+   "type": "p",
+   "text": "Teams Message Extractor automatically scrolls through your full conversation history, from the very first message to the latest, and exports everything to a clean, structured CSV file or a self-contained HTML transcript. File attachments download as one ZIP archive instead of dozens of save prompts. Works with direct messages, group chats, and channels across all three Teams domains (teams.microsoft.com, teams.live.com, teams.cloud.microsoft)."
+  },
+  {
+   "type": "h2",
+   "text": "What's new in 2.8.1"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "CSV export now opens correctly in Excel — accented and international characters (é, ã, ü, ç) are no longer garbled.",
+    "Pasted images & screenshots now captured reliably — including on the new teams.cloud.microsoft layout, where many were previously missed.",
+    "Screenshots embedded directly in the HTML transcript — images appear inline in the export, not just as links.",
+    "Original image quality — attachments save as the exact original file, with no re-compression."
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "What gets captured"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "Sender names & timestamps",
+    "Full message content",
+    "Emoji reactions (per message, with counts)",
+    "File attachments, images, and their URLs",
+    "Complete conversation threads"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "How it works"
+  },
+  {
+   "type": "ol",
+   "items": [
+    "Open any Teams conversation in your browser",
+    "Click the extension icon",
+    "The extension auto-scrolls to the very beginning of the chat, capturing every message",
+    "Download as CSV, HTML, or a single bundled ZIP"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Perfect for"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "Archiving important conversations before they're lost",
+    "Compliance and audit requirements",
+    "Searching through old chat history offline",
+    "Backing up project discussions and decisions",
+    "Migrating data or creating records",
+    "HR and legal documentation needs"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Key features"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "Full auto-scroll — captures your entire chat history automatically, no manual scrolling needed",
+    "Works everywhere in Teams — direct messages, group chats, channels, and all three Teams domains",
+    "Multiple export formats — CSV for spreadsheets, HTML for a formatted transcript with reactions and clickable attachment links",
+    "Streaming ZIP downloads — bundle every attachment into one archive with ZIP64 support for archives larger than 4 GB and DEFLATE compression for text files",
+    "Emoji reactions — captured per message and shown in both CSV and HTML",
+    "Popup-independent downloads — close the popup and the ZIP keeps streaming to disk in the background",
+    "Privacy-first — all processing happens locally in your browser, no data is sent to external servers",
+    "Available in 20 languages with right-to-left support for Arabic and Urdu",
+    "Lightweight and fast"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Disclaimer"
+  },
+  {
+   "type": "p",
+   "text": "This tool is provided \"as is\" without warranty of any kind, express or implied. I make no representations about the accuracy, reliability, completeness, or suitability of this software for any purpose. By using this tool, you acknowledge that you are solely responsible for compliance with your organisation's IT policies and any applicable data protection regulations (GDPR, etc.). You should obtain necessary permissions before extracting workplace communications. The extracted data may contain sensitive or confidential information that must be handled appropriately. I accept no liability for any damages, data loss, privacy breaches, or other consequences arising from the use of this tool. This is an unofficial utility not affiliated with or endorsed by Microsoft."
+  }
+ ]
+}

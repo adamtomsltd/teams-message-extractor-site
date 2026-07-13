@@ -1,0 +1,93 @@
+{
+ "sections": [
+  {
+   "type": "p",
+   "text": "Exportujte zprávy, soubory, obrázky a emoji reakce z chatu Microsoft Teams do formátu CSV nebo HTML. Automatické posouvání kompletní historie chatu pro úplné zálohování a archivaci — přílohy v jednom ZIP archivu."
+  },
+  {
+   "type": "p",
+   "text": "Teams Message Extractor automaticky prochází celou historii vaší konverzace, od úplně první zprávy až po nejnovější, a exportuje vše do přehledného strukturovaného souboru CSV nebo samostatného HTML přepisu. Přílohy se stahují jako jeden ZIP archiv, takže nemusíte potvrzovat desítky výzev k uložení. Funguje s přímými zprávami, skupinovými chaty a kanály ve všech třech doménách Teams (teams.microsoft.com, teams.live.com, teams.cloud.microsoft)."
+  },
+  {
+   "type": "h2",
+   "text": "Novinky ve verzi 2.8.1"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "Export CSV se nyní v Excelu otevírá správně — česká diakritika (ě, š, č, ř, ž) už není poškozená.",
+    "Vložené obrázky a snímky obrazovky se nyní spolehlivě zachytí — i v novém rozhraní teams.cloud.microsoft, kde se jich dříve mnoho ztrácelo.",
+    "Snímky obrazovky vložené přímo do HTML přepisu — obrázky se v exportu zobrazují inline, nejen jako odkazy.",
+    "Původní kvalita obrázků — přílohy se ukládají jako přesný originální soubor, bez opětovné komprese."
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Co se zachytí"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "Jména odesílatelů a časová razítka",
+    "Úplný obsah zpráv",
+    "Emoji reakce (u každé zprávy, s počtem)",
+    "Přílohy souborů, obrázky a jejich URL adresy",
+    "Kompletní vlákna konverzací"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Jak to funguje"
+  },
+  {
+   "type": "ol",
+   "items": [
+    "Otevřete libovolnou konverzaci Teams ve svém prohlížeči",
+    "Klikněte na ikonu rozšíření",
+    "Rozšíření automaticky odscrolluje na úplný začátek chatu a zachytí každou zprávu",
+    "Stáhněte jako CSV, HTML nebo jeden ZIP archiv"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Ideální pro"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "Archivaci důležitých konverzací, než budou ztraceny",
+    "Požadavky na shodu s předpisy a auditem",
+    "Offline vyhledávání ve staré historii chatu",
+    "Zálohování projektových diskusí a rozhodnutí",
+    "Migraci dat nebo vytváření záznamů",
+    "Potřeby HR a právní dokumentace"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Klíčové funkce"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "Plné automatické posouvání — zachytí celou historii chatu automaticky, bez nutnosti ručního posouvání",
+    "Funguje všude v Teams — přímé zprávy, skupinové chaty, kanály a všechny tři domény Teams",
+    "Více formátů exportu — CSV pro tabulkové procesory, HTML pro formátovaný přepis s reakcemi a klikatelnými odkazy na přílohy",
+    "Streamované ZIP stahování — všechny přílohy v jednom archivu, s podporou ZIP64 pro archivy větší než 4 GB a kompresí DEFLATE pro textové soubory",
+    "Emoji reakce — zachyceny u každé zprávy a zobrazeny v CSV i HTML",
+    "Stahování nezávislé na vyskakovacím okně — zavřete vyskakovací okno a ZIP bude i nadále streamovat na disk na pozadí",
+    "Soukromí na prvním místě — veškeré zpracování probíhá lokálně ve vašem prohlížeči, žádná data se neodesílají na externí servery",
+    "K dispozici ve 20 jazycích s podporou psaní zprava doleva pro arabštinu a urdštinu",
+    "Lehké a rychlé"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Vyloučení odpovědnosti"
+  },
+  {
+   "type": "p",
+   "text": "Tento nástroj je poskytován „jak je\" bez jakýchkoli záruk, výslovných nebo předpokládaných. Neposkytuji žádná prohlášení o přesnosti, spolehlivosti, úplnosti nebo vhodnosti tohoto softwaru pro jakýkoli účel. Používáním tohoto nástroje uznáváte, že nesete výhradní odpovědnost za dodržování IT zásad vaší organizace a všech platných předpisů o ochraně osobních údajů (GDPR atd.). Před extrahováním pracovní komunikace byste měli získat nezbytná povolení. Extrahovaná data mohou obsahovat citlivé nebo důvěrné informace, s nimiž je nutné zacházet odpovídajícím způsobem. Nepřijímám žádnou odpovědnost za jakékoli škody, ztrátu dat, porušení soukromí nebo jiné důsledky vyplývající z používání tohoto nástroje. Toto je neoficiální utilita, která není spojena se společností Microsoft ani jí schválena."
+  }
+ ]
+}

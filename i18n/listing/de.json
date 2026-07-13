@@ -1,0 +1,93 @@
+{
+ "sections": [
+  {
+   "type": "p",
+   "text": "Exportieren Sie Microsoft Teams-Chatnachrichten, Dateien, Bilder und Emoji-Reaktionen als CSV oder HTML. Automatisches Scrollen durch den gesamten Chatverlauf für vollständige Sicherung & Archivierung — Anhänge gebündelt als einzelnes ZIP."
+  },
+  {
+   "type": "p",
+   "text": "Teams Message Extractor scrollt automatisch durch Ihren gesamten Gesprächsverlauf, von der allerersten bis zur neuesten Nachricht, und exportiert alles in eine saubere, strukturierte CSV-Datei oder ein eigenständiges HTML-Transkript. Dateianhänge werden als ein einziges ZIP-Archiv heruntergeladen, anstatt dutzender einzelner Speicherdialoge. Funktioniert mit Direktnachrichten, Gruppenchats und Kanälen auf allen drei Teams-Domains (teams.microsoft.com, teams.live.com, teams.cloud.microsoft)."
+  },
+  {
+   "type": "h2",
+   "text": "Neu in 2.8.1"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "CSV-Export öffnet sich jetzt korrekt in Excel — Umlaute und Sonderzeichen (ä, ö, ü, ß) werden nicht mehr verstümmelt.",
+    "Eingefügte Bilder & Screenshots werden jetzt zuverlässig erfasst — auch im neuen Layout teams.cloud.microsoft, wo zuvor viele fehlten.",
+    "Screenshots direkt im HTML-Transkript eingebettet — Bilder erscheinen inline im Export, nicht nur als Links.",
+    "Originale Bildqualität — Anhänge werden als exakte Originaldatei gespeichert, ohne erneute Komprimierung."
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Was erfasst wird"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "Absendernamen & Zeitstempel",
+    "Vollständiger Nachrichteninhalt",
+    "Emoji-Reaktionen (pro Nachricht, mit Anzahl)",
+    "Dateianhänge, Bilder und deren URLs",
+    "Vollständige Konversationsverläufe"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "So funktioniert's"
+  },
+  {
+   "type": "ol",
+   "items": [
+    "Öffnen Sie eine Teams-Konversation in Ihrem Browser",
+    "Klicken Sie auf das Erweiterungssymbol",
+    "Die Erweiterung scrollt automatisch an den Anfang des Chats und erfasst jede Nachricht",
+    "Als CSV, HTML oder gebündeltes ZIP herunterladen"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Ideal für"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "Archivierung wichtiger Gespräche, bevor sie verloren gehen",
+    "Compliance- und Audit-Anforderungen",
+    "Offline-Suche in älteren Chatverläufen",
+    "Sicherung von Projektdiskussionen und Entscheidungen",
+    "Datenmigration oder Dokumentation",
+    "HR- und juristische Dokumentationsbedürfnisse"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Hauptfunktionen"
+  },
+  {
+   "type": "ul",
+   "items": [
+    "Vollständiges Auto-Scroll — erfasst Ihren gesamten Chatverlauf automatisch, kein manuelles Scrollen nötig",
+    "Funktioniert überall in Teams — Direktnachrichten, Gruppenchats, Kanäle und alle drei Teams-Domains",
+    "Mehrere Exportformate — CSV für Tabellenkalkulationen, HTML für ein formatiertes Transkript mit Reaktionen und anklickbaren Anhangslinks",
+    "Streaming-ZIP-Downloads — alle Anhänge in einem Archiv, mit ZIP64-Unterstützung für Archive über 4 GB und DEFLATE-Komprimierung für Textdateien",
+    "Emoji-Reaktionen — pro Nachricht erfasst und in CSV sowie HTML angezeigt",
+    "Popup-unabhängige Downloads — schließen Sie das Popup, das ZIP wird im Hintergrund weiter auf die Festplatte gestreamt",
+    "Datenschutz an erster Stelle — alle Verarbeitung erfolgt lokal in Ihrem Browser, keine Daten werden an externe Server gesendet",
+    "In 20 Sprachen verfügbar mit Rechts-nach-Links-Unterstützung für Arabisch und Urdu",
+    "Schlank und schnell"
+   ]
+  },
+  {
+   "type": "h2",
+   "text": "Haftungsausschluss"
+  },
+  {
+   "type": "p",
+   "text": "Dieses Tool wird „wie besehen\" ohne ausdrückliche oder stillschweigende Gewährleistung jeglicher Art bereitgestellt. Ich mache keine Zusicherungen über Genauigkeit, Zuverlässigkeit, Vollständigkeit oder Eignung dieser Software für einen bestimmten Zweck. Durch die Nutzung dieses Tools erkennen Sie an, dass Sie allein für die Einhaltung der IT-Richtlinien Ihrer Organisation und aller geltenden Datenschutzbestimmungen (DSGVO etc.) verantwortlich sind. Sie sollten die erforderlichen Genehmigungen einholen, bevor Sie Arbeitsplatzkommunikation extrahieren. Die extrahierten Daten können sensible oder vertrauliche Informationen enthalten, die angemessen gehandhabt werden müssen. Ich übernehme keine Haftung für Schäden, Datenverluste, Datenschutzverletzungen oder andere Folgen, die sich aus der Nutzung dieses Tools ergeben. Dies ist ein inoffizielles Dienstprogramm, das nicht mit Microsoft verbunden oder von Microsoft genehmigt ist."
+  }
+ ]
+}

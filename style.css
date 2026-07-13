@@ -40,7 +40,13 @@ a { color: var(--accent); }
   background: var(--card); border: 1px solid var(--border);
   border-radius: 10px; padding: 1rem 1.25rem; margin: 1.25rem 0;
 }
-ul { padding-left: 1.3rem; }
+ul { padding-inline-start: 1.3rem; }
+select.lang {
+  margin-inline-start: auto;
+  background: var(--card); color: var(--fg);
+  border: 1px solid var(--border); border-radius: 6px;
+  padding: 0.25rem 0.5rem; font: inherit; font-size: 0.85rem;
+}
 li { margin: 0.35rem 0; }
 footer {
   max-width: 720px; margin: 0 auto; padding: 1.5rem 1.25rem 3rem;
