@@ -10,11 +10,13 @@
   },
   {
    "type": "h2",
-   "text": "Novedades en la versión 2.8.1"
+   "text": "Novedades en la versión 2.9.0"
   },
   {
    "type": "ul",
    "items": [
+    "Nuevo: extracción de publicaciones de canales. Las conversaciones en hilo se exportan con todas las respuestas anidadas, incluidos el asunto y la estructura del hilo.",
+    "Nueva exportación a Markdown, ideal para pegar en notas, wikis o herramientas de IA.",
     "La exportación CSV ahora se abre correctamente en Excel: los caracteres acentuados (á, é, í, ñ) ya no aparecen dañados.",
     "Las imágenes y capturas de pantalla pegadas ahora se capturan de forma fiable, incluso en la nueva interfaz de teams.cloud.microsoft, donde antes se perdían muchas.",
     "Las capturas de pantalla se incrustan directamente en la transcripción HTML: las imágenes aparecen dentro de la exportación, no solo como enlaces.",

@@ -10,11 +10,13 @@
   },
   {
    "type": "h2",
-   "text": "Novidades na versão 2.8.1"
+   "text": "Novidades na versão 2.9.0"
   },
   {
    "type": "ul",
    "items": [
+    "Novo: extração de postagens de canais. As conversas em tópicos são exportadas com todas as respostas aninhadas, incluindo assunto e estrutura do tópico.",
+    "Nova exportação em Markdown, ideal para colar em notas, wikis ou ferramentas de IA.",
     "A exportação CSV agora abre corretamente no Excel: caracteres acentuados (á, ã, ç, é) não ficam mais corrompidos.",
     "Imagens e capturas de tela coladas agora são capturadas de forma confiável, inclusive no novo layout do teams.cloud.microsoft, onde muitas se perdiam.",
     "As capturas de tela ficam incorporadas diretamente na transcrição HTML: as imagens aparecem embutidas na exportação, não apenas como links.",

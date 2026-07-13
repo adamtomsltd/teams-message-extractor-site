@@ -10,11 +10,13 @@
   },
   {
    "type": "h2",
-   "text": "Nyt i 2.8.1"
+   "text": "Nyt i 2.9.0"
   },
   {
    "type": "ul",
    "items": [
+    "Nyt: udtræk af kanalindlæg. Trådede samtaler eksporteres med alle indlejrede svar, inklusive emne og trådstruktur.",
+    "Ny Markdown-eksport, ideel til at indsætte i noter, wikier eller AI-værktøjer.",
     "CSV-eksporten åbner nu korrekt i Excel, og danske tegn (æ, ø, å) bliver ikke længere ødelagt.",
     "Indsatte billeder og skærmbilleder fanges nu pålideligt, også i det nye teams.cloud.microsoft-layout, hvor mange tidligere blev overset.",
     "Skærmbilleder indlejres direkte i HTML-udskriften, så billederne vises i selve eksporten og ikke kun som links.",

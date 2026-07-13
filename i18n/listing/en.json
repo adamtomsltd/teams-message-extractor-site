@@ -10,11 +10,13 @@
   },
   {
    "type": "h2",
-   "text": "What's new in 2.8.1"
+   "text": "What's new in 2.9.0"
   },
   {
    "type": "ul",
    "items": [
+    "New: channel (Posts) extraction. Threaded channel conversations export with every nested reply, subject line and thread structure included.",
+    "New Markdown export, ideal for pasting into notes, wikis or AI tools.",
     "CSV export now opens correctly in Excel. Accented and international characters (é, ã, ü, ç) are no longer garbled.",
     "Pasted images and screenshots are now captured reliably, including on the new teams.cloud.microsoft layout where many were previously missed.",
     "Screenshots are embedded directly in the HTML transcript, so images appear in the export itself rather than as links.",

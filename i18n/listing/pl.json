@@ -10,11 +10,13 @@
   },
   {
    "type": "h2",
-   "text": "Nowości w wersji 2.8.1"
+   "text": "Nowości w wersji 2.9.0"
   },
   {
    "type": "ul",
    "items": [
+    "Nowość: ekstrakcja postów z kanałów. Wątki są eksportowane ze wszystkimi zagnieżdżonymi odpowiedziami, wraz z tematem i strukturą wątku.",
+    "Nowy eksport do Markdown, idealny do wklejania do notatek, wiki lub narzędzi AI.",
     "Eksport CSV otwiera się teraz poprawnie w Excelu, a polskie znaki (ą, ę, ł, ż) nie są już zniekształcane.",
     "Wklejone obrazy i zrzuty ekranu są teraz niezawodnie przechwytywane, także w nowym układzie teams.cloud.microsoft, gdzie wcześniej wiele z nich było pomijanych.",
     "Zrzuty ekranu są osadzane bezpośrednio w transkrypcie HTML: obrazy widać w samym eksporcie, a nie tylko jako linki.",

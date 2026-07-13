@@ -10,11 +10,13 @@
   },
   {
    "type": "h2",
-   "text": "Neu in 2.8.1"
+   "text": "Neu in 2.9.0"
   },
   {
    "type": "ul",
    "items": [
+    "Neu: Extraktion von Kanal-Beiträgen (Posts). Threads werden mit allen verschachtelten Antworten exportiert, inklusive Betreff und Thread-Struktur.",
+    "Neuer Markdown-Export, ideal zum Einfügen in Notizen, Wikis oder KI-Tools.",
     "CSV-Export öffnet sich jetzt korrekt in Excel: Umlaute und Sonderzeichen (ä, ö, ü, ß) werden nicht mehr verstümmelt.",
     "Eingefügte Bilder und Screenshots werden jetzt zuverlässig erfasst, auch im neuen Layout von teams.cloud.microsoft, wo zuvor viele fehlten.",
     "Screenshots werden direkt ins HTML-Transkript eingebettet: Bilder erscheinen inline im Export, nicht nur als Links.",

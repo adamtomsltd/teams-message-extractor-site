@@ -10,11 +10,13 @@
   },
   {
    "type": "h2",
-   "text": "Nieuw in 2.8.1"
+   "text": "Nieuw in 2.9.0"
   },
   {
    "type": "ul",
    "items": [
+    "Nieuw: extractie van kanaalberichten (posts). Threads worden geëxporteerd met alle geneste reacties, inclusief onderwerp en threadstructuur.",
+    "Nieuwe Markdown-export, ideaal om in notities, wiki's of AI-tools te plakken.",
     "CSV-export opent nu correct in Excel: letters met accenten (é, ë, ü, ç) worden niet meer verhaspeld.",
     "Geplakte afbeeldingen en schermafbeeldingen worden nu betrouwbaar vastgelegd, ook in de nieuwe lay-out van teams.cloud.microsoft, waar er voorheen veel werden gemist.",
     "Schermafbeeldingen worden rechtstreeks in het HTML-transcript ingesloten: afbeeldingen verschijnen inline in de export, niet alleen als link.",

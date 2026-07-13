@@ -10,11 +10,13 @@
   },
   {
    "type": "h2",
-   "text": "Novità nella versione 2.8.1"
+   "text": "Novità nella versione 2.9.0"
   },
   {
    "type": "ul",
    "items": [
+    "Novità: estrazione dei post dei canali. Le conversazioni a thread vengono esportate con tutte le risposte annidate, oggetto e struttura del thread inclusi.",
+    "Nuova esportazione in Markdown, ideale da incollare in note, wiki o strumenti di IA.",
     "L'esportazione CSV ora si apre correttamente in Excel: i caratteri accentati (à, è, ì, ò, ù) non risultano più corrotti.",
     "Le immagini e gli screenshot incollati ora vengono acquisiti in modo affidabile, anche nel nuovo layout teams.cloud.microsoft, dove prima molti andavano persi.",
     "Gli screenshot sono incorporati direttamente nella trascrizione HTML: le immagini compaiono nel corpo dell'esportazione, non solo come link.",
