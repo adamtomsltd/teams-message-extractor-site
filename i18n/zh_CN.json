@@ -54,5 +54,22 @@
   "fq_q4_p": "扩展程序会在本地记录首次安装的时间。在公告之前安装的用户将自动获得优惠的早期支持者价格。这一过程中没有任何信息离开您的设备，详情请参阅<a href=\"privacy.html\">隐私政策</a>。",
   "fq_q5_h": "有疑问？",
   "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-  "idx_shots_h": "界面预览"
+  "idx_shots_h": "界面预览",
+  "cc_title": "Cookie 同意",
+  "cc_desc": "本网站使用 Google Analytics 统计访问量。只有在您同意后才会设置分析 Cookie。",
+  "cc_policy": "隐私政策",
+  "cc_accept": "全部接受",
+  "cc_essential": "仅必要",
+  "cc_more": "更多设置",
+  "cc_modal_title": "Cookie 设置",
+  "cc_modal_desc": "选择本网站可以使用哪些 Cookie。您可以随时通过页脚的“Cookie 设置”链接更改选择。",
+  "cc_save": "保存设置",
+  "cc_nec_name": "严格必要",
+  "cc_nec_desc": "网站运行所必需（例如记住您的 Cookie 选择）。始终启用。",
+  "cc_stats_name": "统计",
+  "cc_stats_desc": "Google Analytics——统计访问量和流量来源，帮助我们改进网站。",
+  "cc_always": "始终启用",
+  "cc_footer": "Cookie 设置",
+  "pp_s8_h": "本网站的 Cookie 与分析",
+  "pp_s8_p": "上述政策针对浏览器扩展程序，扩展程序本身不收集任何分析数据。本网站（adamtomsltd.github.io）使用 Google Analytics 统计访问量并了解哪些页面有用。只有在您于 Cookie 横幅中同意后才会设置分析 Cookie；您可以随时通过每页底部的“Cookie 设置”链接更改选择。如果拒绝，则不会设置任何分析 Cookie。"
 }

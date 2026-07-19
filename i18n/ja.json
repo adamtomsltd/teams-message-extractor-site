@@ -54,5 +54,22 @@
   "fq_q4_p": "本拡張機能は、最初にインストールされた日時をローカルに記録しています。告知より前にインストールされた場合は、割引されたアーリーサポーター価格が自動的に提供されます。この情報がデバイスの外に出ることはありません。詳しくは<a href=\"privacy.html\">プライバシーポリシー</a>をご覧ください。",
   "fq_q5_h": "ご質問はこちら",
   "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-  "idx_shots_h": "実際の画面"
+  "idx_shots_h": "実際の画面",
+  "cc_title": "Cookieの同意",
+  "cc_desc": "本サイトは訪問数の計測にGoogle Analyticsを使用しています。分析用Cookieは同意された場合にのみ設定されます。",
+  "cc_policy": "プライバシーポリシー",
+  "cc_accept": "すべて同意",
+  "cc_essential": "必須のみ",
+  "cc_more": "詳細設定",
+  "cc_modal_title": "Cookie設定",
+  "cc_modal_desc": "本サイトが使用できるCookieを選択してください。選択はページ下部の「Cookie設定」リンクからいつでも変更できます。",
+  "cc_save": "設定を保存",
+  "cc_nec_name": "必須Cookie",
+  "cc_nec_desc": "サイトの動作に必要です（例：Cookieの選択内容の記憶）。常に有効です。",
+  "cc_stats_name": "統計",
+  "cc_stats_desc": "Google Analytics — 訪問数と流入元を計測し、サイト改善に役立てます。",
+  "cc_always": "常に有効",
+  "cc_footer": "Cookie設定",
+  "pp_s8_h": "本サイトにおけるCookieと分析について",
+  "pp_s8_p": "上記のポリシーはブラウザ拡張機能に関するもので、拡張機能自体は分析データを一切収集しません。本サイト（adamtomsltd.github.io）は、訪問数の計測とどのページが役立っているかの把握のためにGoogle Analyticsを使用しています。分析用CookieはCookieバナーで同意された場合にのみ設定され、各ページ下部の「Cookie設定」リンクからいつでも変更できます。同意しない場合、分析用Cookieは設定されません。"
 }

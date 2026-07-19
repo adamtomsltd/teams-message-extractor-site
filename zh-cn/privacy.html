@@ -86,11 +86,41 @@
   </ul>
   <h2>未来的付费功能</h2>
   <p>计划在未来的更新中推出付费版本（参见<a href="paid-model.html">付费模式常见问题</a>）。届时若您激活许可证，<em>仅</em>会将您的许可证密钥和一个随机生成的匿名安装标识符发送给我们的支付和许可服务提供商 Lemon Squeezy 以验证许可证。支付信息完全由 Lemon Squeezy 依据<a href="https://www.lemonsqueezy.com/privacy" rel="noopener">其隐私政策</a>处理；扩展程序绝不会接触您的支付信息。您的 Teams 消息内容将继续仅在您的设备上处理。任何此类变更生效之前，本政策将先行更新。</p>
+  <h2 id="cookies">本网站的 Cookie 与分析</h2>
+  <p>上述政策针对浏览器扩展程序，扩展程序本身不收集任何分析数据。本网站（adamtomsltd.github.io）使用 Google Analytics 统计访问量并了解哪些页面有用。只有在您于 Cookie 横幅中同意后才会设置分析 Cookie；您可以随时通过每页底部的“Cookie 设置”链接更改选择。如果拒绝，则不会设置任何分析 Cookie。</p>
   <h2>本政策的变更</h2>
   <p>重大变更将在扩展程序的版本说明中公布，并以新的生效日期反映在本页面上。</p>
   <h2>联系方式</h2>
   <p>Adam Toms Ltd：<a href="mailto:adamltoms@gmail.com">adamltoms@gmail.com</a></p>
 </main>
-<footer>© Adam Toms Ltd. Microsoft Teams 是 Microsoft Corporation 的商标。本扩展程序不隶属于 Microsoft，也未获得 Microsoft 认可。</footer>
+<footer>© Adam Toms Ltd. Microsoft Teams 是 Microsoft Corporation 的商标。本扩展程序不隶属于 Microsoft，也未获得 Microsoft 认可。 · <button id="cc-open" class="cc-footer-link" type="button">Cookie 设置</button></footer>
+<div id="cc-banner" class="cc-banner" hidden role="region" aria-label="Cookie 同意">
+  <div class="cc-inner">
+    <p class="cc-text"><strong>Cookie 同意</strong><br>本网站使用 Google Analytics 统计访问量。只有在您同意后才会设置分析 Cookie。 <a href="privacy.html#cookies">隐私政策</a></p>
+    <div class="cc-actions">
+      <button id="cc-accept" class="cc-btn cc-primary" type="button">全部接受</button>
+      <button id="cc-essential" class="cc-btn" type="button">仅必要</button>
+      <button id="cc-more" class="cc-btn" type="button">更多设置</button>
+    </div>
+  </div>
+</div>
+<div id="cc-modal" class="cc-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="cc-modal-title">
+  <div class="cc-dialog">
+    <h2 id="cc-modal-title">Cookie 设置</h2>
+    <p>选择本网站可以使用哪些 Cookie。您可以随时通过页脚的“Cookie 设置”链接更改选择。</p>
+    <div class="cc-group">
+      <div class="cc-group-head"><strong>严格必要</strong><span class="cc-always">始终启用</span></div>
+      <p>网站运行所必需（例如记住您的 Cookie 选择）。始终启用。</p>
+    </div>
+    <div class="cc-group">
+      <div class="cc-group-head"><strong>统计</strong><label class="cc-switch"><input type="checkbox" id="cc-stats" aria-label="统计"><span></span></label></div>
+      <p>Google Analytics——统计访问量和流量来源，帮助我们改进网站。</p>
+    </div>
+    <div class="cc-actions">
+      <button id="cc-save" class="cc-btn cc-primary" type="button">保存设置</button>
+    </div>
+  </div>
+</div>
+<script src="../consent.js" defer></script>
 </body>
 </html>

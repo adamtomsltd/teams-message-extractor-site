@@ -54,5 +54,22 @@
   "fq_q4_p": "L'estensione registra localmente la data della prima installazione. Alle installazioni precedenti all'annuncio verrà offerto automaticamente il prezzo scontato riservato ai primi sostenitori. Nulla di tutto ciò lascia il tuo dispositivo (consulta l'<a href=\"privacy.html\">informativa sulla privacy</a>).",
   "fq_q5_h": "Domande?",
   "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-  "idx_shots_h": "Guardalo in azione"
+  "idx_shots_h": "Guardalo in azione",
+  "cc_title": "Consenso ai cookie",
+  "cc_desc": "Questo sito utilizza Google Analytics per contare le visite. I cookie di analisi vengono impostati solo se li accetti.",
+  "cc_policy": "Informativa sulla privacy",
+  "cc_accept": "Accetta tutti",
+  "cc_essential": "Solo essenziali",
+  "cc_more": "Altre impostazioni",
+  "cc_modal_title": "Impostazioni dei cookie",
+  "cc_modal_desc": "Scegli quali cookie questo sito può utilizzare. Puoi cambiare la tua scelta in qualsiasi momento tramite il link «Impostazioni dei cookie» a fondo pagina.",
+  "cc_save": "Salva impostazioni",
+  "cc_nec_name": "Strettamente necessari",
+  "cc_nec_desc": "Necessari al funzionamento del sito (ad esempio per ricordare la tua scelta sui cookie). Sempre attivi.",
+  "cc_stats_name": "Statistiche",
+  "cc_stats_desc": "Google Analytics: conta le visite e le sorgenti di traffico per aiutarci a migliorare il sito.",
+  "cc_always": "Sempre attivi",
+  "cc_footer": "Impostazioni dei cookie",
+  "pp_s8_h": "Cookie e analisi su questo sito",
+  "pp_s8_p": "L'informativa qui sopra riguarda l'estensione del browser, che non raccoglie alcun dato analitico. Questo sito web (adamtomsltd.github.io) utilizza Google Analytics per contare le visite e capire quali pagine sono utili. I cookie di analisi vengono impostati solo se li accetti nel banner dei cookie; puoi cambiare la tua scelta in qualsiasi momento con il link «Impostazioni dei cookie» in fondo a ogni pagina. Se rifiuti, non viene impostato alcun cookie di analisi."
 }

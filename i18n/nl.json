@@ -54,5 +54,22 @@
   "fq_q4_p": "De extensie legt lokaal vast wanneer deze voor het eerst is geïnstalleerd. Installaties van vóór de aankondiging krijgen automatisch de early-supporter-prijs met korting aangeboden. Niets hiervan verlaat je apparaat; zie het <a href=\"privacy.html\">privacybeleid</a>.",
   "fq_q5_h": "Vragen?",
   "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-  "idx_shots_h": "Zo ziet het eruit"
+  "idx_shots_h": "Zo ziet het eruit",
+  "cc_title": "Cookietoestemming",
+  "cc_desc": "Deze website gebruikt Google Analytics om bezoeken te tellen. Analysecookies worden alleen geplaatst als u ze accepteert.",
+  "cc_policy": "Privacybeleid",
+  "cc_accept": "Alles accepteren",
+  "cc_essential": "Alleen essentieel",
+  "cc_more": "Meer instellingen",
+  "cc_modal_title": "Cookie-instellingen",
+  "cc_modal_desc": "Kies welke cookies deze website mag gebruiken. U kunt uw keuze op elk moment wijzigen via de link 'Cookie-instellingen' onderaan de pagina.",
+  "cc_save": "Instellingen opslaan",
+  "cc_nec_name": "Strikt noodzakelijk",
+  "cc_nec_desc": "Nodig om de website te laten werken (bijvoorbeeld om uw cookiekeuze te onthouden). Altijd aan.",
+  "cc_stats_name": "Statistieken",
+  "cc_stats_desc": "Google Analytics — telt bezoeken en verkeersbronnen zodat we de site kunnen verbeteren.",
+  "cc_always": "Altijd aan",
+  "cc_footer": "Cookie-instellingen",
+  "pp_s8_h": "Cookies en analyse op deze website",
+  "pp_s8_p": "Het bovenstaande beleid gaat over de browserextensie, die zelf geen analysegegevens verzamelt. Deze website (adamtomsltd.github.io) gebruikt Google Analytics om bezoeken te tellen en te zien welke pagina's nuttig zijn. Analysecookies worden alleen geplaatst als u ze accepteert in de cookiebanner; u kunt uw keuze op elk moment wijzigen via de link 'Cookie-instellingen' onderaan elke pagina. Als u weigert, worden er geen analysecookies geplaatst."
 }

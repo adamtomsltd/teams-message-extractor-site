@@ -86,11 +86,41 @@
   </ul>
   <h2>향후 유료 기능</h2>
   <p>향후 업데이트에서 유료 등급이 도입될 예정입니다(<a href="paid-model.html">유료 모델 FAQ</a> 참조). 출시될 경우, 라이선스를 활성화하면 라이선스 키와 무작위로 생성된 익명 설치 식별자<em>만</em> 결제 및 라이선스 제공업체인 Lemon Squeezy로 전송되어 라이선스를 검증합니다. 결제 정보는 전적으로 Lemon Squeezy가 <a href="https://www.lemonsqueezy.com/privacy" rel="noopener">자체 개인정보 처리방침</a>에 따라 처리하며, 확장 프로그램은 결제 정보를 볼 수 없습니다. Teams 메시지 내용은 계속해서 사용자의 기기에서만 처리됩니다. 이러한 변경이 시행되기 전에 본 방침이 먼저 업데이트됩니다.</p>
+  <h2 id="cookies">이 웹사이트의 쿠키 및 분석</h2>
+  <p>위의 방침은 브라우저 확장 프로그램에 관한 것으로, 확장 프로그램 자체는 어떠한 분석 데이터도 수집하지 않습니다. 이 웹사이트(adamtomsltd.github.io)는 방문 수를 집계하고 어떤 페이지가 유용한지 파악하기 위해 Google Analytics를 사용합니다. 분석 쿠키는 쿠키 배너에서 동의한 경우에만 설정되며, 각 페이지 하단의 “쿠키 설정” 링크로 언제든지 선택을 변경할 수 있습니다. 거부하면 분석 쿠키는 설정되지 않습니다.</p>
   <h2>본 방침의 변경</h2>
   <p>중대한 변경 사항은 확장 프로그램의 릴리스 노트에 공지되며, 새로운 시행일과 함께 이 페이지에 반영됩니다.</p>
   <h2>문의</h2>
   <p>Adam Toms Ltd · <a href="mailto:adamltoms@gmail.com">adamltoms@gmail.com</a></p>
 </main>
-<footer>© Adam Toms Ltd. Microsoft Teams는 Microsoft Corporation의 상표입니다. 이 확장 프로그램은 Microsoft와 제휴하거나 승인받지 않았습니다.</footer>
+<footer>© Adam Toms Ltd. Microsoft Teams는 Microsoft Corporation의 상표입니다. 이 확장 프로그램은 Microsoft와 제휴하거나 승인받지 않았습니다. · <button id="cc-open" class="cc-footer-link" type="button">쿠키 설정</button></footer>
+<div id="cc-banner" class="cc-banner" hidden role="region" aria-label="쿠키 동의">
+  <div class="cc-inner">
+    <p class="cc-text"><strong>쿠키 동의</strong><br>이 웹사이트는 방문 수 집계를 위해 Google Analytics를 사용합니다. 분석 쿠키는 동의한 경우에만 설정됩니다. <a href="privacy.html#cookies">개인정보 처리방침</a></p>
+    <div class="cc-actions">
+      <button id="cc-accept" class="cc-btn cc-primary" type="button">모두 수락</button>
+      <button id="cc-essential" class="cc-btn" type="button">필수만 허용</button>
+      <button id="cc-more" class="cc-btn" type="button">추가 설정</button>
+    </div>
+  </div>
+</div>
+<div id="cc-modal" class="cc-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="cc-modal-title">
+  <div class="cc-dialog">
+    <h2 id="cc-modal-title">쿠키 설정</h2>
+    <p>이 사이트가 사용할 수 있는 쿠키를 선택하세요. 페이지 하단의 “쿠키 설정” 링크로 언제든지 변경할 수 있습니다.</p>
+    <div class="cc-group">
+      <div class="cc-group-head"><strong>필수 쿠키</strong><span class="cc-always">항상 사용</span></div>
+      <p>사이트 작동에 필요합니다(예: 쿠키 선택 기억). 항상 사용됩니다.</p>
+    </div>
+    <div class="cc-group">
+      <div class="cc-group-head"><strong>통계</strong><label class="cc-switch"><input type="checkbox" id="cc-stats" aria-label="통계"><span></span></label></div>
+      <p>Google Analytics — 방문 수와 유입 경로를 집계하여 사이트 개선에 활용합니다.</p>
+    </div>
+    <div class="cc-actions">
+      <button id="cc-save" class="cc-btn cc-primary" type="button">설정 저장</button>
+    </div>
+  </div>
+</div>
+<script src="../consent.js" defer></script>
 </body>
 </html>

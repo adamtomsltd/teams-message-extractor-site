@@ -86,11 +86,41 @@
   </ul>
   <h2>Futuras funciones de pago</h2>
   <p>Está previsto un nivel de pago en una actualización futura (consulta las <a href="paid-model.html">preguntas frecuentes sobre el modelo de pago</a>). Si llega a lanzarse, activar una licencia enviará <em>únicamente</em> tu clave de licencia y un identificador de instalación aleatorio y anónimo a nuestro proveedor de pagos y licencias, Lemon Squeezy, para validar la licencia. Los datos de pago los gestiona íntegramente Lemon Squeezy conforme a <a href="https://www.lemonsqueezy.com/privacy" rel="noopener">su política de privacidad</a>; la extensión nunca ve tu información de pago. El contenido de tus mensajes de Teams seguirá procesándose solo en tu dispositivo. Esta política se actualizará antes de que cualquier cambio de este tipo entre en vigor.</p>
+  <h2 id="cookies">Cookies y analítica en este sitio web</h2>
+  <p>La política anterior se refiere a la extensión del navegador, que no recopila ningún dato analítico. Este sitio web (adamtomsltd.github.io) utiliza Google Analytics para contar las visitas y saber qué páginas resultan útiles. Las cookies de análisis solo se instalan si las aceptas en el aviso de cookies; puedes cambiar tu elección en cualquier momento con el enlace «Configuración de cookies» al pie de cada página. Si las rechazas, no se instala ninguna cookie de análisis.</p>
   <h2>Cambios en esta política</h2>
   <p>Los cambios sustanciales se anunciarán en las notas de la versión de la extensión y se reflejarán en esta página con una nueva fecha de entrada en vigor.</p>
   <h2>Contacto</h2>
   <p>Adam Toms Ltd: <a href="mailto:adamltoms@gmail.com">adamltoms@gmail.com</a></p>
 </main>
-<footer>© Adam Toms Ltd. Microsoft Teams es una marca comercial de Microsoft Corporation. Esta extensión no está afiliada a Microsoft ni cuenta con su respaldo.</footer>
+<footer>© Adam Toms Ltd. Microsoft Teams es una marca comercial de Microsoft Corporation. Esta extensión no está afiliada a Microsoft ni cuenta con su respaldo. · <button id="cc-open" class="cc-footer-link" type="button">Configuración de cookies</button></footer>
+<div id="cc-banner" class="cc-banner" hidden role="region" aria-label="Consentimiento de cookies">
+  <div class="cc-inner">
+    <p class="cc-text"><strong>Consentimiento de cookies</strong><br>Este sitio web utiliza Google Analytics para contar las visitas. Las cookies de análisis solo se instalan si las aceptas. <a href="privacy.html#cookies">Política de privacidad</a></p>
+    <div class="cc-actions">
+      <button id="cc-accept" class="cc-btn cc-primary" type="button">Aceptar todo</button>
+      <button id="cc-essential" class="cc-btn" type="button">Solo esenciales</button>
+      <button id="cc-more" class="cc-btn" type="button">Más opciones</button>
+    </div>
+  </div>
+</div>
+<div id="cc-modal" class="cc-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="cc-modal-title">
+  <div class="cc-dialog">
+    <h2 id="cc-modal-title">Configuración de cookies</h2>
+    <p>Elige qué cookies puede usar este sitio. Puedes cambiar tu elección en cualquier momento mediante el enlace «Configuración de cookies» del pie de página.</p>
+    <div class="cc-group">
+      <div class="cc-group-head"><strong>Estrictamente necesarias</strong><span class="cc-always">Siempre activas</span></div>
+      <p>Necesarias para que el sitio funcione (por ejemplo, recordar tu elección de cookies). Siempre activas.</p>
+    </div>
+    <div class="cc-group">
+      <div class="cc-group-head"><strong>Estadísticas</strong><label class="cc-switch"><input type="checkbox" id="cc-stats" aria-label="Estadísticas"><span></span></label></div>
+      <p>Google Analytics: cuenta las visitas y las fuentes de tráfico para poder mejorar el sitio.</p>
+    </div>
+    <div class="cc-actions">
+      <button id="cc-save" class="cc-btn cc-primary" type="button">Guardar configuración</button>
+    </div>
+  </div>
+</div>
+<script src="../consent.js" defer></script>
 </body>
 </html>

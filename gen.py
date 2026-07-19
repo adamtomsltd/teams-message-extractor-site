@@ -81,8 +81,45 @@ def nav(t, code, page, here_prefix, css_prefix):
   </nav>
 </header>"""
 
-def foot(t):
-    return f"\n<footer>{t['footer']}</footer>\n</body>\n</html>\n"
+def consent_ui(t):
+    """Localized cookie banner + settings modal, wired up by consent.js.
+    Hidden by default; consent.js shows the banner only when no valid
+    consent cookie exists."""
+    return f"""
+<div id="cc-banner" class="cc-banner" hidden role="region" aria-label="{esc(t['cc_title'])}">
+  <div class="cc-inner">
+    <p class="cc-text"><strong>{t['cc_title']}</strong><br>{t['cc_desc']} <a href="privacy.html#cookies">{t['cc_policy']}</a></p>
+    <div class="cc-actions">
+      <button id="cc-accept" class="cc-btn cc-primary" type="button">{t['cc_accept']}</button>
+      <button id="cc-essential" class="cc-btn" type="button">{t['cc_essential']}</button>
+      <button id="cc-more" class="cc-btn" type="button">{t['cc_more']}</button>
+    </div>
+  </div>
+</div>
+<div id="cc-modal" class="cc-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="cc-modal-title">
+  <div class="cc-dialog">
+    <h2 id="cc-modal-title">{t['cc_modal_title']}</h2>
+    <p>{t['cc_modal_desc']}</p>
+    <div class="cc-group">
+      <div class="cc-group-head"><strong>{t['cc_nec_name']}</strong><span class="cc-always">{t['cc_always']}</span></div>
+      <p>{t['cc_nec_desc']}</p>
+    </div>
+    <div class="cc-group">
+      <div class="cc-group-head"><strong>{t['cc_stats_name']}</strong><label class="cc-switch"><input type="checkbox" id="cc-stats" aria-label="{esc(t['cc_stats_name'])}"><span></span></label></div>
+      <p>{t['cc_stats_desc']}</p>
+    </div>
+    <div class="cc-actions">
+      <button id="cc-save" class="cc-btn cc-primary" type="button">{t['cc_save']}</button>
+    </div>
+  </div>
+</div>"""
+
+def foot(t, css_prefix):
+    return (
+        f"\n<footer>{t['footer']} · <button id=\"cc-open\" class=\"cc-footer-link\" type=\"button\">{t['cc_footer']}</button></footer>"
+        + consent_ui(t)
+        + f'\n<script src="{css_prefix}consent.js" defer></script>\n</body>\n</html>\n'
+    )
 
 def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
@@ -147,6 +184,8 @@ def render_privacy(t, code):
   </ul>
   <h2>{t['pp_s5_h']}</h2>
   <p>{t['pp_s5_p']}</p>
+  <h2 id="cookies">{t['pp_s8_h']}</h2>
+  <p>{t['pp_s8_p']}</p>
   <h2>{t['pp_s6_h']}</h2>
   <p>{t['pp_s6_p']}</p>
   <h2>{t['pp_s7_h']}</h2>
@@ -197,7 +236,7 @@ for c, (d, lang, rtl, flag) in LOCALES.items():
             head(t, TITLE[page](t), c, page, css_prefix)
             + nav(t, c, page, here_prefix, css_prefix)
             + RENDER[page](t, c)
-            + foot(t)
+            + foot(t, css_prefix)
         )
         assert "{{" not in html and "None" not in html.replace("noNone", "")
         with io.open(os.path.join(outdir, page), "w", encoding="utf-8") as f:

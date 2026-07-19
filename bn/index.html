@@ -116,6 +116,34 @@
   <h2>সহায়তা</h2>
   <p>প্রশ্ন, বাগ রিপোর্ট বা ফিচারের অনুরোধ: <a href="mailto:adamltoms@gmail.com">adamltoms@gmail.com</a></p>
 </main>
-<footer>© Adam Toms Ltd. Microsoft Teams হল Microsoft Corporation-এর একটি ট্রেডমার্ক। এই এক্সটেনশনটি Microsoft-এর সাথে যুক্ত বা এর দ্বারা অনুমোদিত নয়।</footer>
+<footer>© Adam Toms Ltd. Microsoft Teams হল Microsoft Corporation-এর একটি ট্রেডমার্ক। এই এক্সটেনশনটি Microsoft-এর সাথে যুক্ত বা এর দ্বারা অনুমোদিত নয়। · <button id="cc-open" class="cc-footer-link" type="button">কুকি সেটিংস</button></footer>
+<div id="cc-banner" class="cc-banner" hidden role="region" aria-label="কুকি সম্মতি">
+  <div class="cc-inner">
+    <p class="cc-text"><strong>কুকি সম্মতি</strong><br>এই ওয়েবসাইট ভিজিট গণনার জন্য Google Analytics ব্যবহার করে। অ্যানালিটিক্স কুকি শুধুমাত্র আপনার সম্মতিতে সেট করা হয়। <a href="privacy.html#cookies">গোপনীয়তা নীতি</a></p>
+    <div class="cc-actions">
+      <button id="cc-accept" class="cc-btn cc-primary" type="button">সব গ্রহণ করুন</button>
+      <button id="cc-essential" class="cc-btn" type="button">শুধু অপরিহার্য</button>
+      <button id="cc-more" class="cc-btn" type="button">আরও সেটিংস</button>
+    </div>
+  </div>
+</div>
+<div id="cc-modal" class="cc-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="cc-modal-title">
+  <div class="cc-dialog">
+    <h2 id="cc-modal-title">কুকি সেটিংস</h2>
+    <p>এই ওয়েবসাইট কোন কুকি ব্যবহার করতে পারবে তা বেছে নিন। পৃষ্ঠার নিচে “কুকি সেটিংস” লিঙ্ক থেকে আপনি যেকোনো সময় আপনার পছন্দ পরিবর্তন করতে পারেন।</p>
+    <div class="cc-group">
+      <div class="cc-group-head"><strong>কঠোরভাবে প্রয়োজনীয়</strong><span class="cc-always">সর্বদা চালু</span></div>
+      <p>ওয়েবসাইট চালানোর জন্য প্রয়োজন (যেমন আপনার কুকি পছন্দ মনে রাখা)। সর্বদা চালু।</p>
+    </div>
+    <div class="cc-group">
+      <div class="cc-group-head"><strong>পরিসংখ্যান</strong><label class="cc-switch"><input type="checkbox" id="cc-stats" aria-label="পরিসংখ্যান"><span></span></label></div>
+      <p>Google Analytics — ভিজিট ও ট্রাফিকের উৎস গণনা করে যাতে আমরা সাইটটি উন্নত করতে পারি।</p>
+    </div>
+    <div class="cc-actions">
+      <button id="cc-save" class="cc-btn cc-primary" type="button">সেটিংস সংরক্ষণ করুন</button>
+    </div>
+  </div>
+</div>
+<script src="../consent.js" defer></script>
 </body>
 </html>

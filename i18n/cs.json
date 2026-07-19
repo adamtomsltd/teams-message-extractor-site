@@ -54,5 +54,22 @@
   "fq_q4_p": "Rozšíření si lokálně zaznamenává, kdy bylo poprvé nainstalováno. Instalacím starším než oznámení bude automaticky nabídnuta zvýhodněná cena pro první podporovatele. Nic z toho neopustí vaše zařízení. Viz <a href=\"privacy.html\">zásady ochrany osobních údajů</a>.",
   "fq_q5_h": "Otázky?",
   "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-  "idx_shots_h": "Podívejte se, jak funguje"
+  "idx_shots_h": "Podívejte se, jak funguje",
+  "cc_title": "Souhlas s cookies",
+  "cc_desc": "Tento web používá Google Analytics k počítání návštěv. Analytické cookies se ukládají pouze s vaším souhlasem.",
+  "cc_policy": "Zásady ochrany osobních údajů",
+  "cc_accept": "Přijmout vše",
+  "cc_essential": "Pouze nezbytné",
+  "cc_more": "Další nastavení",
+  "cc_modal_title": "Nastavení cookies",
+  "cc_modal_desc": "Zvolte, které cookies smí tento web používat. Svou volbu můžete kdykoli změnit pomocí odkazu „Nastavení cookies“ v zápatí.",
+  "cc_save": "Uložit nastavení",
+  "cc_nec_name": "Nezbytně nutné",
+  "cc_nec_desc": "Nutné pro fungování webu (např. zapamatování vaší volby cookies). Vždy zapnuto.",
+  "cc_stats_name": "Statistika",
+  "cc_stats_desc": "Google Analytics — počítá návštěvy a zdroje návštěvnosti, abychom mohli web zlepšovat.",
+  "cc_always": "Vždy zapnuto",
+  "cc_footer": "Nastavení cookies",
+  "pp_s8_h": "Cookies a analytika na tomto webu",
+  "pp_s8_p": "Výše uvedené zásady se týkají rozšíření prohlížeče, které žádná analytická data nesbírá. Tento web (adamtomsltd.github.io) používá Google Analytics k počítání návštěv a zjišťování, které stránky jsou užitečné. Analytické cookies se ukládají pouze poté, co je přijmete v cookie liště; svou volbu můžete kdykoli změnit pomocí odkazu „Nastavení cookies“ v zápatí každé stránky. Pokud odmítnete, žádné analytické cookies se neuloží."
 }

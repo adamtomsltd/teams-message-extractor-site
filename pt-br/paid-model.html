@@ -73,6 +73,34 @@
   <h2>Dúvidas?</h2>
   <p><a href="mailto:adamltoms@gmail.com">adamltoms@gmail.com</a></p>
 </main>
-<footer>© Adam Toms Ltd. Microsoft Teams é uma marca registrada da Microsoft Corporation. Esta extensão não é afiliada à Microsoft nem endossada por ela.</footer>
+<footer>© Adam Toms Ltd. Microsoft Teams é uma marca registrada da Microsoft Corporation. Esta extensão não é afiliada à Microsoft nem endossada por ela. · <button id="cc-open" class="cc-footer-link" type="button">Configurações de cookies</button></footer>
+<div id="cc-banner" class="cc-banner" hidden role="region" aria-label="Consentimento de cookies">
+  <div class="cc-inner">
+    <p class="cc-text"><strong>Consentimento de cookies</strong><br>Este site usa o Google Analytics para contar visitas. Os cookies de análise só são definidos se você aceitá-los. <a href="privacy.html#cookies">Política de privacidade</a></p>
+    <div class="cc-actions">
+      <button id="cc-accept" class="cc-btn cc-primary" type="button">Aceitar todos</button>
+      <button id="cc-essential" class="cc-btn" type="button">Apenas essenciais</button>
+      <button id="cc-more" class="cc-btn" type="button">Mais configurações</button>
+    </div>
+  </div>
+</div>
+<div id="cc-modal" class="cc-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="cc-modal-title">
+  <div class="cc-dialog">
+    <h2 id="cc-modal-title">Configurações de cookies</h2>
+    <p>Escolha quais cookies este site pode usar. Você pode alterar sua escolha a qualquer momento pelo link “Configurações de cookies” no rodapé.</p>
+    <div class="cc-group">
+      <div class="cc-group-head"><strong>Estritamente necessários</strong><span class="cc-always">Sempre ativos</span></div>
+      <p>Necessários para o funcionamento do site (por exemplo, lembrar sua escolha de cookies). Sempre ativos.</p>
+    </div>
+    <div class="cc-group">
+      <div class="cc-group-head"><strong>Estatísticas</strong><label class="cc-switch"><input type="checkbox" id="cc-stats" aria-label="Estatísticas"><span></span></label></div>
+      <p>Google Analytics — conta visitas e fontes de tráfego para que possamos melhorar o site.</p>
+    </div>
+    <div class="cc-actions">
+      <button id="cc-save" class="cc-btn cc-primary" type="button">Salvar configurações</button>
+    </div>
+  </div>
+</div>
+<script src="../consent.js" defer></script>
 </body>
 </html>

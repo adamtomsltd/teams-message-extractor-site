@@ -54,5 +54,22 @@
   "fq_q4_p": "Udvidelsen registrerer lokalt, hvornår den først blev installeret. Installationer fra før annonceringen tilbydes automatisk den rabatterede pris som tak for tidlig støtte. Intet af dette forlader din enhed; se <a href=\"privacy.html\">privatlivspolitikken</a>.",
   "fq_q5_h": "Spørgsmål?",
   "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-  "idx_shots_h": "Se det i brug"
+  "idx_shots_h": "Se det i brug",
+  "cc_title": "Cookiesamtykke",
+  "cc_desc": "Denne hjemmeside bruger Google Analytics til at tælle besøg. Analysecookies sættes kun, hvis du accepterer dem.",
+  "cc_policy": "Privatlivspolitik",
+  "cc_accept": "Accepter alle",
+  "cc_essential": "Kun nødvendige",
+  "cc_more": "Flere indstillinger",
+  "cc_modal_title": "Cookieindstillinger",
+  "cc_modal_desc": "Vælg hvilke cookies denne hjemmeside må bruge. Du kan til enhver tid ændre dit valg via linket ”Cookieindstillinger” i sidefoden.",
+  "cc_save": "Gem indstillinger",
+  "cc_nec_name": "Strengt nødvendige",
+  "cc_nec_desc": "Kræves for at hjemmesiden fungerer (f.eks. for at huske dit cookievalg). Altid slået til.",
+  "cc_stats_name": "Statistik",
+  "cc_stats_desc": "Google Analytics — tæller besøg og trafikkilder, så vi kan forbedre siden.",
+  "cc_always": "Altid slået til",
+  "cc_footer": "Cookieindstillinger",
+  "pp_s8_h": "Cookies og analyse på denne hjemmeside",
+  "pp_s8_p": "Politikken ovenfor gælder browserudvidelsen, som ikke indsamler analysedata. Denne hjemmeside (adamtomsltd.github.io) bruger Google Analytics til at tælle besøg og se, hvilke sider der er nyttige. Analysecookies sættes kun, hvis du accepterer dem i cookiebanneret; du kan til enhver tid ændre dit valg via linket ”Cookieindstillinger” nederst på hver side. Hvis du afviser, sættes der ingen analysecookies."
 }

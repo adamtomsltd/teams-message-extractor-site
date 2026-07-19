@@ -54,5 +54,22 @@
   "fq_q4_p": "A extensão registra localmente quando foi instalada pela primeira vez. Instalações anteriores ao anúncio receberão automaticamente a oferta do preço com desconto de apoiador inicial. Nada disso sai do seu dispositivo; consulte a <a href=\"privacy.html\">política de privacidade</a>.",
   "fq_q5_h": "Dúvidas?",
   "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-  "idx_shots_h": "Veja em ação"
+  "idx_shots_h": "Veja em ação",
+  "cc_title": "Consentimento de cookies",
+  "cc_desc": "Este site usa o Google Analytics para contar visitas. Os cookies de análise só são definidos se você aceitá-los.",
+  "cc_policy": "Política de privacidade",
+  "cc_accept": "Aceitar todos",
+  "cc_essential": "Apenas essenciais",
+  "cc_more": "Mais configurações",
+  "cc_modal_title": "Configurações de cookies",
+  "cc_modal_desc": "Escolha quais cookies este site pode usar. Você pode alterar sua escolha a qualquer momento pelo link “Configurações de cookies” no rodapé.",
+  "cc_save": "Salvar configurações",
+  "cc_nec_name": "Estritamente necessários",
+  "cc_nec_desc": "Necessários para o funcionamento do site (por exemplo, lembrar sua escolha de cookies). Sempre ativos.",
+  "cc_stats_name": "Estatísticas",
+  "cc_stats_desc": "Google Analytics — conta visitas e fontes de tráfego para que possamos melhorar o site.",
+  "cc_always": "Sempre ativos",
+  "cc_footer": "Configurações de cookies",
+  "pp_s8_h": "Cookies e análise neste site",
+  "pp_s8_p": "A política acima trata da extensão do navegador, que não coleta nenhum dado de análise. Este site (adamtomsltd.github.io) usa o Google Analytics para contar visitas e ver quais páginas são úteis. Os cookies de análise só são definidos se você aceitá-los no banner de cookies; você pode alterar sua escolha a qualquer momento pelo link “Configurações de cookies” no rodapé de cada página. Se recusar, nenhum cookie de análise será definido."
 }

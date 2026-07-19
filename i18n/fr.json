@@ -54,5 +54,22 @@
   "fq_q4_p": "L'extension enregistre localement la date de sa première installation. Les installations antérieures à l'annonce se verront automatiquement proposer le tarif réduit « premiers soutiens ». Rien de tout cela ne quitte votre appareil (voir la <a href=\"privacy.html\">politique de confidentialité</a>).",
   "fq_q5_h": "Des questions ?",
   "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-  "idx_shots_h": "Aperçu en images"
+  "idx_shots_h": "Aperçu en images",
+  "cc_title": "Consentement aux cookies",
+  "cc_desc": "Ce site utilise Google Analytics pour compter les visites. Les cookies d'analyse ne sont déposés que si vous les acceptez.",
+  "cc_policy": "Politique de confidentialité",
+  "cc_accept": "Tout accepter",
+  "cc_essential": "Essentiels uniquement",
+  "cc_more": "Plus d'options",
+  "cc_modal_title": "Paramètres des cookies",
+  "cc_modal_desc": "Choisissez les cookies que ce site peut utiliser. Vous pouvez modifier votre choix à tout moment via le lien « Paramètres des cookies » en bas de page.",
+  "cc_save": "Enregistrer les paramètres",
+  "cc_nec_name": "Strictement nécessaires",
+  "cc_nec_desc": "Indispensables au fonctionnement du site (par exemple, mémoriser votre choix de cookies). Toujours actifs.",
+  "cc_stats_name": "Statistiques",
+  "cc_stats_desc": "Google Analytics — compte les visites et les sources de trafic afin d'améliorer le site.",
+  "cc_always": "Toujours actifs",
+  "cc_footer": "Paramètres des cookies",
+  "pp_s8_h": "Cookies et mesure d'audience sur ce site",
+  "pp_s8_p": "La politique ci-dessus concerne l'extension de navigateur, qui ne collecte aucune donnée d'analyse. Ce site web (adamtomsltd.github.io) utilise Google Analytics pour compter les visites et identifier les pages utiles. Les cookies d'analyse ne sont déposés que si vous les acceptez via le bandeau de cookies ; vous pouvez modifier votre choix à tout moment grâce au lien « Paramètres des cookies » en bas de chaque page. Si vous refusez, aucun cookie d'analyse n'est déposé."
 }

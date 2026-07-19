@@ -54,5 +54,22 @@
   "fq_q4_p": "Rozszerzenie lokalnie zapisuje datę pierwszej instalacji. Instalacjom sprzed ogłoszenia automatycznie zostanie zaoferowana zniżkowa cena dla wczesnych użytkowników. Żadne z tych danych nie opuszczają Twojego urządzenia. Zobacz <a href=\"privacy.html\">politykę prywatności</a>.",
   "fq_q5_h": "Pytania?",
   "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-  "idx_shots_h": "Zobacz, jak działa"
+  "idx_shots_h": "Zobacz, jak działa",
+  "cc_title": "Zgoda na pliki cookie",
+  "cc_desc": "Ta strona używa Google Analytics do zliczania odwiedzin. Pliki cookie do analityki są zapisywane tylko za Twoją zgodą.",
+  "cc_policy": "Polityka prywatności",
+  "cc_accept": "Zaakceptuj wszystkie",
+  "cc_essential": "Tylko niezbędne",
+  "cc_more": "Więcej ustawień",
+  "cc_modal_title": "Ustawienia plików cookie",
+  "cc_modal_desc": "Wybierz, których plików cookie może używać ta strona. Możesz zmienić swój wybór w dowolnym momencie za pomocą linku „Ustawienia plików cookie” w stopce.",
+  "cc_save": "Zapisz ustawienia",
+  "cc_nec_name": "Ściśle niezbędne",
+  "cc_nec_desc": "Wymagane do działania strony (np. zapamiętanie Twojego wyboru dotyczącego cookie). Zawsze włączone.",
+  "cc_stats_name": "Statystyka",
+  "cc_stats_desc": "Google Analytics — zlicza odwiedziny i źródła ruchu, abyśmy mogli ulepszać stronę.",
+  "cc_always": "Zawsze włączone",
+  "cc_footer": "Ustawienia plików cookie",
+  "pp_s8_h": "Pliki cookie i analityka na tej stronie",
+  "pp_s8_p": "Powyższa polityka dotyczy rozszerzenia przeglądarki, które nie zbiera żadnych danych analitycznych. Ta strona internetowa (adamtomsltd.github.io) używa Google Analytics do zliczania odwiedzin i sprawdzania, które podstrony są przydatne. Pliki cookie do analityki są zapisywane tylko po ich zaakceptowaniu w banerze cookie; swój wybór możesz zmienić w każdej chwili za pomocą linku „Ustawienia plików cookie” w stopce każdej strony. Jeśli odmówisz, żadne pliki cookie do analityki nie zostaną zapisane."
 }

@@ -54,5 +54,22 @@
   "fq_q4_p": "Die Erweiterung speichert lokal, wann sie erstmals installiert wurde. Wer sie schon vor der Ankündigung installiert hat, erhält automatisch den vergünstigten Frühunterstützer-Preis angeboten. Nichts davon verlässt Ihr Gerät; siehe die <a href=\"privacy.html\">Datenschutzerklärung</a>.",
   "fq_q5_h": "Fragen?",
   "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-  "idx_shots_h": "So sieht es aus"
+  "idx_shots_h": "So sieht es aus",
+  "cc_title": "Cookie-Einwilligung",
+  "cc_desc": "Diese Website verwendet Google Analytics, um Besuche zu zählen. Analyse-Cookies werden nur gesetzt, wenn Sie zustimmen.",
+  "cc_policy": "Datenschutzerklärung",
+  "cc_accept": "Alle akzeptieren",
+  "cc_essential": "Nur notwendige",
+  "cc_more": "Weitere Einstellungen",
+  "cc_modal_title": "Cookie-Einstellungen",
+  "cc_modal_desc": "Wählen Sie, welche Cookies diese Website verwenden darf. Sie können Ihre Auswahl jederzeit über den Link „Cookie-Einstellungen“ in der Fußzeile ändern.",
+  "cc_save": "Einstellungen speichern",
+  "cc_nec_name": "Unbedingt erforderlich",
+  "cc_nec_desc": "Erforderlich für die Funktion der Website (z. B. um Ihre Cookie-Auswahl zu speichern). Immer aktiv.",
+  "cc_stats_name": "Statistik",
+  "cc_stats_desc": "Google Analytics — zählt Besuche und Zugriffsquellen, damit wir die Website verbessern können.",
+  "cc_always": "Immer aktiv",
+  "cc_footer": "Cookie-Einstellungen",
+  "pp_s8_h": "Cookies und Analyse auf dieser Website",
+  "pp_s8_p": "Die obige Erklärung betrifft die Browser-Erweiterung, die selbst keinerlei Analysedaten erhebt. Diese Website (adamtomsltd.github.io) verwendet Google Analytics, um Besuche zu zählen und zu sehen, welche Seiten hilfreich sind. Analyse-Cookies werden nur gesetzt, wenn Sie ihnen im Cookie-Banner zustimmen; Ihre Auswahl können Sie jederzeit über den Link „Cookie-Einstellungen“ in der Fußzeile jeder Seite ändern. Wenn Sie ablehnen, werden keine Analyse-Cookies gesetzt."
 }

@@ -54,5 +54,22 @@
   "fq_q4_p": "擴充功能會在本機記錄首次安裝的時間。在公告日期之前安裝的使用者將自動獲得優惠的早期支持者價格。這些資料絕不會離開您的裝置，詳情請參閱<a href=\"privacy.html\">隱私權政策</a>。",
   "fq_q5_h": "有其他問題嗎？",
   "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
-  "idx_shots_h": "介面預覽"
+  "idx_shots_h": "介面預覽",
+  "cc_title": "Cookie 同意",
+  "cc_desc": "本網站使用 Google Analytics 統計造訪次數。只有在您同意後才會設定分析 Cookie。",
+  "cc_policy": "隱私權政策",
+  "cc_accept": "全部接受",
+  "cc_essential": "僅必要",
+  "cc_more": "更多設定",
+  "cc_modal_title": "Cookie 設定",
+  "cc_modal_desc": "選擇本網站可以使用哪些 Cookie。您可以隨時透過頁尾的「Cookie 設定」連結變更選擇。",
+  "cc_save": "儲存設定",
+  "cc_nec_name": "絕對必要",
+  "cc_nec_desc": "網站運作所必需（例如記住您的 Cookie 選擇）。永遠啟用。",
+  "cc_stats_name": "統計",
+  "cc_stats_desc": "Google Analytics——統計造訪次數與流量來源，協助我們改進網站。",
+  "cc_always": "永遠啟用",
+  "cc_footer": "Cookie 設定",
+  "pp_s8_h": "本網站的 Cookie 與分析",
+  "pp_s8_p": "上述政策針對瀏覽器擴充功能，擴充功能本身不會收集任何分析資料。本網站（adamtomsltd.github.io）使用 Google Analytics 統計造訪次數並了解哪些頁面有幫助。只有在您於 Cookie 橫幅中同意後才會設定分析 Cookie；您可以隨時透過每頁底部的「Cookie 設定」連結變更選擇。如果拒絕，就不會設定任何分析 Cookie。"
 }

@@ -116,6 +116,34 @@
   <h2>Support</h2>
   <p>Questions, bug reports, or feature requests: <a href="mailto:adamltoms@gmail.com">adamltoms@gmail.com</a></p>
 </main>
-<footer>© Adam Toms Ltd. Microsoft Teams is a trademark of Microsoft Corporation. This extension is not affiliated with or endorsed by Microsoft.</footer>
+<footer>© Adam Toms Ltd. Microsoft Teams is a trademark of Microsoft Corporation. This extension is not affiliated with or endorsed by Microsoft. · <button id="cc-open" class="cc-footer-link" type="button">Cookie settings</button></footer>
+<div id="cc-banner" class="cc-banner" hidden role="region" aria-label="Cookie consent">
+  <div class="cc-inner">
+    <p class="cc-text"><strong>Cookie consent</strong><br>This website uses Google Analytics to count visits. Analytics cookies are set only if you accept them. <a href="privacy.html#cookies">Privacy policy</a></p>
+    <div class="cc-actions">
+      <button id="cc-accept" class="cc-btn cc-primary" type="button">Accept all</button>
+      <button id="cc-essential" class="cc-btn" type="button">Essential only</button>
+      <button id="cc-more" class="cc-btn" type="button">More settings</button>
+    </div>
+  </div>
+</div>
+<div id="cc-modal" class="cc-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="cc-modal-title">
+  <div class="cc-dialog">
+    <h2 id="cc-modal-title">Cookie settings</h2>
+    <p>Choose which cookies this website may use. You can change your choice at any time via the “Cookie settings” link in the footer.</p>
+    <div class="cc-group">
+      <div class="cc-group-head"><strong>Strictly necessary</strong><span class="cc-always">Always on</span></div>
+      <p>Required for the website to work (for example, remembering your cookie choice). Always on.</p>
+    </div>
+    <div class="cc-group">
+      <div class="cc-group-head"><strong>Statistics</strong><label class="cc-switch"><input type="checkbox" id="cc-stats" aria-label="Statistics"><span></span></label></div>
+      <p>Google Analytics — counts visits and traffic sources so we can improve the site.</p>
+    </div>
+    <div class="cc-actions">
+      <button id="cc-save" class="cc-btn cc-primary" type="button">Save settings</button>
+    </div>
+  </div>
+</div>
+<script src="consent.js" defer></script>
 </body>
 </html>

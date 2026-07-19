@@ -54,5 +54,22 @@
   "fq_q4_h": "How will existing users be recognised?",
   "fq_q4_p": "The extension locally records when it was first installed. Installs that predate the announcement will be offered the discounted early supporter price automatically. Nothing about this leaves your device. See the <a href=\"privacy.html\">privacy policy</a>.",
   "fq_q5_h": "Questions?",
-  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>"
+  "fq_q5_p": "<a href=\"mailto:adamltoms@gmail.com\">adamltoms@gmail.com</a>",
+  "cc_title": "Cookie consent",
+  "cc_desc": "This website uses Google Analytics to count visits. Analytics cookies are set only if you accept them.",
+  "cc_policy": "Privacy policy",
+  "cc_accept": "Accept all",
+  "cc_essential": "Essential only",
+  "cc_more": "More settings",
+  "cc_modal_title": "Cookie settings",
+  "cc_modal_desc": "Choose which cookies this website may use. You can change your choice at any time via the “Cookie settings” link in the footer.",
+  "cc_save": "Save settings",
+  "cc_nec_name": "Strictly necessary",
+  "cc_nec_desc": "Required for the website to work (for example, remembering your cookie choice). Always on.",
+  "cc_stats_name": "Statistics",
+  "cc_stats_desc": "Google Analytics — counts visits and traffic sources so we can improve the site.",
+  "cc_always": "Always on",
+  "cc_footer": "Cookie settings",
+  "pp_s8_h": "Cookies and analytics on this website",
+  "pp_s8_p": "The policy above covers the browser extension, which collects no analytics data at all. This website (adamtomsltd.github.io) uses Google Analytics to count visits and see which pages are useful. Analytics cookies are set only if you accept them in the cookie banner, and you can change your choice at any time via the “Cookie settings” link at the bottom of every page. If you decline, no analytics cookies are set."
 }

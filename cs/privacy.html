@@ -86,11 +86,41 @@
   </ul>
   <h2>Budoucí placené funkce</h2>
   <p>V budoucí aktualizaci je plánována placená verze (viz <a href="paid-model.html">FAQ k placenému modelu</a>). Pokud k tomu dojde, aktivace licence odešle <em>pouze</em> váš licenční klíč a náhodný, anonymní identifikátor instalace našemu poskytovateli plateb a licencí, společnosti Lemon Squeezy, k ověření licence. Platební údaje zpracovává výhradně Lemon Squeezy podle <a href="https://www.lemonsqueezy.com/privacy" rel="noopener">svých zásad ochrany osobních údajů</a>; rozšíření vaše platební informace nikdy nevidí. Obsah vašich zpráv z Teams bude i nadále zpracováván pouze na vašem zařízení. Tyto zásady budou aktualizovány dříve, než jakákoli taková změna vstoupí v platnost.</p>
+  <h2 id="cookies">Cookies a analytika na tomto webu</h2>
+  <p>Výše uvedené zásady se týkají rozšíření prohlížeče, které žádná analytická data nesbírá. Tento web (adamtomsltd.github.io) používá Google Analytics k počítání návštěv a zjišťování, které stránky jsou užitečné. Analytické cookies se ukládají pouze poté, co je přijmete v cookie liště; svou volbu můžete kdykoli změnit pomocí odkazu „Nastavení cookies“ v zápatí každé stránky. Pokud odmítnete, žádné analytické cookies se neuloží.</p>
   <h2>Změny těchto zásad</h2>
   <p>Podstatné změny budou oznámeny v poznámkách k vydání rozšíření a promítnuty na této stránce s novým datem účinnosti.</p>
   <h2>Kontakt</h2>
   <p>Adam Toms Ltd, <a href="mailto:adamltoms@gmail.com">adamltoms@gmail.com</a></p>
 </main>
-<footer>© Adam Toms Ltd. Microsoft Teams je ochranná známka společnosti Microsoft Corporation. Toto rozšíření není spojeno se společností Microsoft ani jí schváleno.</footer>
+<footer>© Adam Toms Ltd. Microsoft Teams je ochranná známka společnosti Microsoft Corporation. Toto rozšíření není spojeno se společností Microsoft ani jí schváleno. · <button id="cc-open" class="cc-footer-link" type="button">Nastavení cookies</button></footer>
+<div id="cc-banner" class="cc-banner" hidden role="region" aria-label="Souhlas s cookies">
+  <div class="cc-inner">
+    <p class="cc-text"><strong>Souhlas s cookies</strong><br>Tento web používá Google Analytics k počítání návštěv. Analytické cookies se ukládají pouze s vaším souhlasem. <a href="privacy.html#cookies">Zásady ochrany osobních údajů</a></p>
+    <div class="cc-actions">
+      <button id="cc-accept" class="cc-btn cc-primary" type="button">Přijmout vše</button>
+      <button id="cc-essential" class="cc-btn" type="button">Pouze nezbytné</button>
+      <button id="cc-more" class="cc-btn" type="button">Další nastavení</button>
+    </div>
+  </div>
+</div>
+<div id="cc-modal" class="cc-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="cc-modal-title">
+  <div class="cc-dialog">
+    <h2 id="cc-modal-title">Nastavení cookies</h2>
+    <p>Zvolte, které cookies smí tento web používat. Svou volbu můžete kdykoli změnit pomocí odkazu „Nastavení cookies“ v zápatí.</p>
+    <div class="cc-group">
+      <div class="cc-group-head"><strong>Nezbytně nutné</strong><span class="cc-always">Vždy zapnuto</span></div>
+      <p>Nutné pro fungování webu (např. zapamatování vaší volby cookies). Vždy zapnuto.</p>
+    </div>
+    <div class="cc-group">
+      <div class="cc-group-head"><strong>Statistika</strong><label class="cc-switch"><input type="checkbox" id="cc-stats" aria-label="Statistika"><span></span></label></div>
+      <p>Google Analytics — počítá návštěvy a zdroje návštěvnosti, abychom mohli web zlepšovat.</p>
+    </div>
+    <div class="cc-actions">
+      <button id="cc-save" class="cc-btn cc-primary" type="button">Uložit nastavení</button>
+    </div>
+  </div>
+</div>
+<script src="../consent.js" defer></script>
 </body>
 </html>
