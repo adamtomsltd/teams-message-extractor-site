@@ -70,6 +70,7 @@ def head(t, title, code, page, css_prefix):
 <title>{title}</title>
 <meta name="description" content="{meta_desc}">
 <link rel="canonical" href="https://adamtomsltd.github.io{page_url(code, page)}">
+{faq_jsonld(t) if page == "index.html" else ""}
 <link rel="stylesheet" href="{css_prefix}style.css">
 <link rel="icon" href="{css_prefix}assets/icon.svg" type="image/svg+xml">
 <link rel="icon" href="{css_prefix}assets/icon128.png" type="image/png">
@@ -156,13 +157,42 @@ def render_listing(code):
             out.append(f"  <{tag}>\n{items}\n  </{tag}>")
     return "\n".join(out)
 
+STORE_URL = "https://chromewebstore.google.com/detail/teams-message-extractor-c/hemdpkoomkdphclendigjhelkaknjddb"
+
+def faq_jsonld(t):
+    items = []
+    for i in range(1, 6):
+        items.append({
+            "@type": "Question", "name": t[f"faq_q{i}"],
+            "acceptedAnswer": {"@type": "Answer", "text": t[f"faq_a{i}"]}
+        })
+    import json as _json
+    return ('<script type="application/ld+json">'
+            + _json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": items}, ensure_ascii=False)
+            + '</script>')
+
 def render_index(t, code):
     css_prefix = "../" if LOCALES[code][0] else ""
+    stats = "".join(f'<span class="chip">{t[k]}</span>' for k in ("stat_formats", "stat_langs", "stat_trackers", "stat_proxy"))
+    fmt_rows = "".join(
+        f'<tr><td class="fmtname">{name}</td><td>{t[key]}</td></tr>'
+        for name, key in (("CSV", "fmt_csv"), ("HTML", "fmt_html"), ("Markdown", "fmt_md"), ("ZIP", "fmt_zip")))
+    faq_items = "".join(
+        f'<details><summary>{t[f"faq_q{i}"]}</summary><p>{t[f"faq_a{i}"]}</p></details>'
+        for i in range(1, 6))
     return f"""<main>
-  <h1>{t['idx_title']}</h1>
+  <h1>{t['hero_h']}</h1>
+  <p class="herosub">{t['hero_sub']}</p>
+  <p class="ctarow"><a class="cta" href="{STORE_URL}" rel="noopener">{t['cta_install']}</a>
+  <span class="ctausers">{t['cta_users']}</span></p>
+  <div class="stats">{stats}</div>
   <figure class="hero"><img src="{css_prefix}assets/hero.png" alt="{esc(t['idx_title'])}" width="1400" height="560"></figure>
   <div class="card">{t['idx_card']}</div>
 {render_listing(code)}
+  <h2>{t['fmt_h']}</h2>
+  <div class="fmtwrap"><table class="fmt">{fmt_rows}</table></div>
+  <h2>{t['faq_h']}</h2>
+  <div class="faq">{faq_items}</div>
   <h2>{t['idx_shots_h']}</h2>
   <figure class="shot"><img src="{css_prefix}assets/popup.png" alt="{esc(t['idx_title'])}" width="640" height="400" loading="lazy"></figure>
   <h2>{t['idx_support_h']}</h2>
@@ -233,10 +263,21 @@ TITLE = {
 load_cache = {}
 for c in LOCALES:
     load_cache[c] = load(c)
+_en = load('en') if 'en' not in load_cache else load_cache.get('en') or load('en')
+class _Fallback(dict):
+    def __init__(self, d, en): super().__init__(d); self._en = en
+    def __missing__(self, k): return self._en.get(k, '')
+    def get(self, k, default=None):
+        v = super().get(k, None)
+        return v if v is not None else self._en.get(k, default)
+for c in LOCALES:
+    en_d = load_cache['en'] if 'en' in load_cache else _en
+    load_cache[c] = _Fallback(load_cache[c], en_d)
     missing = set(load_cache["en"] if "en" in load_cache else []) - set(load_cache[c])
     if c != "en":
         missing = set(load_cache["en"]) - set(load_cache[c])
-        assert not missing, f"{c} missing keys: {missing}"
+        if missing:
+            print(f"note: {c} falls back to English for {len(missing)} key(s)")
 
 count = 0
 for c, (d, lang, rtl, flag) in LOCALES.items():

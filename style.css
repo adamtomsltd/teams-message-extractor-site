@@ -112,3 +112,28 @@ footer {
   font: inherit; font-size: inherit; color: var(--accent); background: none;
   border: none; padding: 0; cursor: pointer; text-decoration: underline;
 }
+
+.herosub { font-size: 1.05rem; color: var(--muted); max-width: 60ch; }
+.ctarow { display: flex; align-items: center; gap: 0.9rem; flex-wrap: wrap; }
+.cta {
+  display: inline-block; background: var(--accent); color: #fff !important;
+  text-decoration: none; font-weight: 700; padding: 0.7rem 1.3rem;
+  border-radius: 8px; font-size: 1.02rem;
+}
+.cta:hover { opacity: 0.92; }
+.ctausers { color: var(--muted); font-weight: 600; }
+.stats { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0; }
+.chip {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 999px; padding: 0.25rem 0.75rem; font-size: 0.85rem; font-weight: 600;
+}
+.fmtwrap { overflow-x: auto; }
+table.fmt { border-collapse: collapse; width: 100%; }
+table.fmt td { border-top: 1px solid var(--border); padding: 0.55rem 0.6rem; vertical-align: top; }
+td.fmtname { font-weight: 700; white-space: nowrap; color: var(--accent); }
+.faq details {
+  border: 1px solid var(--border); border-radius: 8px;
+  padding: 0.6rem 0.9rem; margin: 0.5rem 0; background: var(--card);
+}
+.faq summary { cursor: pointer; font-weight: 600; }
+.faq p { margin: 0.6rem 0 0.2rem; }
