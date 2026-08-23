@@ -95,5 +95,6 @@
   "faq_q4": "Werkt het achter de beveiligingsproxy van mijn bedrijf?",
   "faq_a4": "Ja. Teams-domeinen achter een proxy, zoals Microsoft Defender for Cloud Apps (MCAS), worden ondersteund, en elke andere proxy die hostnamen herschrijft werkt via een fallback met één klik.",
   "faq_q5": "Wat kost het?",
-  "faq_a5": "Vandaag is de extensie gratis. Er is een betaald Pro-niveau gepland voor geavanceerde functies; bestaande gebruikers behouden alles wat ze hebben en krijgen korting als vroege supporter. Zie de FAQ over het betaalde model."
+  "faq_a5": "Vandaag is de extensie gratis. Er is een betaald Pro-niveau gepland voor geavanceerde functies; bestaande gebruikers behouden alles wat ze hebben en krijgen korting als vroege supporter. Zie de FAQ over het betaalde model.",
+  "a11y_skip": "Naar inhoud"
 }

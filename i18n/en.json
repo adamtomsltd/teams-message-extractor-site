@@ -95,5 +95,6 @@
   "faq_q4": "Does it work behind my company's security proxy?",
   "faq_a4": "Yes. Proxied Teams domains such as Microsoft Defender for Cloud Apps (MCAS) are supported, and any other hostname-rewriting proxy works via a one-click fallback.",
   "faq_q5": "What does it cost?",
-  "faq_a5": "It is free today. A paid Pro tier for power features is planned; existing users keep everything they have and get an early supporter discount — see the Paid Model FAQ."
+  "faq_a5": "It is free today. A paid Pro tier for power features is planned; existing users keep everything they have and get an early supporter discount — see the Paid Model FAQ.",
+  "a11y_skip": "Skip to content"
 }

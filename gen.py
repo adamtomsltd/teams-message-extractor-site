@@ -76,7 +76,8 @@ def head(t, title, code, page, css_prefix):
 <link rel="icon" href="{css_prefix}assets/icon128.png" type="image/png">
 {alts}
 </head>
-<body>"""
+<body>
+<a class="skiplink" href="#main">{t.get('a11y_skip', 'Skip to content')}</a>"""
 
 def nav(t, code, page, here_prefix, css_prefix):
     opts = []
@@ -321,7 +322,7 @@ for c, (d, lang, rtl, flag) in LOCALES.items():
         html = (
             head(t, TITLE[page](t), c, page, css_prefix)
             + nav(t, c, page, here_prefix, css_prefix)
-            + RENDER[page](t, c)
+            + RENDER[page](t, c).replace('<main', '<main id="main"', 1)
             + foot(t, css_prefix)
         )
         assert "{{" not in html and "None" not in html.replace("noNone", "")

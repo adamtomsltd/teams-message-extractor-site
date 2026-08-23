@@ -95,5 +95,6 @@
   "faq_q4": "Fonctionne-t-elle derrière le proxy de sécurité de mon entreprise ?",
   "faq_a4": "Oui. Les domaines Teams passant par un proxy, comme Microsoft Defender for Cloud Apps (MCAS), sont pris en charge, et tout autre proxy réécrivant les noms d'hôte fonctionne grâce à une solution de repli en un clic.",
   "faq_q5": "Combien ça coûte ?",
-  "faq_a5": "L'extension est gratuite aujourd'hui. Une offre Pro payante est prévue pour les fonctions avancées ; les utilisateurs existants conservent tout ce qu'ils ont et bénéficient d'une remise de soutien de la première heure. Consultez la FAQ sur le modèle payant."
+  "faq_a5": "L'extension est gratuite aujourd'hui. Une offre Pro payante est prévue pour les fonctions avancées ; les utilisateurs existants conservent tout ce qu'ils ont et bénéficient d'une remise de soutien de la première heure. Consultez la FAQ sur le modèle payant.",
+  "a11y_skip": "Aller au contenu"
 }

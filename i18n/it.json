@@ -95,5 +95,6 @@
   "faq_q4": "Funziona dietro il proxy di sicurezza della mia azienda?",
   "faq_a4": "Sì. Sono supportati i domini Teams dietro proxy come Microsoft Defender for Cloud Apps (MCAS), e qualsiasi altro proxy che riscrive i nomi host funziona grazie a un'alternativa attivabile con un clic.",
   "faq_q5": "Quanto costa?",
-  "faq_a5": "Oggi è gratuita. È previsto un livello Pro a pagamento per le funzioni avanzate; gli utenti esistenti mantengono tutto ciò che hanno e ricevono uno sconto come primi sostenitori. Consulta le FAQ sul modello a pagamento."
+  "faq_a5": "Oggi è gratuita. È previsto un livello Pro a pagamento per le funzioni avanzate; gli utenti esistenti mantengono tutto ciò che hanno e ricevono uno sconto come primi sostenitori. Consulta le FAQ sul modello a pagamento.",
+  "a11y_skip": "Vai al contenuto"
 }

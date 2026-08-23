@@ -95,5 +95,6 @@
   "faq_q4": "Czy działa za firmowym serwerem proxy?",
   "faq_a4": "Tak. Obsługiwane są domeny Teams za proxy, takie jak Microsoft Defender for Cloud Apps (MCAS), a każdy inny serwer proxy przepisujący nazwy hostów działa dzięki rozwiązaniu awaryjnemu uruchamianemu jednym kliknięciem.",
   "faq_q5": "Ile to kosztuje?",
-  "faq_a5": "Dziś rozszerzenie jest darmowe. Planowany jest płatny poziom Pro z funkcjami zaawansowanymi; dotychczasowi użytkownicy zachowają wszystko, co mają, i otrzymają zniżkę dla wczesnych użytkowników. Zobacz FAQ modelu płatnego."
+  "faq_a5": "Dziś rozszerzenie jest darmowe. Planowany jest płatny poziom Pro z funkcjami zaawansowanymi; dotychczasowi użytkownicy zachowają wszystko, co mają, i otrzymają zniżkę dla wczesnych użytkowników. Zobacz FAQ modelu płatnego.",
+  "a11y_skip": "Przejdź do treści"
 }

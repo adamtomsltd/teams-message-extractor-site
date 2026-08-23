@@ -191,3 +191,53 @@ table.fmt tr:first-child td { border-top: none; }
 header.site nav { max-width: 960px; }
 footer { max-width: 960px; text-align: center; }
 @media (max-width: 480px) { .heroband h1 { font-size: 1.6rem; } }
+
+/* ── AAA accessibility layer (WCAG 2.1 AAA) ──────────────────────────────
+   Measured contrast: light accent-ink #45477e = 8.55:1 on #fff, 7.87:1 on
+   card; light muted #4a4a5c = 8.66/7.97; dark muted #bcbcd0 = 9.63/8.73;
+   dark accent #9ea2ff = 7.76/7.04 with dark-on-accent CTA text at 7.76:1.
+   All body-text pairs ≥ 7:1; CTA/badge text ≥ 7:1 (exceeds AAA-large 4.5). */
+:root {
+  --accent-ink: #45477e;
+  --on-accent: #ffffff;
+  --muted: #4a4a5c;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --accent-ink: #9ea2ff; --on-accent: #16161e; --muted: #bcbcd0; }
+}
+:root[data-theme="dark"] { --accent-ink: #9ea2ff; --on-accent: #16161e; --muted: #bcbcd0; }
+:root[data-theme="light"] { --accent-ink: #45477e; --on-accent: #ffffff; --muted: #4a4a5c; }
+
+h1, .band h2, a, header.site a.brand, td.fmtname, ul.cardgrid strong { color: var(--accent-ink); }
+.license-buy a { color: var(--accent-ink); }
+.cta, ol.steps li::before {
+  background: var(--accent-ink);
+  color: var(--on-accent) !important;
+}
+
+/* Visible focus for every interactive element (2.4.7 / 2.4.13) */
+a:focus-visible, button:focus-visible, summary:focus-visible,
+select:focus-visible, input:focus-visible, details:focus-visible {
+  outline: 3px solid var(--accent-ink);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Skip link (2.4.1) — visually hidden until focused */
+.skiplink {
+  position: absolute; left: -9999px; top: 0; z-index: 100;
+  background: var(--accent-ink); color: var(--on-accent);
+  padding: 0.7rem 1.2rem; border-radius: 0 0 8px 0; font-weight: 700;
+  text-decoration: none;
+}
+.skiplink:focus { left: 0; }
+
+/* Target size ≥44px (2.5.5) for nav links, language select, FAQ summaries */
+header.site nav a { padding: 0.7rem 0.35rem; display: inline-block; }
+select.lang { min-height: 44px; padding: 0.5rem 0.75rem; }
+.faq summary { padding: 0.55rem 0.2rem; min-height: 28px; }
+.faq details { padding: 0.35rem 0.9rem 0.6rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}

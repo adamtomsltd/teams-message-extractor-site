@@ -95,5 +95,6 @@
   "faq_q4": "Virker den bag min virksomheds sikkerhedsproxy?",
   "faq_a4": "Ja. Teams-domæner bag proxy, for eksempel Microsoft Defender for Cloud Apps (MCAS), understøttes, og enhver anden proxy, der omskriver værtsnavne, virker via en reserveløsning med ét klik.",
   "faq_q5": "Hvad koster det?",
-  "faq_a5": "Den er gratis i dag. En betalt Pro-udgave til avancerede funktioner er planlagt; eksisterende brugere beholder alt, hvad de har, og får rabat som tidlige støtter. Se FAQ om betalingsmodellen."
+  "faq_a5": "Den er gratis i dag. En betalt Pro-udgave til avancerede funktioner er planlagt; eksisterende brugere beholder alt, hvad de har, og får rabat som tidlige støtter. Se FAQ om betalingsmodellen.",
+  "a11y_skip": "Gå til indhold"
 }
