@@ -218,7 +218,7 @@ def render_listing_grouped(code):
         and all(a["type"] == b["type"] for a, b in zip(en_secs, sections)))
 
     ul_seen = [0]  # mutable counter shared with block_html
-    UL_VARIANTS = ["timeline", "pillgrid", "usecases", "cardgrid"]
+    UL_VARIANTS = ["timeline", "pillgrid", "usecases", ""]
 
     def block_html(s, en_s=None):
         if s["type"] == "p":
@@ -243,9 +243,10 @@ def render_listing_grouped(code):
                 cards.append(f'<li>{ICON}<h3>{lead}</h3><p>{rest}</p></li>')
             else:
                 cards.append(f'<li>{ICON}<p class="solo">{txt}</p></li>')
-        variant = UL_VARIANTS[ul_seen[0]] if ul_seen[0] < len(UL_VARIANTS) else "cardgrid"
+        variant = UL_VARIANTS[ul_seen[0]] if ul_seen[0] < len(UL_VARIANTS) else ""
         ul_seen[0] += 1
-        return f'<ul class="cardgrid {variant}">{"".join(cards)}</ul>' 
+        variant_cls = f" {variant}" if variant else ""
+        return f'<ul class="cardgrid{variant_cls}">{"".join(cards)}</ul>' 
 
     intro, groups, cur = [], [], None
     for i, s in enumerate(sections):
