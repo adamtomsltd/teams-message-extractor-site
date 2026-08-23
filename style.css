@@ -137,3 +137,57 @@ td.fmtname { font-weight: 700; white-space: nowrap; color: var(--accent); }
 }
 .faq summary { cursor: pointer; font-weight: 600; }
 .faq p { margin: 0.6rem 0 0.2rem; }
+
+/* ── Landing v2: full-width alternating bands, card grids, step tiles ───── */
+main.landing { max-width: none; padding: 0; }
+.band { padding: 0.5rem 0; }
+.band.alt { background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.band .wrap { max-width: 960px; margin: 0 auto; padding: 2.2rem 1.25rem; }
+.band h2 { margin-top: 0; font-size: 1.45rem; }
+.band h2::after { content: ""; display: block; width: 44px; height: 3px; background: var(--accent); border-radius: 2px; margin-top: 8px; }
+
+.heroband { background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 10%, var(--bg)), var(--bg)); }
+.heroband .wrap { padding: 3.2rem 1.25rem 2.6rem; text-align: center; }
+.heroband h1 { font-size: 2.1rem; max-width: 24ch; margin: 0 auto 0.8rem; }
+.heroband .herosub { margin: 0 auto 1.4rem; max-width: 58ch; }
+.heroband .ctarow, .heroband .stats { justify-content: center; }
+.cta { box-shadow: 0 6px 18px color-mix(in srgb, var(--accent) 35%, transparent); }
+
+figure.hero.browser { margin: 0 0 1.4rem; }
+figure.hero.browser img {
+  border-radius: 12px; border: 1px solid var(--border);
+  box-shadow: 0 18px 44px rgba(0,0,0,0.16);
+}
+
+.prose { max-width: 70ch; }
+.prose p { color: var(--muted); }
+
+ul.cardgrid { list-style: none; padding: 0; margin: 1.1rem 0 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 0.8rem; }
+ul.cardgrid li {
+  background: var(--bg); border: 1px solid var(--border); border-radius: 10px;
+  padding: 0.9rem 1rem; margin: 0; font-size: 0.95rem; line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.band:not(.alt) ul.cardgrid li { background: var(--card); }
+ul.cardgrid strong { color: var(--accent); }
+
+ol.steps { list-style: none; counter-reset: step; padding: 0; margin: 1.1rem 0 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; }
+ol.steps li {
+  counter-increment: step; background: var(--bg); border: 1px solid var(--border);
+  border-radius: 10px; padding: 1rem; margin: 0; font-size: 0.95rem;
+}
+.band.alt ol.steps li { background: var(--bg); }
+ol.steps li::before {
+  content: counter(step); display: block; width: 28px; height: 28px;
+  border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700;
+  text-align: center; line-height: 28px; margin-bottom: 0.6rem; font-size: 0.9rem;
+}
+table.fmt { background: var(--bg); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+table.fmt tr:first-child td { border-top: none; }
+.faq details { background: var(--bg); }
+.band.alt .faq details, .band.alt table.fmt { background: var(--bg); }
+header.site nav { max-width: 960px; }
+footer { max-width: 960px; text-align: center; }
+@media (max-width: 480px) { .heroband h1 { font-size: 1.6rem; } }

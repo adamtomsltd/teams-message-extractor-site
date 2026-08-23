@@ -139,23 +139,43 @@ def foot(t, css_prefix):
 def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
-def render_listing(code):
-    """Render the locale's Chrome Web Store detailed description (synced by
-    sync_listing.py) as the body of the landing page."""
+def render_listing_grouped(code):
+    """The store description (synced by sync_listing.py), grouped into
+    (intro_html, [(title, body_html), ...]) so the landing can render each
+    h2-section as its own full-width band. Bullet lists become card grids;
+    numbered lists become step tiles — the two changes that turn a text
+    document into a landing page."""
     path = os.path.join(SITE, "i18n", "listing", code + ".json")
     with io.open(path, encoding="utf-8") as f:
         sections = json.load(f)["sections"]
-    out = []
-    for s in sections:
+
+    def block_html(s):
         if s["type"] == "p":
-            out.append(f"  <p>{esc(s['text'])}</p>")
-        elif s["type"] == "h2":
-            out.append(f"  <h2>{esc(s['text'])}</h2>")
+            return f'<p>{esc(s["text"])}</p>'
+        if s["type"] == "ol":
+            items = "".join(f'<li><span>{esc(i)}</span></li>' for i in s["items"])
+            return f'<ol class="steps">{items}</ol>'
+        # ul → card grid. Bullets of the form "Title — rest" / "Title: rest"
+        # get a bold lead so cards scan like features, not sentences.
+        cards = []
+        for i in s["items"]:
+            txt = esc(i)
+            for sep in (": ", "، ", "：", " – "):
+                if sep in txt and len(txt.split(sep)[0]) < 60:
+                    lead, rest = txt.split(sep, 1)
+                    txt = f'<strong>{lead}</strong><br>{rest}'
+                    break
+            cards.append(f'<li>{txt}</li>')
+        return f'<ul class="cardgrid">{"".join(cards)}</ul>'
+
+    intro, groups, cur = [], [], None
+    for s in sections:
+        if s["type"] == "h2":
+            cur = {"title": esc(s["text"]), "body": []}
+            groups.append(cur)
         else:
-            tag = s["type"]
-            items = "\n".join(f"    <li>{esc(i)}</li>" for i in s["items"])
-            out.append(f"  <{tag}>\n{items}\n  </{tag}>")
-    return "\n".join(out)
+            (cur["body"] if cur else intro).append(block_html(s))
+    return "\n".join(intro), [(g["title"], "\n".join(g["body"])) for g in groups]
 
 STORE_URL = "https://chromewebstore.google.com/detail/teams-message-extractor-c/hemdpkoomkdphclendigjhelkaknjddb"
 
@@ -180,24 +200,35 @@ def render_index(t, code):
     faq_items = "".join(
         f'<details><summary>{t[f"faq_q{i}"]}</summary><p>{t[f"faq_a{i}"]}</p></details>'
         for i in range(1, 6))
-    return f"""<main>
-  <h1>{t['hero_h']}</h1>
-  <p class="herosub">{t['hero_sub']}</p>
-  <p class="ctarow"><a class="cta" href="{STORE_URL}" rel="noopener">{t['cta_install']}</a>
-  <span class="ctausers">{t['cta_users']}</span></p>
-  <div class="stats">{stats}</div>
-  <figure class="hero"><img src="{css_prefix}assets/hero.png" alt="{esc(t['idx_title'])}" width="1400" height="560"></figure>
-  <div class="card">{t['idx_card']}</div>
-{render_listing(code)}
-  <h2>{t['fmt_h']}</h2>
-  <div class="fmtwrap"><table class="fmt">{fmt_rows}</table></div>
-  <h2>{t['faq_h']}</h2>
-  <div class="faq">{faq_items}</div>
-  <h2>{t['idx_shots_h']}</h2>
-  <figure class="shot"><img src="{css_prefix}assets/popup.png" alt="{esc(t['idx_title'])}" width="640" height="400" loading="lazy"></figure>
-  <h2>{t['idx_support_h']}</h2>
-  <p>{t['idx_support']} <a href="mailto:adamltoms@gmail.com">adamltoms@gmail.com</a></p>
-</main>"""
+    intro_html, groups = render_listing_grouped(code)
+
+    bands = []
+    def band(inner, cls=""):
+        bands.append(f'<section class="band {cls}"><div class="wrap">{inner}</div></section>')
+
+    band(f"""<h1>{t['hero_h']}</h1>
+      <p class="herosub">{t['hero_sub']}</p>
+      <p class="ctarow"><a class="cta" href="{STORE_URL}" rel="noopener">{t['cta_install']}</a>
+      <span class="ctausers">{t['cta_users']}</span></p>
+      <div class="stats">{stats}</div>""", "heroband")
+
+    band(f"""<figure class="hero browser"><img src="{css_prefix}assets/hero.png" alt="{esc(t['idx_title'])}" width="1400" height="560"></figure>
+      <div class="card">{t['idx_card']}</div>
+      <div class="prose">{intro_html}</div>""")
+
+    for i, (title, body) in enumerate(groups):
+        band(f'<h2>{title}</h2>{body}', "alt" if i % 2 == 0 else "")
+
+    band(f'<h2>{t["fmt_h"]}</h2><div class="fmtwrap"><table class="fmt">{fmt_rows}</table></div>',
+         "alt" if len(groups) % 2 == 0 else "")
+    band(f'<h2>{t["faq_h"]}</h2><div class="faq">{faq_items}</div>')
+    band(f"""<h2>{t['idx_shots_h']}</h2>
+      <figure class="shot"><img src="{css_prefix}assets/popup.png" alt="{esc(t['idx_title'])}" width="640" height="400" loading="lazy"></figure>""", "alt")
+    band(f"""<h2>{t['idx_support_h']}</h2>
+      <p>{t['idx_support']} <a href="mailto:adamltoms@gmail.com">adamltoms@gmail.com</a></p>
+      <p class="ctarow"><a class="cta" href="{STORE_URL}" rel="noopener">{t['cta_install']}</a></p>""")
+
+    return '<main class="landing">' + "".join(bands) + '</main>'
 
 def render_privacy(t, code):
     return f"""<main>
