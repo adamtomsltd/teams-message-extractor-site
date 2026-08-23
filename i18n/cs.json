@@ -96,5 +96,7 @@
   "faq_a4": "Ano. Podporovány jsou proxované domény Teams, například Microsoft Defender for Cloud Apps (MCAS), a jakýkoli jiný proxy server přepisující názvy hostitelů funguje díky záložnímu řešení na jedno kliknutí.",
   "faq_q5": "Kolik to stojí?",
   "faq_a5": "Dnes je rozšíření zdarma. Placená úroveň Pro s pokročilými funkcemi se plánuje; stávající uživatelé si ponechají vše, co mají, a získají slevu pro první podporovatele. Podrobnosti najdete v FAQ k placenému modelu.",
-  "a11y_skip": "Přeskočit na obsah"
+  "a11y_skip": "Přeskočit na obsah",
+  "smpl_h": "Stáhněte si ukázkový export",
+  "smpl_note": "Krátká smyšlená konverzace vytvořená skutečnými formátovači rozšíření. Přesně uvidíte, co dostanete, ještě před instalací."
 }

@@ -96,5 +96,7 @@
   "faq_a4": "Sim. Domínios do Teams atrás de proxy, como o Microsoft Defender for Cloud Apps (MCAS), são compatíveis, e qualquer outro proxy que reescreva nomes de host funciona por meio de uma alternativa de um clique.",
   "faq_q5": "Quanto custa?",
   "faq_a5": "Hoje é grátis. Um nível Pro pago para recursos avançados está planejado; os usuários existentes mantêm tudo o que já têm e recebem um desconto de apoiador inicial. Veja as perguntas frequentes sobre o modelo pago.",
-  "a11y_skip": "Pular para o conteúdo"
+  "a11y_skip": "Pular para o conteúdo",
+  "smpl_h": "Baixe um exemplo de exportação",
+  "smpl_note": "Uma breve conversa fictícia, produzida com os formatadores reais da extensão, para você ver exatamente o que vai receber antes de instalar."
 }

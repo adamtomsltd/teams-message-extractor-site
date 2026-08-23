@@ -96,5 +96,7 @@
   "faq_a4": "Sí. Se admiten dominios de Teams tras proxy, como Microsoft Defender for Cloud Apps (MCAS), y cualquier otro proxy que reescriba nombres de host funciona mediante una alternativa de un solo clic.",
   "faq_q5": "¿Cuánto cuesta?",
   "faq_a5": "Hoy es gratis. Está previsto un nivel Pro de pago para funciones avanzadas; los usuarios existentes conservan todo lo que tienen y reciben un descuento por apoyo temprano. Consulta las preguntas frecuentes sobre el modelo de pago.",
-  "a11y_skip": "Saltar al contenido"
+  "a11y_skip": "Saltar al contenido",
+  "smpl_h": "Descarga un ejemplo de exportación",
+  "smpl_note": "Una breve conversación ficticia, generada con los formateadores reales de la extensión, para que veas exactamente qué obtendrás antes de instalar."
 }

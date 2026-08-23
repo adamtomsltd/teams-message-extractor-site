@@ -70,6 +70,13 @@ def head(t, title, code, page, css_prefix):
 <title>{title}</title>
 <meta name="description" content="{meta_desc}">
 <link rel="canonical" href="https://adamtomsltd.github.io{page_url(code, page)}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{meta_desc}">
+<meta property="og:url" content="https://adamtomsltd.github.io{page_url(code, page)}">
+<meta property="og:image" content="https://adamtomsltd.github.io/teams-message-extractor-site/assets/hero.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#45477e">
 {faq_jsonld(t) if page == "index.html" else ""}
 <link rel="stylesheet" href="{css_prefix}style.css">
 <link rel="icon" href="{css_prefix}assets/icon.svg" type="image/svg+xml">
@@ -166,7 +173,10 @@ def render_listing_grouped(code):
                     lead, rest = txt.split(sep, 1)
                     txt = f'<strong>{lead}</strong><br>{rest}'
                     break
-            cards.append(f'<li>{txt}</li>')
+            icon = ('<svg class="cardicon" aria-hidden="true" viewBox="0 0 20 20" width="18" height="18">'
+                    '<circle cx="10" cy="10" r="9" fill="currentColor" opacity="0.14"/>'
+                    '<path d="M6 10.3l2.6 2.6L14 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+            cards.append(f'<li>{icon}<div>{txt}</div></li>')
         return f'<ul class="cardgrid">{"".join(cards)}</ul>'
 
     intro, groups, cur = [], [], None
@@ -179,6 +189,13 @@ def render_listing_grouped(code):
     return "\n".join(intro), [(g["title"], "\n".join(g["body"])) for g in groups]
 
 STORE_URL = "https://chromewebstore.google.com/detail/teams-message-extractor-c/hemdpkoomkdphclendigjhelkaknjddb"
+
+CHROME_ICON = ('<svg class="ctaicon" aria-hidden="true" viewBox="0 0 48 48" width="22" height="22">'
+    '<circle cx="24" cy="24" r="20" fill="#fff"/>'
+    '<path fill="#EA4335" d="M24 8a16 16 0 0 1 13.86 8H24a8 8 0 0 0-7.4 4.94L9.7 12.7A16 16 0 0 1 24 8z"/>'
+    '<path fill="#34A853" d="M9.7 12.7l6.9 8.24A8 8 0 0 0 24 32c.6 0 1.18-.07 1.74-.19L18.8 39.9A16 16 0 0 1 9.7 12.7z"/>'
+    '<path fill="#FBBC05" d="M37.86 16A16 16 0 0 1 18.8 39.9l6.94-8.1A8 8 0 0 0 32 24c0-1.42-.37-2.76-1.02-3.92L37.86 16z"/>'
+    '<circle cx="24" cy="24" r="6.5" fill="#4285F4" stroke="#fff" stroke-width="1.6"/></svg>')
 
 def faq_jsonld(t):
     items = []
@@ -209,7 +226,7 @@ def render_index(t, code):
 
     band(f"""<h1>{t['hero_h']}</h1>
       <p class="herosub">{t['hero_sub']}</p>
-      <p class="ctarow"><a class="cta" href="{STORE_URL}" rel="noopener">{t['cta_install']}</a>
+      <p class="ctarow"><a class="cta" href="{STORE_URL}" rel="noopener">{CHROME_ICON}{t['cta_install']}</a>
       <span class="ctausers">{t['cta_users']}</span></p>
       <div class="stats">{stats}</div>""", "heroband")
 
@@ -222,12 +239,19 @@ def render_index(t, code):
 
     band(f'<h2>{t["fmt_h"]}</h2><div class="fmtwrap"><table class="fmt">{fmt_rows}</table></div>',
          "alt" if len(groups) % 2 == 0 else "")
-    band(f'<h2>{t["faq_h"]}</h2><div class="faq">{faq_items}</div>')
+    band(f"""<h2>{t['smpl_h']}</h2>
+      <p class="prose">{t['smpl_note']}</p>
+      <p class="samplerow">
+        <a class="samplelink" href="{css_prefix}assets/sample.csv" download>CSV</a>
+        <a class="samplelink" href="{css_prefix}assets/sample.html" download>HTML</a>
+        <a class="samplelink" href="{css_prefix}assets/sample.md" download>Markdown</a>
+      </p>""")
+    band(f'<h2>{t["faq_h"]}</h2><div class="faq">{faq_items}</div>', "alt")
     band(f"""<h2>{t['idx_shots_h']}</h2>
       <figure class="shot"><img src="{css_prefix}assets/popup.png" alt="{esc(t['idx_title'])}" width="640" height="400" loading="lazy"></figure>""", "alt")
     band(f"""<h2>{t['idx_support_h']}</h2>
       <p>{t['idx_support']} <a href="mailto:adamltoms@gmail.com">adamltoms@gmail.com</a></p>
-      <p class="ctarow"><a class="cta" href="{STORE_URL}" rel="noopener">{t['cta_install']}</a></p>""")
+      <p class="ctarow"><a class="cta" href="{STORE_URL}" rel="noopener">{CHROME_ICON}{t['cta_install']}</a></p>""")
 
     return '<main class="landing">' + "".join(bands) + '</main>'
 

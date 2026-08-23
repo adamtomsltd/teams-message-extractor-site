@@ -96,5 +96,7 @@
   "faq_a4": "Ja. Über Proxy laufende Teams-Domains wie Microsoft Defender for Cloud Apps (MCAS) werden unterstützt, und jeder andere Proxy, der Hostnamen umschreibt, funktioniert über eine Ein-Klick-Fallback-Option.",
   "faq_q5": "Was kostet die Erweiterung?",
   "faq_a5": "Heute ist sie kostenlos. Eine kostenpflichtige Pro-Stufe für Power-Funktionen ist geplant. Bestehende Nutzer behalten alles, was sie haben, und erhalten einen Frühunterstützer-Rabatt. Details finden Sie im FAQ zum Bezahlmodell.",
-  "a11y_skip": "Zum Inhalt springen"
+  "a11y_skip": "Zum Inhalt springen",
+  "smpl_h": "Beispiel-Export herunterladen",
+  "smpl_note": "Eine kurze fiktive Unterhaltung, erzeugt mit den echten Formatierern der Erweiterung. So sehen Sie vor der Installation genau, was Sie erhalten."
 }

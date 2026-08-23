@@ -241,3 +241,45 @@ select.lang { min-height: 44px; padding: 0.5rem 0.75rem; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
+
+/* ── Polish pass: bigger hero, iconed CTA, competitor-grade cards, samples,
+      light textures ─────────────────────────────────────────────────────── */
+.heroband .wrap { padding: 3.8rem 1.25rem 3rem; }
+.heroband h1 { font-size: 2.7rem; line-height: 1.15; letter-spacing: -0.5px; }
+.herosub { font-size: 1.15rem; }
+.cta { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.85rem 1.5rem; font-size: 1.08rem; border-radius: 10px; }
+.ctaicon { flex: 0 0 auto; }
+
+ul.cardgrid li {
+  display: flex; gap: 0.7rem; align-items: flex-start;
+  padding: 1.1rem 1.2rem; border-radius: 12px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+ul.cardgrid li:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0,0,0,0.10); }
+.cardicon { color: var(--accent-ink); flex: 0 0 auto; margin-top: 2px; }
+ol.steps li { border-radius: 12px; transition: transform 0.15s ease, box-shadow 0.15s ease; }
+ol.steps li:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0,0,0,0.10); }
+
+.samplerow { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+.samplelink {
+  display: inline-block; border: 2px solid var(--accent-ink); color: var(--accent-ink);
+  border-radius: 10px; padding: 0.55rem 1.2rem; font-weight: 700; text-decoration: none;
+  min-width: 44px; text-align: center;
+}
+.samplelink:hover { background: var(--accent-ink); color: var(--on-accent); }
+
+/* Light textures — ≤7% tints so measured AAA contrast is unaffected */
+.heroband {
+  background:
+    radial-gradient(closest-side at 50% -10%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 75%),
+    radial-gradient(color-mix(in srgb, var(--accent-ink) 7%, transparent) 1px, transparent 1px),
+    var(--bg);
+  background-size: auto, 22px 22px, auto;
+}
+.band.alt {
+  background:
+    repeating-linear-gradient(45deg, transparent 0 14px, color-mix(in srgb, var(--accent) 3%, transparent) 14px 15px),
+    var(--card);
+}
+figure.hero.browser img { box-shadow: 0 24px 60px color-mix(in srgb, var(--accent) 22%, rgba(0,0,0,0.14)); }
+@media (max-width: 480px) { .heroband h1 { font-size: 1.9rem; } .herosub { font-size: 1.02rem; } }
