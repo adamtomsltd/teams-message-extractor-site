@@ -367,3 +367,51 @@ table.fmt tr + tr td { border-top: 1px solid var(--border); }
 
 /* Chips: slightly larger presence to match the new rhythm */
 .chip { padding: 0.4rem 0.95rem; font-size: 0.88rem; }
+
+/* ── v5: distinct component variants per section (shadcn-inspired tokens) ──
+   timeline  → "What's new" reads as release notes
+   pillgrid  → "What gets captured" reads as a compact capability list
+   usecases  → "Perfect for" reads as soft tinted tiles
+   cardgrid  → "Key features" keeps the full elevated card treatment      */
+
+/* Variant 1: changelog timeline */
+ul.timeline { display: block; position: relative; padding-inline-start: 1.7rem;
+  border-inline-start: 2px solid var(--border); }
+ul.timeline li { display: block; padding: 0.1rem 0 0.1rem 0.6rem; margin: 0 0 1.3rem;
+  border: none; box-shadow: none; background: transparent; position: relative; }
+ul.timeline li:hover { transform: none; box-shadow: none; }
+ul.timeline li::before { content: ""; position: absolute; inset-inline-start: -2.05rem; top: 0.42rem;
+  width: 11px; height: 11px; border-radius: 50%;
+  background: var(--bg); border: 2.5px solid var(--accent-ink); }
+ul.timeline .cardico { display: none; }
+ul.timeline h3 { display: inline; font-size: 1rem; margin: 0; }
+ul.timeline h3::after { content: " — "; color: var(--muted); }
+ul.timeline p { display: inline; }
+ul.timeline p.solo { color: var(--fg); }
+
+/* Variant 2: compact capability pills */
+ul.pillgrid { grid-template-columns: repeat(auto-fit, minmax(215px, 1fr)); gap: 0.6rem; }
+ul.pillgrid li { display: flex; align-items: center; gap: 0.7rem;
+  padding: 0.72rem 0.95rem; border-radius: 10px; box-shadow: none;
+  background: color-mix(in srgb, var(--card) 65%, var(--bg)); }
+ul.pillgrid li:hover { transform: none; box-shadow: none;
+  border-color: color-mix(in srgb, var(--accent-ink) 40%, var(--border)); }
+ul.pillgrid .cardico { width: 30px; height: 30px; border-radius: 8px; margin: 0; flex: 0 0 auto; }
+ul.pillgrid p, ul.pillgrid p.solo { font-size: 0.92rem; color: var(--fg); }
+ul.pillgrid h3 { font-size: 0.95rem; margin: 0; }
+
+/* Variant 3: soft tinted use-case tiles */
+ul.usecases { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+ul.usecases li { border: none; box-shadow: none; border-radius: 14px;
+  background: color-mix(in srgb, var(--accent) 7%, var(--bg));
+  padding: 1.2rem 1.3rem; }
+ul.usecases li:hover { transform: none; box-shadow: none;
+  background: color-mix(in srgb, var(--accent) 12%, var(--bg)); }
+ul.usecases .cardico { background: transparent; width: auto; height: auto;
+  margin-bottom: 0.55rem; color: var(--accent-ink); }
+ul.usecases p.solo { color: var(--fg); font-weight: 600; font-size: 0.95rem; }
+
+/* Alt-band adjustments so variants sit on either background */
+.band.alt ul.pillgrid li { background: var(--bg); }
+.band.alt ul.usecases li { background: color-mix(in srgb, var(--accent) 9%, var(--bg)); }
+.band.alt ul.timeline li { background: transparent; }
