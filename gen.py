@@ -44,7 +44,19 @@ def page_url(code, page):
     d = LOCALES[code][0]
     return f"{BASE}/{d}/{page}" if d else f"{BASE}/{page}"
 
+import re as _re
+def strip_tags(html):
+    return _re.sub(r'<[^>]+>', '', html).replace('"', '&quot;').strip()
+
+def meta_desc_for(t, page):
+    if page == 'index.html':
+        return strip_tags(t.get('idx_intro', ''))[:300]
+    if page == 'privacy.html':
+        return strip_tags(t.get('pp_summary', ''))[:300]
+    return strip_tags(t.get('fq_card', ''))[:300]
+
 def head(t, title, code, page, css_prefix):
+    meta_desc = meta_desc_for(t, page)
     lang, rtl = LOCALES[code][1], LOCALES[code][2]
     alts = "\n".join(
         f'<link rel="alternate" hreflang="{LOCALES[c][1]}" href="https://adamtomsltd.github.io{page_url(c, page)}">'
@@ -56,6 +68,8 @@ def head(t, title, code, page, css_prefix):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
+<meta name="description" content="{meta_desc}">
+<link rel="canonical" href="https://adamtomsltd.github.io{page_url(code, page)}">
 <link rel="stylesheet" href="{css_prefix}style.css">
 <link rel="icon" href="{css_prefix}assets/icon.svg" type="image/svg+xml">
 <link rel="icon" href="{css_prefix}assets/icon128.png" type="image/png">
@@ -242,4 +256,14 @@ for c, (d, lang, rtl, flag) in LOCALES.items():
         with io.open(os.path.join(outdir, page), "w", encoding="utf-8") as f:
             f.write(html)
         count += 1
-print(f"generated {count} pages for {len(LOCALES)} locales")
+urls = []
+for c, (d, lang, rtl, flag) in LOCALES.items():
+    for page in PAGES:
+        urls.append(f"https://adamtomsltd.github.io{page_url(c, page)}")
+sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+sitemap += "".join(f"<url><loc>{u}</loc></url>\n" for u in urls)
+sitemap += "</urlset>\n"
+io.open(os.path.join(SITE, "sitemap.xml"), "w", encoding="utf-8").write(sitemap)
+io.open(os.path.join(SITE, "robots.txt"), "w", encoding="utf-8").write(
+    "User-agent: *\nAllow: /\nSitemap: https://adamtomsltd.github.io/teams-message-extractor-site/sitemap.xml\n")
+print(f"generated {count} pages for {len(LOCALES)} locales + sitemap ({len(urls)} urls) + robots.txt")
