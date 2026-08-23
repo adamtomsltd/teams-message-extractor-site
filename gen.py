@@ -218,7 +218,7 @@ def render_listing_grouped(code):
         and all(a["type"] == b["type"] for a, b in zip(en_secs, sections)))
 
     ul_seen = [0]  # mutable counter shared with block_html
-    UL_VARIANTS = ["timeline", "pillgrid", "usecases", ""]
+    UL_VARIANTS = ["timeline", "usecases", "usecases", ""]
 
     def block_html(s, en_s=None):
         if s["type"] == "p":
