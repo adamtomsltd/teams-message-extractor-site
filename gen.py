@@ -147,6 +147,63 @@ def foot(t, css_prefix):
 def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
+# ── Icon glyphs (stroke, currentColor) + English-keyword assignment.
+# Listing structure is identical across locales (same sections, same item
+# order), so icons chosen from the EN text apply position-wise everywhere.
+GLYPHS = {
+ "chat":    '<path d="M21 12a8 8 0 0 1-8 8H5l-2 2V12a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8z"/>',
+ "user":    '<circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6"/>',
+ "smile":   '<circle cx="12" cy="12" r="9"/><path d="M8.5 14a4.5 4.5 0 0 0 7 0M9 9.5h.01M15 9.5h.01"/>',
+ "clip":    '<path d="M21 12.5l-8.2 8.2a5.8 5.8 0 0 1-8.2-8.2L12.8 4.3a3.9 3.9 0 0 1 5.5 5.5L10 18a1.95 1.95 0 0 1-2.8-2.8l7.3-7.3"/>',
+ "image":   '<rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5-4 4-2-2-5 5"/>',
+ "branch":  '<circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="9" r="2"/><path d="M6 7v10M18 11c0 4-5 4-9 6"/>',
+ "globe":   '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14 0 18M12 3c-3 3.5-3 14 0 18"/>',
+ "shield":  '<path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/>',
+ "zap":     '<path d="M13 2L5 13h5l-1 9 8-11h-5z"/>',
+ "archive": '<rect x="3" y="4" width="18" height="4" rx="1"/><path d="M5 8v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8M10 12h4"/>',
+ "file":    '<path d="M14 3H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5"/>',
+ "download":'<path d="M12 4v11M7 10l5 5 5-5M4 20h16"/>',
+ "scroll":  '<path d="M7 5l5 5 5-5M7 13l5 5 5-5"/>',
+ "search":  '<circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.5-4.5"/>',
+ "table":   '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16M15 4v16"/>',
+ "code":    '<path d="M8 8L4 12l4 4M16 8l4 4-4 4"/>',
+ "mdmark":  '<path d="M4 17V7l4 5 4-5v10M17 8v6M14.5 12l2.5 2.5L19.5 12"/>',
+ "clock":   '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+ "check":   '<path d="M5 12.5l4 4L19 7"/>',
+}
+def glyph(name, size=20):
+    return (f'<span class="cardico" aria-hidden="true"><svg viewBox="0 0 24 24" width="{size}" height="{size}" '
+            f'fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
+            f'{GLYPHS.get(name, GLYPHS["check"])}</svg></span>')
+
+KEYWORD_GLYPHS = [
+ ("channel","branch"),("thread","branch"),("csv","table"),("excel","table"),
+ ("markdown","mdmark"),("screenshot","image"),("image","image"),
+ ("scroll","scroll"),("zip","archive"),("archiv","archive"),("backup","archive"),("backing","archive"),
+ ("timestamp","clock"),("sender","user"),("author","user"),
+ ("emoji","smile"),("reaction","smile"),("attachment","clip"),("file","clip"),
+ ("search","search"),("compliance","shield"),("audit","shield"),("legal","shield"),
+ ("hr ","shield"),("privacy","shield"),("private","shield"),("local","shield"),
+ ("domain","globe"),("everywhere","globe"),("language","globe"),
+ ("download","download"),("popup","download"),("migrat","file"),("record","file"),
+ ("fast","zap"),("light","zap"),
+ ("message","chat"),("chat","chat"),("conversation","chat"),
+]
+def glyph_for(en_text):
+    t = (en_text or "").lower()
+    for kw, g in KEYWORD_GLYPHS:
+        if kw in t:
+            return g
+    return "check"
+
+_EN_LISTING = None
+def en_listing_sections():
+    global _EN_LISTING
+    if _EN_LISTING is None:
+        with io.open(os.path.join(SITE, "i18n", "listing", "en.json"), encoding="utf-8") as f:
+            _EN_LISTING = json.load(f)["sections"]
+    return _EN_LISTING
+
 def render_listing_grouped(code):
     """The store description (synced by sync_listing.py), grouped into
     (intro_html, [(title, body_html), ...]) so the landing can render each
@@ -156,8 +213,11 @@ def render_listing_grouped(code):
     path = os.path.join(SITE, "i18n", "listing", code + ".json")
     with io.open(path, encoding="utf-8") as f:
         sections = json.load(f)["sections"]
+    en_secs = en_listing_sections()
+    structure_matches = (len(en_secs) == len(sections)
+        and all(a["type"] == b["type"] for a, b in zip(en_secs, sections)))
 
-    def block_html(s):
+    def block_html(s, en_s=None):
         if s["type"] == "p":
             return f'<p>{esc(s["text"])}</p>'
         if s["type"] == "ol":
@@ -166,11 +226,10 @@ def render_listing_grouped(code):
         # ul → card grid. "Title: rest" bullets become a composed card:
         # icon tile, title line, muted description. Unsplittable bullets stay
         # a single line under the icon.
-        ICON = ('<span class="cardico" aria-hidden="true"><svg viewBox="0 0 20 20" width="20" height="20">'
-                '<path d="M5 10.3l3.2 3.2L15 6.8" fill="none" stroke="currentColor" stroke-width="2.2" '
-                'stroke-linecap="round" stroke-linejoin="round"/></svg></span>')
+        en_items = (en_s or {}).get("items", [])
         cards = []
-        for i in s["items"]:
+        for idx, i in enumerate(s["items"]):
+            ICON = glyph(glyph_for(en_items[idx] if idx < len(en_items) else i))
             txt = esc(i)
             lead = rest = None
             for sep in (": ", "، ", "：", " – "):
@@ -184,12 +243,13 @@ def render_listing_grouped(code):
         return f'<ul class="cardgrid">{"".join(cards)}</ul>' 
 
     intro, groups, cur = [], [], None
-    for s in sections:
+    for i, s in enumerate(sections):
+        en_s = en_secs[i] if structure_matches else None
         if s["type"] == "h2":
             cur = {"title": esc(s["text"]), "body": []}
             groups.append(cur)
         else:
-            (cur["body"] if cur else intro).append(block_html(s))
+            (cur["body"] if cur else intro).append(block_html(s, en_s))
     return "\n".join(intro), [(g["title"], "\n".join(g["body"])) for g in groups]
 
 STORE_URL = "https://chromewebstore.google.com/detail/teams-message-extractor-c/hemdpkoomkdphclendigjhelkaknjddb"
@@ -216,8 +276,9 @@ def faq_jsonld(t):
 def render_index(t, code):
     css_prefix = "../" if LOCALES[code][0] else ""
     stats = "".join(f'<span class="chip">{t[k]}</span>' for k in ("stat_formats", "stat_langs", "stat_trackers", "stat_proxy"))
+    FMT_GLYPH = {"CSV": "table", "HTML": "code", "Markdown": "mdmark", "ZIP": "archive"}
     fmt_rows = "".join(
-        f'<tr><td class="fmtname">{name}</td><td>{t[key]}</td></tr>'
+        f'<tr><td class="fmtname">{glyph(FMT_GLYPH[name], 18)}{name}</td><td>{t[key]}</td></tr>'
         for name, key in (("CSV", "fmt_csv"), ("HTML", "fmt_html"), ("Markdown", "fmt_md"), ("ZIP", "fmt_zip")))
     faq_items = "".join(
         f'<details><summary>{t[f"faq_q{i}"]}</summary><p>{t[f"faq_a{i}"]}</p></details>'
@@ -246,9 +307,9 @@ def render_index(t, code):
     band(f"""<h2>{t['smpl_h']}</h2>
       <p class="prose">{t['smpl_note']}</p>
       <p class="samplerow">
-        <a class="samplelink" href="{css_prefix}assets/sample.csv" download>CSV</a>
-        <a class="samplelink" href="{css_prefix}assets/sample.html" download>HTML</a>
-        <a class="samplelink" href="{css_prefix}assets/sample.md" download>Markdown</a>
+        <a class="samplelink" href="{css_prefix}assets/sample.csv" download>{glyph("table", 18)}CSV</a>
+        <a class="samplelink" href="{css_prefix}assets/sample.html" download>{glyph("code", 18)}HTML</a>
+        <a class="samplelink" href="{css_prefix}assets/sample.md" download>{glyph("mdmark", 18)}Markdown</a>
       </p>""")
     band(f'<h2>{t["faq_h"]}</h2><div class="faq">{faq_items}</div>', "alt")
     band(f"""<h2>{t['idx_shots_h']}</h2>

@@ -334,3 +334,36 @@ table.fmt td { padding: 0.85rem 1rem; }
   .band .wrap { padding: 2.4rem 1.1rem; }
   .heroband .wrap { padding: 3rem 1.1rem 2.4rem; }
 }
+
+/* ── v4: hero rhythm, format/sample icons, custom FAQ disclosure ───────── */
+.heroband .wrap { padding: 4.6rem 1.5rem 4rem; }
+.heroband h1 { margin: 0 auto 1.3rem; }
+.heroband .herosub { margin: 0 auto; }
+.heroband .ctarow { margin: 2.2rem 0 0; }
+.heroband .stats { margin: 2rem 0 0; }
+
+td.fmtname .cardico, .samplelink .cardico {
+  width: 30px; height: 30px; border-radius: 8px; margin: 0 0.6rem 0 0;
+  vertical-align: middle;
+}
+td.fmtname { display: flex; align-items: center; border-top: none; }
+table.fmt tr + tr td { border-top: 1px solid var(--border); }
+.samplelink { display: inline-flex; align-items: center; }
+.samplelink .cardico { background: transparent; color: inherit; margin: 0 0.45rem 0 0; width: 22px; height: 22px; }
+.samplelink:hover .cardico { color: var(--on-accent); }
+
+/* FAQ: replace the browser disclosure triangle with a rotating chevron */
+.faq summary { list-style: none; position: relative; padding-inline-end: 2rem; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: ""; position: absolute; inset-inline-end: 0.2rem; top: 50%;
+  width: 10px; height: 10px; margin-top: -8px;
+  border-inline-end: 2.5px solid var(--accent-ink);
+  border-bottom: 2.5px solid var(--accent-ink);
+  transform: rotate(45deg); transition: transform 0.18s ease;
+}
+.faq details[open] summary::after { transform: rotate(225deg); margin-top: -3px; }
+.faq details[open] { border-color: color-mix(in srgb, var(--accent-ink) 30%, var(--border)); }
+
+/* Chips: slightly larger presence to match the new rhythm */
+.chip { padding: 0.4rem 0.95rem; font-size: 0.88rem; }
