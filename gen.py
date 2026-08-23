@@ -163,21 +163,25 @@ def render_listing_grouped(code):
         if s["type"] == "ol":
             items = "".join(f'<li><span>{esc(i)}</span></li>' for i in s["items"])
             return f'<ol class="steps">{items}</ol>'
-        # ul → card grid. Bullets of the form "Title — rest" / "Title: rest"
-        # get a bold lead so cards scan like features, not sentences.
+        # ul → card grid. "Title: rest" bullets become a composed card:
+        # icon tile, title line, muted description. Unsplittable bullets stay
+        # a single line under the icon.
+        ICON = ('<span class="cardico" aria-hidden="true"><svg viewBox="0 0 20 20" width="20" height="20">'
+                '<path d="M5 10.3l3.2 3.2L15 6.8" fill="none" stroke="currentColor" stroke-width="2.2" '
+                'stroke-linecap="round" stroke-linejoin="round"/></svg></span>')
         cards = []
         for i in s["items"]:
             txt = esc(i)
+            lead = rest = None
             for sep in (": ", "، ", "：", " – "):
                 if sep in txt and len(txt.split(sep)[0]) < 60:
                     lead, rest = txt.split(sep, 1)
-                    txt = f'<strong>{lead}</strong><br>{rest}'
                     break
-            icon = ('<svg class="cardicon" aria-hidden="true" viewBox="0 0 20 20" width="18" height="18">'
-                    '<circle cx="10" cy="10" r="9" fill="currentColor" opacity="0.14"/>'
-                    '<path d="M6 10.3l2.6 2.6L14 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>')
-            cards.append(f'<li>{icon}<div>{txt}</div></li>')
-        return f'<ul class="cardgrid">{"".join(cards)}</ul>'
+            if lead:
+                cards.append(f'<li>{ICON}<h3>{lead}</h3><p>{rest}</p></li>')
+            else:
+                cards.append(f'<li>{ICON}<p class="solo">{txt}</p></li>')
+        return f'<ul class="cardgrid">{"".join(cards)}</ul>' 
 
     intro, groups, cur = [], [], None
     for s in sections:
