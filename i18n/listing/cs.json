@@ -10,17 +10,16 @@
   },
   {
    "type": "h2",
-   "text": "Novinky ve verzi 2.9.0"
+   "text": "Novinky ve verzi 2.9.4"
   },
   {
    "type": "ul",
    "items": [
-    "Novinka: extrakce příspěvků z kanálů. Vlákna se exportují se všemi vnořenými odpověďmi, včetně předmětu a struktury vlákna.",
-    "Nový export do Markdownu, ideální pro vkládání do poznámek, wiki nebo nástrojů AI.",
-    "Export CSV se nyní v Excelu otevírá správně a česká diakritika (ě, š, č, ř, ž) už není poškozená.",
-    "Vložené obrázky a snímky obrazovky se nyní spolehlivě zachytí, a to i v novém rozhraní teams.cloud.microsoft, kde se jich dříve mnoho ztrácelo.",
-    "Snímky obrazovky se vkládají přímo do HTML přepisu: obrázky jsou vidět přímo v exportu, ne jen jako odkazy.",
-    "Obrázky si zachovají původní kvalitu: přílohy se ukládají jako přesný originální soubor bez opětovné komprese."
+    "Obrázky se nyní exportují v plném rozlišení. Teams v chatu zobrazuje jen zmenšenou kopii vloženého obrázku; export si teď stáhne originál, a to jak do HTML přepisu, tak do ZIP archivu.",
+    "Zprávy zůstávají ve správném pořadí. Opraveny občasné případy, kdy se zprávy v exportu objevily mimo pořadí.",
+    "Velké chaty s mnoha obrázky už neselhávají na úplném konci extrakce.",
+    "Tlačítko „Spustit extrakci“ znovu funguje po opětovném otevření vyskakovacího okna během extrakce.",
+    "Z nedávných novinek: extrakce příspěvků z kanálů, export do Markdownu, CSV vhodné pro Excel a spolehlivé zachycení vložených snímků obrazovky na teams.cloud.microsoft."
    ]
   },
   {

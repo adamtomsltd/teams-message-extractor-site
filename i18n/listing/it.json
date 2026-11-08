@@ -10,17 +10,16 @@
   },
   {
    "type": "h2",
-   "text": "Novità nella versione 2.9.0"
+   "text": "Novità nella versione 2.9.4"
   },
   {
    "type": "ul",
    "items": [
-    "Novità: estrazione dei post dei canali. Le conversazioni a thread vengono esportate con tutte le risposte annidate, oggetto e struttura del thread inclusi.",
-    "Nuova esportazione in Markdown, ideale da incollare in note, wiki o strumenti di IA.",
-    "L'esportazione CSV ora si apre correttamente in Excel: i caratteri accentati (à, è, ì, ò, ù) non risultano più corrotti.",
-    "Le immagini e gli screenshot incollati ora vengono acquisiti in modo affidabile, anche nel nuovo layout teams.cloud.microsoft, dove prima molti andavano persi.",
-    "Gli screenshot sono incorporati direttamente nella trascrizione HTML: le immagini compaiono nel corpo dell'esportazione, non solo come link.",
-    "Qualità originale delle immagini: gli allegati vengono salvati come copia esatta del file originale, senza ricompressione."
+    "Le immagini ora vengono esportate a piena risoluzione. Teams mostra in chat solo una copia ridotta dell'immagine incollata; l'esportazione ora recupera l'originale, sia nella trascrizione HTML che nello ZIP.",
+    "I messaggi restano nell'ordine corretto. Risolti i casi occasionali di messaggi fuori sequenza nell'esportazione.",
+    "Le chat lunghe e ricche di immagini non falliscono più proprio alla fine dell'estrazione.",
+    "Il pulsante Avvia funziona di nuovo dopo aver riaperto il popup durante un'estrazione.",
+    "Novità recenti: estrazione dei post dei canali, esportazione in Markdown, CSV compatibile con Excel e acquisizione affidabile degli screenshot incollati su teams.cloud.microsoft."
    ]
   },
   {

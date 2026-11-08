@@ -10,17 +10,16 @@
   },
   {
    "type": "h2",
-   "text": "Novidades na versão 2.9.0"
+   "text": "Novidades na versão 2.9.4"
   },
   {
    "type": "ul",
    "items": [
-    "Novo: extração de postagens de canais. As conversas em tópicos são exportadas com todas as respostas aninhadas, incluindo assunto e estrutura do tópico.",
-    "Nova exportação em Markdown, ideal para colar em notas, wikis ou ferramentas de IA.",
-    "A exportação CSV agora abre corretamente no Excel: caracteres acentuados (á, ã, ç, é) não ficam mais corrompidos.",
-    "Imagens e capturas de tela coladas agora são capturadas de forma confiável, inclusive no novo layout do teams.cloud.microsoft, onde muitas se perdiam.",
-    "As capturas de tela ficam incorporadas diretamente na transcrição HTML: as imagens aparecem embutidas na exportação, não apenas como links.",
-    "Qualidade de imagem original: os anexos são salvos como o arquivo original exato, sem recompressão."
+    "As imagens agora são exportadas em resolução completa. O Teams mostra no chat apenas uma cópia reduzida da imagem colada; a exportação agora busca o original, tanto na transcrição HTML quanto no ZIP.",
+    "As mensagens ficam na ordem certa. Corrigidos os casos ocasionais de mensagens fora de sequência na exportação.",
+    "Conversas grandes e cheias de imagens não falham mais bem no final da extração.",
+    "O botão Iniciar volta a funcionar depois de reabrir o popup durante uma extração.",
+    "Também recente: extração de postagens de canais, exportação em Markdown, CSV compatível com Excel e captura confiável de capturas de tela coladas no teams.cloud.microsoft."
    ]
   },
   {

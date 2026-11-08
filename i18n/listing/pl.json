@@ -10,17 +10,16 @@
   },
   {
    "type": "h2",
-   "text": "Nowości w wersji 2.9.0"
+   "text": "Nowości w wersji 2.9.4"
   },
   {
    "type": "ul",
    "items": [
-    "Nowość: ekstrakcja postów z kanałów. Wątki są eksportowane ze wszystkimi zagnieżdżonymi odpowiedziami, wraz z tematem i strukturą wątku.",
-    "Nowy eksport do Markdown, idealny do wklejania do notatek, wiki lub narzędzi AI.",
-    "Eksport CSV otwiera się teraz poprawnie w Excelu, a polskie znaki (ą, ę, ł, ż) nie są już zniekształcane.",
-    "Wklejone obrazy i zrzuty ekranu są teraz niezawodnie przechwytywane, także w nowym układzie teams.cloud.microsoft, gdzie wcześniej wiele z nich było pomijanych.",
-    "Zrzuty ekranu są osadzane bezpośrednio w transkrypcie HTML: obrazy widać w samym eksporcie, a nie tylko jako linki.",
-    "Obrazy zachowują oryginalną jakość: załączniki są zapisywane jako dokładnie ten sam oryginalny plik, bez ponownej kompresji."
+    "Obrazy są teraz eksportowane w pełnej rozdzielczości. Teams pokazuje w czacie tylko pomniejszoną kopię wklejonego obrazu; eksport pobiera teraz oryginał, zarówno do transkryptu HTML, jak i do archiwum ZIP.",
+    "Wiadomości zachowują właściwą kolejność. Naprawiono sporadyczne przypadki wiadomości pojawiających się w eksporcie w złej kolejności.",
+    "Duże czaty z wieloma obrazami nie kończą się już błędem na samym końcu ekstrakcji.",
+    "Przycisk „Rozpocznij ekstrakcję” znów działa po ponownym otwarciu okienka rozszerzenia w trakcie ekstrakcji.",
+    "Z ostatnich nowości: ekstrakcja postów z kanałów, eksport do Markdown, CSV przyjazny dla Excela oraz niezawodne przechwytywanie wklejonych zrzutów ekranu na teams.cloud.microsoft."
    ]
   },
   {

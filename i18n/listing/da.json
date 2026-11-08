@@ -10,17 +10,16 @@
   },
   {
    "type": "h2",
-   "text": "Nyt i 2.9.0"
+   "text": "Nyt i 2.9.4"
   },
   {
    "type": "ul",
    "items": [
-    "Nyt: udtræk af kanalindlæg. Trådede samtaler eksporteres med alle indlejrede svar, inklusive emne og trådstruktur.",
-    "Ny Markdown-eksport, ideel til at indsætte i noter, wikier eller AI-værktøjer.",
-    "CSV-eksporten åbner nu korrekt i Excel, og danske tegn (æ, ø, å) bliver ikke længere ødelagt.",
-    "Indsatte billeder og skærmbilleder fanges nu pålideligt, også i det nye teams.cloud.microsoft-layout, hvor mange tidligere blev overset.",
-    "Skærmbilleder indlejres direkte i HTML-udskriften, så billederne vises i selve eksporten og ikke kun som links.",
-    "Original billedkvalitet: vedhæftede filer gemmes som den nøjagtige originalfil uden genkomprimering."
+    "Billeder eksporteres nu i fuld opløsning. Teams viser kun en nedskaleret kopi af et indsat billede i chatten; eksporten henter nu originalen, både i HTML-udskriften og i ZIP-arkivet.",
+    "Beskederne står i den rigtige rækkefølge. Enkelte beskeder kunne tidligere optræde i forkert rækkefølge i eksporten; det er rettet.",
+    "Store chats med mange billeder fejler ikke længere helt til sidst i udtrækket.",
+    "Knappen ”Start udtræk” virker igen, når du genåbner pop op-vinduet under et udtræk.",
+    "Også nyt på det seneste: udtræk af kanalindlæg, Markdown-eksport, Excel-venlig CSV og pålidelig indfangning af indsatte skærmbilleder på teams.cloud.microsoft."
    ]
   },
   {

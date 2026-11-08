@@ -10,17 +10,16 @@
   },
   {
    "type": "h2",
-   "text": "What's new in 2.9.0"
+   "text": "What's new in 2.9.4"
   },
   {
    "type": "ul",
    "items": [
-    "New: channel (Posts) extraction. Threaded channel conversations export with every nested reply, subject line and thread structure included.",
-    "New Markdown export, ideal for pasting into notes, wikis or AI tools.",
-    "CSV export now opens correctly in Excel. Accented and international characters (é, ã, ü, ç) are no longer garbled.",
-    "Pasted images and screenshots are now captured reliably, including on the new teams.cloud.microsoft layout where many were previously missed.",
-    "Screenshots are embedded directly in the HTML transcript, so images appear in the export itself rather than as links.",
-    "Attachments save as the exact original file at original quality, with no recompression."
+    "Images now export at full resolution. Teams only shows a downscaled copy of a pasted image in the chat; the export now fetches the original, in the HTML transcript and in the ZIP.",
+    "Messages stay in the right order. Occasional out-of-sequence messages in the export are fixed.",
+    "Large, image-heavy chats no longer fail at the very end of the extraction.",
+    "The Start button works again after reopening the popup during an extraction.",
+    "Also recent: channel (Posts) extraction, Markdown export, Excel-friendly CSV, and reliable capture of pasted screenshots on teams.cloud.microsoft."
    ]
   },
   {
